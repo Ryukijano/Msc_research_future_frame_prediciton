@@ -1,0 +1,49 @@
+
+Downloading https://github.com/tychovdo/MovingMNIST/raw/master/mnist_test_seq.npy.gz
+Processing...
+Done!
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+training: 100%|██████████| 71/71 [00:37<00:00,  2.34it/s, train_loss=0.00397]
+
+testing: 100%|██████████| 8/8 [00:02<00:00,  3.73it/s, eval_loss=0.00395]
+
+  0%|          | 0/15 [00:39<?, ?it/s]0:00,  3.73it/s, eval_loss=0.00395]
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+training: 100%|██████████| 71/71 [00:37<00:00,  2.29it/s, train_loss=0.034]
+testing:  62%|██████▎   | 5/8 [00:01<00:00,  3.46it/s, eval_loss=0.0339]
+
