@@ -1,0 +1,4 @@
+  0%|          | 0/500 [00:00<?, ?it/s]C:\Users\sc23gd\AppData\Local\Temp\ipykernel_25452\1249557489.py:18: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\utils\tensor_new.cpp:277.)
+  batch = torch.tensor(batch).unsqueeze(1)
+  0%|          | 0/500 [00:00<?, ?it/s]
+Using downloaded and verified file: .\moving_mnist.npy

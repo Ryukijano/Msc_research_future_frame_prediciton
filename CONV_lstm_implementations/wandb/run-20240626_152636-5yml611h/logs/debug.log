@@ -1,0 +1,41 @@
+2024-06-26 15:26:36,512 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-06-26 15:26:36,512 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Configure stats pid to 24112
+2024-06-26 15:26:36,512 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Loading settings from C:\Users\sc23gd\.config\wandb\settings
+2024-06-26 15:26:36,512 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Loading settings from c:\Users\sc23gd\Documents\GitHub\Msc_research_future_frame_prediciton\CONV_lstm_implementations\wandb\settings
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_init.py:_log_setup():520] Logging user logs to c:\Users\sc23gd\Documents\GitHub\Msc_research_future_frame_prediciton\CONV_lstm_implementations\wandb\run-20240626_152636-5yml611h\logs\debug.log
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_init.py:_log_setup():521] Logging internal logs to c:\Users\sc23gd\Documents\GitHub\Msc_research_future_frame_prediciton\CONV_lstm_implementations\wandb\run-20240626_152636-5yml611h\logs\debug-internal.log
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_init.py:init():560] calling init triggers
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-26 15:26:36,513 INFO    MainThread:24112 [wandb_init.py:init():585] re-initializing run, found existing run on stack: caybm3hw
+2024-06-26 15:26:36,514 INFO    MainThread:24112 [wandb_run.py:_finish():2109] finishing run hack-the-thong/Conv_vae_lstm_mnist/caybm3hw
+2024-06-26 15:26:36,514 INFO    MainThread:24112 [jupyter.py:save_history():444] not saving jupyter history
+2024-06-26 15:26:36,514 INFO    MainThread:24112 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-06-26 15:26:36,514 INFO    MainThread:24112 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-06-26 15:26:36,514 INFO    MainThread:24112 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-06-26 15:26:36,514 INFO    MainThread:24112 [wandb_run.py:_restore():2332] restore
+2024-06-26 15:26:36,515 INFO    MainThread:24112 [wandb_run.py:_restore():2338] restore done
+2024-06-26 15:26:41,445 INFO    MainThread:24112 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-06-26 15:26:41,445 INFO    MainThread:24112 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-06-26 15:26:41,449 INFO    MainThread:24112 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-06-26 15:26:41,736 INFO    MainThread:24112 [wandb_init.py:init():610] starting backend
+2024-06-26 15:26:41,736 INFO    MainThread:24112 [wandb_init.py:init():614] setting up manager
+2024-06-26 15:26:41,739 INFO    MainThread:24112 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-06-26 15:26:41,740 INFO    MainThread:24112 [wandb_init.py:init():622] backend started and connected
+2024-06-26 15:26:41,744 INFO    MainThread:24112 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-06-26 15:26:41,744 INFO    MainThread:24112 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-06-26 15:26:41,744 INFO    MainThread:24112 [wandb_init.py:init():711] updated telemetry
+2024-06-26 15:26:41,876 INFO    MainThread:24112 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-06-26 15:26:42,832 INFO    MainThread:24112 [wandb_run.py:_on_init():2402] communicating current version
+2024-06-26 15:26:42,889 INFO    MainThread:24112 [wandb_run.py:_on_init():2411] got version response 
+2024-06-26 15:26:42,890 INFO    MainThread:24112 [wandb_init.py:init():795] starting run threads in backend
+2024-06-26 15:26:43,255 INFO    MainThread:24112 [wandb_run.py:_console_start():2380] atexit reg
+2024-06-26 15:26:43,255 INFO    MainThread:24112 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-06-26 15:26:43,255 INFO    MainThread:24112 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-06-26 15:26:43,255 INFO    MainThread:24112 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-06-26 15:26:43,256 INFO    MainThread:24112 [wandb_init.py:init():838] run started, returning control to user process
+2024-06-26 15:26:43,256 INFO    MainThread:24112 [wandb_watch.py:watch():51] Watching

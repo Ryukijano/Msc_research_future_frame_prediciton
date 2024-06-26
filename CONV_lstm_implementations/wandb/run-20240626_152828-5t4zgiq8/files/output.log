@@ -1,0 +1,5 @@
+
+  0%|          | 0/1000 [00:00<?, ?it/s]
+Using downloaded and verified file: .\moving_mnist.npy
+Input shape: torch.Size([8, 1, 10, 64, 64])
+Target shape: torch.Size([8, 1, 64, 64])
