@@ -1,0 +1,7 @@
+
+  0%|          | 0/250 [00:00<?, ?it/s]
+Reconstructed shape: torch.Size([32, 1, 10, 64, 64])
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Using downloaded and verified file: .\moving_mnist.npy
+Input shape: torch.Size([32, 1, 10, 64, 64])
+Target shape: torch.Size([32, 1, 64, 64])
