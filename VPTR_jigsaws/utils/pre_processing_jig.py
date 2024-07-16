@@ -26,28 +26,22 @@ def unzip(file_dir, output_dir):
     with zipfile.ZipFile(file_dir, 'r') as zip_ref:
         zip_ref.extractall(output_dir)
 
-def vid2frames(dataset_dir, root_dir, frame_size = None):
+def vid2frames(dataset_dir, root_dir, frame_size=(64, 64)):
     videos_path = Path(dataset_dir)
     vid_file_list = list(videos_path.glob("*.avi"))
-    print(len(vid_file_list))
+    print(f"Found {len(vid_file_list)} video files.")
     for vid in vid_file_list:
-        dir_str = ''
-        for s in vid.name.strip().split('.')[:-1]:
-            dir_str += s
-        dir_str = dir_str.replace(" ", "")
-        img_dir = Path(root_dir).joinpath(Path(dir_str))
+        dir_str = vid.stem.replace(" ", "")
+        img_dir = Path(root_dir) / dir_str
 
         if img_dir.exists():
-            shutil.rmtree(img_dir.absolute())
+            shutil.rmtree(img_dir)
         
         img_dir.mkdir(parents=True, exist_ok=True)
 
-        if frame_size is not None:
-            command = ['ffmpeg', '-i', vid.absolute().as_posix(), '-f', 'image2', '-s', f'{frame_size}x{frame_size}', f'{img_dir.absolute().as_posix()}/image_%04d_{frame_size}x{frame_size}.png']
-        else:
-            command = ['ffmpeg', '-i', vid.absolute().as_posix(), '-r', '10', '-s', f'64x64', f'{img_dir.absolute().as_posix()}/image_%04d.png']
-        
-        process = subprocess.Popen(command, stdout = subprocess.PIPE)
+        command = ['ffmpeg', '-i', str(vid), '-vf', f"scale={frame_size[0]}:{frame_size[1]}", f'{img_dir}/image_%04d.png']
+        subprocess.run(command, stdout=subprocess.PIPE)
+
     
 def frames2vid(frames_dir, out_file, frame_size, fps = 25):
     frames_path = Path(frames_dir)

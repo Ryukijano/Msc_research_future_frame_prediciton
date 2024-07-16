@@ -356,6 +356,43 @@ class MovingMNISTDataset(Dataset):
 
         imgs[0].save(str(Path(file_name).absolute()), save_all = True, append_images = imgs[1:])
 
+class SuturingDataset(Dataset):
+    def __init__(self, data_path, transform, num_past_frames=10, num_future_frames=10):
+        self.data_path = Path(data_path)
+        self.transform = transform
+        self.num_past_frames = num_past_frames
+        self.num_future_frames = num_future_frames
+        self.clip_length = num_past_frames + num_future_frames
+        self.clips = self.load_data()
+
+    def load_data(self):
+        clips = []
+        video_folders = sorted(self.data_path.glob('*'))
+        for folder in video_folders:
+            frame_files = sorted(folder.glob('*.png'))
+            for i in range(0, len(frame_files) - self.clip_length, self.clip_length):
+                past_clip = frame_files[i:i+self.num_past_frames]
+                future_clip = frame_files[i+self.num_past_frames:i+self.clip_length]
+                clips.append((past_clip, future_clip))
+        return clips
+
+    def __len__(self):
+        return len(self.clips)
+
+    def __getitem__(self, idx):
+        past_clip, future_clip = self.clips[idx]
+        past_images = [Image.open(f) for f in past_clip]
+        future_images = [Image.open(f) for f in future_clip]
+
+        if self.transform:
+            past_images = [self.transform(img) for img in past_images]
+            future_images = [self.transform(img) for img in future_images]
+
+        past_tensor = torch.stack([transforms.ToTensor()(img) for img in past_images])
+        future_tensor = torch.stack([transforms.ToTensor()(img) for img in future_images])
+
+        return past_tensor, future_tensor
+
 
 class VidResize(object):
     def __init__(self, *args, **resize_kwargs):
