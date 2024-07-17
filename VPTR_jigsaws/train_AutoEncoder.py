@@ -104,8 +104,8 @@ def show_samples(VPTR_Enc, VPTR_Dec, sample, save_dir, renorm_transform):
         visualize_batch_clips(past_frames[0:idx, :, ...], rec_future_frames[0:idx, :, ...], rec_past_frames[0:idx, :, ...], save_dir, renorm_transform, desc = 'ae')
 
 if __name__ == '__main__':
-    ckpt_save_dir = Path('/home/ryukijano/VPTR_jigsaws/MovingMNIST/VPTR_ckpts/MNIST_ResNetAE_MSEGDLgan_ckpt')
-    tensorboard_save_dir = Path('/home/ryukijano/VPTR_jigsaws/MovingMNIST/VPTR_ckpts/MNIST_ResNetAE_MSEGDLgan_tensorboard')
+    ckpt_save_dir = Path('C:\\Users\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_ckpt')
+    tensorboard_save_dir = Path('C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_tensorboard')
 
     #resume_ckpt = ckpt_save_dir.joinpath('epoch_45.tar')
     resume_ckpt = None
@@ -115,7 +115,7 @@ if __name__ == '__main__':
     num_past_frames = 10
     num_future_frames = 10
     encH, encW, encC = 8, 8, 528
-    img_channels = 1 #3 channels for BAIR datset
+    img_channels = 1 #3 channels for BAIR dataset
     epochs = 2
     N = 4
     AE_lr = 2e-4
@@ -124,12 +124,12 @@ if __name__ == '__main__':
 
     #####################Init Dataset ###########################
     data_set_name = 'MNIST' #see utils.dataset
-    dataset_dir = '/home/ryukijano/VPTR_jigsaws/moving-mnist-example'
+    dataset_dir = 'C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\moving-mnist-example'
     train_loader, val_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, num_past_frames, num_future_frames)
 
     #####################Init Models and Optimizer ###########################
     VPTR_Enc = VPTREnc(img_channels, feat_dim = encC, n_downsampling = 3).to(device)
-    VPTR_Dec = VPTRDec(img_channels, feat_dim = encC, n_downsampling = 3, out_layer = 'Tanh').to(device) #Sigmoid for MNIST, Tanh for KTH and BAIR
+    VPTR_Dec = VPTRDec(img_channels, feat_dim = encC, n_downsampling = 3, out_layer = 'Sigmoid').to(device) #Sigmoid for MNIST, Tanh for KTH and BAIR
     VPTR_Disc = VPTRDisc(img_channels, ndf=64, n_layers=3, norm_layer=nn.BatchNorm2d).to(device)
     init_weights(VPTR_Disc)
     init_weights(VPTR_Enc)
