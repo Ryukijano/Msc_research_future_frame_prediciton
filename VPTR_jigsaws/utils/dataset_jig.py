@@ -62,6 +62,21 @@ def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames = 1
 
         test_set = BAIRDataset(dataset_dir.joinpath('test'), transform, color_mode = 'RGB', 
                                 num_past_frames = 2, num_future_frames = test_future_frames)()
+        
+    
+    elif data_set_name == 'Suturing':
+        # Define transformations (adjust as needed)
+        norm_transform = VidNormalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        renorm_transform = VidReNormalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        train_transform = transforms.Compose([VidResize((64, 64)), VidRandomHorizontalFlip(0.5), 
+                                                VidRandomVerticalFlip(0.5), VidToTensor(), norm_transform])
+        test_transform = transforms.Compose([VidResize((64, 64)), VidToTensor(), norm_transform])
+
+        # Load train and test datasets directly
+        train_set = JIGSAWSDataset(Path(data_set_dir).joinpath('train'), train_transform,
+                                    num_past_frames=num_past_frames, num_future_frames=num_future_frames)
+        test_set = JIGSAWSDataset(Path(data_set_dir).joinpath('test'), test_transform,
+                                num_past_frames=test_past_frames, num_future_frames=test_future_frames)
 
     N = batch_size
     train_loader = DataLoader(train_set, batch_size=N, shuffle=True, num_workers=num_workers, drop_last = True)
@@ -76,7 +91,7 @@ def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames = 1
         train_loader = DataLoader(train_set, batch_size=N, shuffle=False, pin_memory=True, num_workers=num_workers, sampler=train_sampler, drop_last = True)
         val_loader = DataLoader(val_set, batch_size=N, shuffle=False, pin_memory=True, num_workers=num_workers, sampler=val_sampler, drop_last = True)
 
-    return train_loader, val_loader, test_loader, renorm_transform
+    return train_loader,  test_loader, renorm_transform
 
 class KTHDataset(object):
     """
@@ -355,8 +370,11 @@ class MovingMNISTDataset(Dataset):
             imgs.append(img)
 
         imgs[0].save(str(Path(file_name).absolute()), save_all = True, append_images = imgs[1:])
+        
 
-class SuturingDataset(Dataset):
+class JIGSAWSDataset(Dataset):
+"""JIGSAWS Suturing dataset class."""
+
     def __init__(self, data_path, transform, num_past_frames=10, num_future_frames=10):
         self.data_path = Path(data_path)
         self.transform = transform
@@ -366,32 +384,25 @@ class SuturingDataset(Dataset):
         self.clips = self.load_data()
 
     def load_data(self):
+        """Loads data clips from pre-split sequences."""
         clips = []
-        video_folders = sorted(self.data_path.glob('*'))
-        for folder in video_folders:
-            frame_files = sorted(folder.glob('*.png'))
-            for i in range(0, len(frame_files) - self.clip_length, self.clip_length):
-                past_clip = frame_files[i:i+self.num_past_frames]
-                future_clip = frame_files[i+self.num_past_frames:i+self.clip_length]
-                clips.append((past_clip, future_clip))
+        for sequence_folder in self.data_path.glob('*'):
+            frame_files = sorted(sequence_folder.glob('*.png'))
+            clips.append(frame_files)
         return clips
 
     def __len__(self):
         return len(self.clips)
 
     def __getitem__(self, idx):
-        past_clip, future_clip = self.clips[idx]
-        past_images = [Image.open(f) for f in past_clip]
-        future_images = [Image.open(f) for f in future_clip]
+        clip = self.clips[idx]
+        images = [Image.open(f).convert('RGB') for f in clip]
 
         if self.transform:
-            past_images = [self.transform(img) for img in past_images]
-            future_images = [self.transform(img) for img in future_images]
+            images = [self.transform(img) for img in images]
 
-        past_tensor = torch.stack([transforms.ToTensor()(img) for img in past_images])
-        future_tensor = torch.stack([transforms.ToTensor()(img) for img in future_images])
-
-        return past_tensor, future_tensor
+        tensor = torch.stack(images, dim=0)
+        return tensor[:, :self.num_past_frames], tensor[:, self.num_past_frames:]  # Return past and future frames
 
 
 class VidResize(object):

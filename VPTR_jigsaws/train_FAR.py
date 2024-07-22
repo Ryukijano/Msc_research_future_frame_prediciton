@@ -136,9 +136,9 @@ def FAR_show_sample(VPTR_Enc, VPTR_Dec, VPTR_Transformer, num_pred, sample, save
 
 if __name__ == '__main__':
     set_seed(2021)
-    ckpt_save_dir = Path('C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_FAR_MSEGDL_ckpt')
-    tensorboard_save_dir = Path('C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\MNIST_FAR_MSEGDL_tensorboard')
-    resume_AE_ckpt = Path('C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_ckpt').joinpath('epoch_2.tar')
+    ckpt_save_dir = Path('C:\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_FAR_MSEGDL_ckpt')
+    tensorboard_save_dir = Path('C:\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\MNIST_FAR_MSEGDL_tensorboard')
+    resume_AE_ckpt = Path('C:\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_ckpt').joinpath('epoch_10.tar')
     #resume_ckpt = ckpt_save_dir.joinpath('epoch_179.tar')
     resume_ckpt = None
 
@@ -158,7 +158,7 @@ if __name__ == '__main__':
     encH, encW, encC = 8, 8, 528
     img_channels = 1 #3 channels for BAIR
     epochs = 5
-    N = 2
+    N = 6
     #AE_lr = 2e-4
     Transformer_lr = 1e-4
     max_grad_norm = 1.0 
@@ -170,7 +170,7 @@ if __name__ == '__main__':
 
     #####################Init Dataset ###########################
     data_set_name = 'MNIST'
-    dataset_dir = 'C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\moving-mnist-example'
+    dataset_dir = 'C:\\VPTR_jigsaws\\moving-mnist-example'
     test_past_frames = 10
     test_future_frames = 10
     train_loader, val_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, test_past_frames, test_future_frames)

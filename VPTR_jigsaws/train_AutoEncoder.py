@@ -86,8 +86,8 @@ def single_iter(VPTR_Enc, VPTR_Dec, VPTR_Disc, optimizer_G, optimizer_D, sample,
     return iter_loss_dict
 
 def show_samples(VPTR_Enc, VPTR_Dec, sample, save_dir, renorm_transform):
-    VPTR_Enc = VPTR_Enc.eval()
-    VPTR_Dec = VPTR_Dec.eval()
+    VPTR_Enc.eval()
+    VPTR_Dec.eval()
     with torch.no_grad():
         past_frames, future_frames = sample
         past_frames = past_frames.to(device)
@@ -101,13 +101,14 @@ def show_samples(VPTR_Enc, VPTR_Dec, sample, save_dir, renorm_transform):
 
         N = future_frames.shape[0]
         idx = min(N, 4)
-        visualize_batch_clips(past_frames[0:idx, :, ...], rec_future_frames[0:idx, :, ...], rec_past_frames[0:idx, :, ...], save_dir, renorm_transform, desc = 'ae')
+        visualize_batch_clips(past_frames[0:idx], future_frames[0:idx], rec_future_frames[0:idx], save_dir, renorm_transform, desc='ae')
+
 
 if __name__ == '__main__':
-    ckpt_save_dir = Path('C:\\Users\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_ckpt')
-    tensorboard_save_dir = Path('C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_tensorboard')
+    ckpt_save_dir = Path('C:\\VPTR_jigsaws\\jigsaws_suturing\\VPTR_ckpts\\JIGSAWS_ResnetAE_MSEGDLgan_ckpt')
+    tensorboard_save_dir = Path('C:\\VPTR_jigsaws\\jigsaws_suturing\\VPTR_ckpts\\JIGSAWS_ResnetAE_MSEGDLgan_tensorboard')
 
-    #resume_ckpt = ckpt_save_dir.joinpath('epoch_45.tar')
+    #resume_ckpt = ckpt_save_dir.joinpath('epoch_10.tar')
     resume_ckpt = None
     start_epoch = 0
 
@@ -115,21 +116,21 @@ if __name__ == '__main__':
     num_past_frames = 10
     num_future_frames = 10
     encH, encW, encC = 8, 8, 528
-    img_channels = 1 #3 channels for BAIR dataset
-    epochs = 2
+    img_channels = 3 #3 channels for BAIR dataset
+    epochs = 5
     N = 4
     AE_lr = 2e-4
     lam_gan = 0.01
     device = torch.device('cuda:0')
 
     #####################Init Dataset ###########################
-    data_set_name = 'MNIST' #see utils.dataset
-    dataset_dir = 'C:\\Users\\sc23gd\\Documents\\GitHub\\Msc_research_future_frame_prediciton\\VPTR_jigsaws\\moving-mnist-example'
-    train_loader, val_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, num_past_frames, num_future_frames)
+    data_set_name = 'Suturing' #see utils.dataset
+    dataset_dir = 'C:\\VPTR_jigsaws\\jigsaws_suturing\\frames_split\\'
+    train_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, num_past_frames=num_past_frames, num_future_frames=num_future_frames)
 
     #####################Init Models and Optimizer ###########################
     VPTR_Enc = VPTREnc(img_channels, feat_dim = encC, n_downsampling = 3).to(device)
-    VPTR_Dec = VPTRDec(img_channels, feat_dim = encC, n_downsampling = 3, out_layer = 'Sigmoid').to(device) #Sigmoid for MNIST, Tanh for KTH and BAIR
+    VPTR_Dec = VPTRDec(img_channels, feat_dim = encC, n_downsampling = 3, out_layer = 'Tanh').to(device) #Sigmoid for MNIST, Tanh for KTH and BAIR
     VPTR_Disc = VPTRDisc(img_channels, ndf=64, n_layers=3, norm_layer=nn.BatchNorm2d).to(device)
     init_weights(VPTR_Disc)
     init_weights(VPTR_Enc)
@@ -173,9 +174,9 @@ if __name__ == '__main__':
         
         show_samples(VPTR_Enc, VPTR_Dec, sample, ckpt_save_dir.joinpath(f'train_gifs_epoch{epoch}'), renorm_transform)
         
-        #validation
+        #testing
         EpochAveMeter = AverageMeters(loss_name_list)
-        for idx, sample in enumerate(val_loader, 0):
+        for idx, sample in enumerate(test_loader, 0):
             iter_loss_dict = single_iter(VPTR_Enc, VPTR_Dec, VPTR_Disc, optimizer_G, optimizer_D, sample, device, train_flag = False)
             EpochAveMeter.iter_update(iter_loss_dict)
         loss_dict = EpochAveMeter.epoch_update(loss_dict, epoch, train_flag = False)

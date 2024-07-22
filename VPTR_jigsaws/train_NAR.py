@@ -139,9 +139,9 @@ def NAR_show_samples(VPTR_Enc, VPTR_Dec, VPTR_Transformer, sample, save_dir):
 if __name__ == '__main__':
     set_seed(2021)
 
-    ckpt_save_dir = Path('/home/ryukijano/VPTR_jigsaws/VPTR_ckpts/MNIST_NAR_MSEGLD_BPNCE01_RPE_ckpt')
-    tensorboard_save_dir = Path('/home/ryukijano/VPTR_jigsaws/MovingMNIST/VPTR_ckpts/MNIST_NAR_MSEGDL_BPNCE01_RPE_tensorboard')
-    resume_AE_ckpt = Path('/home/ryukijano/VPTR_jigsaws/MovingMNIST/VPTR_ckpts/MNIST_ResNetAE_MSEGDLgan_ckpt').joinpath('epoch_2.tar')
+    ckpt_save_dir = Path('C:\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_NAR_MSEGLD_BPNCE01_RPE_ckpt')
+    tensorboard_save_dir = Path('C:\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_NAR_MSEGDL_BPNCE01_RPE_tensorboard')
+    resume_AE_ckpt = Path('C:\\VPTR_jigsaws\\MovingMNIST\\VPTR_ckpts\\MNIST_ResNetAE_MSEGDLgan_ckpt').joinpath('epoch_2.tar')
     #resume_ckpt = ckpt_save_dir.joinpath('epoch_88.tar')
     resume_ckpt = None
 
@@ -179,7 +179,7 @@ if __name__ == '__main__':
 
     #####################Init Dataset ###########################
     data_set_name = 'MNIST'
-    dataset_dir = '/home/ryukijano/VPTR_jigsaws/moving-mnist-example'
+    dataset_dir = 'C:\\VPTR_jigsaws\\moving-mnist-example'
     test_past_frames = 2
     test_future_frames = 10
     train_loader, val_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, test_past_frames, test_future_frames)
