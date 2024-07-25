@@ -8,9 +8,8 @@ import copy
 from utils.position_encoding import PositionEmbeddding1D
 from .MultiHeadAttentionRPE import MultiheadAttentionRPE
 
-"""
-Encoder, same for auto-regressive and non-autoregressive models
-"""
+# ... (Other classes remain unchanged) ...
+
 class VidHRFormerEncoder(nn.Module):
     def __init__(self, encoder_layer, num_layers, norm=None):
         super().__init__()
@@ -28,7 +27,7 @@ class VidHRFormerEncoder(nn.Module):
         return output
 
 class VidHRFormerBlockEnc(nn.Module):
-    def __init__(self, encH, encW, embed_dim, num_heads, window_size = 7, dropout = 0., drop_path = 0., Spatial_FFN_hidden_ratio = 4, dim_feedforward = 1024, far = False, rpe = True):
+    def __init__(self, encH, encW, embed_dim, num_heads, window_size=7, dropout=0., drop_path=0., Spatial_FFN_hidden_ratio=4, dim_feedforward=1024, far=False, rpe=True):
         super().__init__()
         self.embed_dim = embed_dim
         self.num_heads = num_heads
@@ -40,7 +39,7 @@ class VidHRFormerBlockEnc(nn.Module):
         MlpDWBN_layer_norm = False
         if far:
             MlpDWBN_layer_norm = True
-        self.SpatialFFN = MlpDWBN(encH, encW, embed_dim, hidden_features = int(Spatial_FFN_hidden_ratio*embed_dim), out_features = embed_dim, drop = dropout, AR_model = MlpDWBN_layer_norm)
+        self.SpatialFFN = MlpDWBN(encH, encW, embed_dim, hidden_features=int(Spatial_FFN_hidden_ratio * embed_dim), out_features=embed_dim, drop=dropout, AR_model=MlpDWBN_layer_norm)
         self.norm1 = nn.LayerNorm(embed_dim)
         self.norm2 = nn.LayerNorm(embed_dim)
         self.drop_path = DropPath(drop_path) if drop_path > 0.0 else nn.Identity()
@@ -55,6 +54,8 @@ class VidHRFormerBlockEnc(nn.Module):
         self.drop3 = nn.Dropout(dropout) if dropout > 0. else nn.Identity()
         self.norm4 = nn.LayerNorm(embed_dim)
 
+        self.resize = nn.AdaptiveAvgPool2d((8, 8))  # resize the input tensor to 8x8
+
         self.far = far
 
     def forward(self, x, local_window_pos_embed, temporal_pos_embed):
@@ -65,32 +66,63 @@ class VidHRFormerBlockEnc(nn.Module):
         Return: (N, T, H, W, C)
         """
         N, T, H, W, C = x.shape
-        x = x + self.drop_path(self.SLMHSA(self.norm1(x), local_window_pos_embed)) #spatial local window self-attention, and skip connection
         
-        #Conv feed-forward, different local window information interacts
-        x = x + self.drop_path(self.SpatialFFN(self.norm2(x)))#(N, T, H, W, C)
+        print(f"Input x shape: {x.shape}")
+        print(f"local_window_pos_embed shape: {local_window_pos_embed.shape}")
+        print(f"temporal_pos_embed shape: {temporal_pos_embed.shape}")
 
-        #temporal attention
-        x = x.permute(1, 0, 2, 3, 4).reshape(T, N*H*W, C)
+        # Resize the tensor
+        x = x.reshape(N * T, H, W, C).permute(0, 3, 1, 2)
+        x = self.resize(x)
+        x = x.permute(0, 2, 3, 1).reshape(N, T, 8, 8, C)  # Updated shape to match the expected dimensions
+        
+        print(f"Resized x shape: {x.shape}")
+
+        x = x + self.drop_path(self.SLMHSA(self.norm1(x), local_window_pos_embed))  # spatial local window self-attention, and skip connection
+
+        # Conv feed-forward, different local window information interacts
+        x = x + self.drop_path(self.SpatialFFN(self.norm2(x)))  # (N, T, H, W, C)
+
+        # temporal attention
+        N, T, H, W, C = x.shape  # update the shape after spatial FFN
+        x = x.permute(1, 0, 2, 3, 4).reshape(T, N * H * W, C)
         x1 = self.norm3(x)
+        
+        print(f"x1 shape after norm3: {x1.shape}")
+        
+        attn_mask =None
         if self.far:
-            #create attention mask for temporal self-attention
-            attn_mask = torch.triu(torch.ones(T, T), diagonal = 1) == 1
-            x = x + self.drop1(self.temporal_MHSA(x1 + temporal_pos_embed[:, None, :], 
-                               x1 + temporal_pos_embed[:, None, :], 
-                               x1, 
-                               attn_mask = attn_mask.to(x1.device))[0])
-        else:
-            x = x + self.drop1(self.temporal_MHSA(x1 + temporal_pos_embed[:, None, :], x1 + temporal_pos_embed[:, None, :], x1)[0])
+            # create attention mask for temporal self-attention
+            attn_mask = torch.triu(torch.ones(T, T), diagonal=1) == 1
+            
+        print(f"attn_mask shape: {attn_mask.shape if attn_mask is not None else None}")
+        
+        print(f"x1: {x1.shape}")
+        print(f"temporal_pos_embed[:T, None, :]: {temporal_pos_embed[:T, None, :].shape}")
+        
+        #Ensure temporal_pos_embed is sliced correctly
+        if temporal_pos_embed.shape[0]< T:
+            T = temporal_pos_embed.shape[0]
+            x = x[:T]
+            x1 = x1[:T]
+            print(f"Adjusted T: {T}")
+        x = x + self.drop1(self.temporal_MHSA(
+                            x1 + temporal_pos_embed[:T, None, :], 
+                            x1 + temporal_pos_embed[:T, None, :],
+                            x1, attn_mask=attn_mask.to(x1.device)if attn_mask is not None else None)[0])
 
-        #output feed-forward
+
+        # output feed-forward
         x1 = self.norm4(x)
         x1 = self.linear2(self.drop2(self.activation(self.linear1(x1))))
         x = x + self.drop3(x1)
 
         x = x.reshape(T, N, H, W, C).permute(1, 0, 2, 3, 4)
+        
+        print(f"Output x shape: {x.shape}")
 
         return x
+
 
 ####################################End of Transformer Encoder modules#################################
 class VidHRformerDecoderNAR(nn.Module):
@@ -255,16 +287,16 @@ class TemporalSpatialLocalMultiheadAttention(nn.Module):
         # attention
         # pad
         N, T1, H, W, C = memory.shape
-        memory = memory.view(N*T1, H, W, C)
+        memory = memory.reshape(N*T1, H, W, C)
         memory_pad = self.pad_helper.pad_if_needed(memory, memory.size())
         _, H_pad, W_pad, C = memory_pad.shape
-        memory_pad = memory_pad.view(N, T1, H_pad, W_pad, C)
+        memory_pad = memory_pad.reshape(N, T1, H_pad, W_pad, C)
 
         N, T2, H, W, C = query.shape
-        query = query.view(N*T2, H, W, C)
+        query = query.reshape(N*T2, H, W, C)
         query_pad = self.pad_helper.pad_if_needed(query, query.size())
         _, H_pad, W_pad, C = query_pad.shape
-        query_pad = query_pad.view(N, T2, H_pad, W_pad, C)
+        query_pad = query_pad.reshape(N, T2, H_pad, W_pad, C)
 
         # permute
         memory_permute = self.permute_helper.permute(memory_pad, memory_pad.size()) #(T1*window_size*window_size, N*H/window_size*W/window_size, C)
@@ -281,7 +313,7 @@ class TemporalSpatialLocalMultiheadAttention(nn.Module):
         # de-pad, pooling with `ceil_mode=True` will do implicit padding, so we need to remove it, too
         out = self.pad_helper.depad_if_needed(out, (N*T2, H, W, C))
 
-        return out.view(N, T2, H, W, C)
+        return out.reshape(N, T2, H, W, C)
 
 
 class SpatialLocalMultiheadAttention(nn.Module):
@@ -327,7 +359,7 @@ class SpatialLocalMultiheadAttention(nn.Module):
            (N, T, H, W, C)
         """
         N, T, H, W, C = x.shape
-        x = x.view(N*T, H, W, C)
+        x = x.reshape(N*T, H, W, C)
 
         # attention
         # pad
@@ -341,7 +373,7 @@ class SpatialLocalMultiheadAttention(nn.Module):
             k = q = x_permute + local_pos_embed.flatten(0, 1)[:, None, :]
 
         if value is not None:
-            value = value.view(N*T, H, W, C)
+            value = value.reshape(N*T, H, W, C)
             value_pad = self.pad_helper.pad_if_needed(value, value.size())
             value_permute = self.permute_helper.permute(value_pad, value_pad.size()) #(window_size*window_size, N*T*H/window_size*W/window_size, C)
             # attention
@@ -354,7 +386,7 @@ class SpatialLocalMultiheadAttention(nn.Module):
         # de-pad, pooling with `ceil_mode=True` will do implicit padding, so we need to remove it, too
         out = self.pad_helper.depad_if_needed(out, x.size())
 
-        return out.view(N, T, H, W, C)
+        return out.reshape(N, T, H, W, C)
 
     def extra_repr(self) -> str:
         return f"dim={self.dim}, window_size={self.window_size}, num_heads={self.num_heads}"
@@ -426,7 +458,7 @@ class MlpDWBN(nn.Module):
         x: (N, T, H, W, C)
         """
         N, T, H, W, C = x.shape
-        x = x.view(N*T, H, W, C).permute(0, 3, 1, 2)
+        x = x.reshape(N*T, H, W, C).permute(0, 3, 1, 2)
         x = self.fc1(x)
         x = self.norm1(x)
         x = self.act1(x)

@@ -55,35 +55,39 @@ class VidHRFormerNAR(nn.Module):
 
 class VidHRFormerFAR(nn.Module):
     def __init__(self, in_feat_shape, num_encoder_layer, num_past_frames, num_future_frames,
-                    embed_dim, num_heads, window_size = 7, dropout = 0., drop_path = 0., Spatial_FFN_hidden_ratio = 4, dim_feedforward = 512, rpe = True):
+                    embed_dim, num_heads, window_size=7, dropout=0., drop_path=0., Spatial_FFN_hidden_ratio=4, dim_feedforward=512, rpe=True):
         super().__init__()
         self.in_C, self.H, self.W = in_feat_shape
         self.embed_dim = embed_dim
-        #self.conv_proj = nn.Identity() if self.in_C == self.embed_dim else self.feat_proj()
-        #self.conv_proj_rev = nn.Identity() if self.in_C == self.embed_dim else self.feat_proj_rev()
 
         self.num_encoder_layer = num_encoder_layer
         self.num_heads = num_heads
 
-        self.encoder = VidHRFormerEncoder(VidHRFormerBlockEnc(self.H, self.W, embed_dim, num_heads, window_size, dropout, drop_path, Spatial_FFN_hidden_ratio, dim_feedforward, far = True, rpe=rpe), 
+        self.encoder = VidHRFormerEncoder(VidHRFormerBlockEnc(self.H, self.W, embed_dim, num_heads, window_size, dropout, drop_path, Spatial_FFN_hidden_ratio, dim_feedforward, far=True, rpe=rpe), 
                                         num_encoder_layer, nn.LayerNorm(embed_dim))
         
     def forward(self, input_feat, local_window_pos_embed, temporal_pos_embed):
         """
         Args:
-            past_gt_feats:  (N, T, 528, 8, 8)
-            future_frames: (N, T, 528, 8, 8) or None
+            input_feat: (N, T, 528, 8, 8)
             local_window_pos_embed: (window_size, window_size, embed_dim)
             temporal_pos_embed: (Tp+Tf, embed_dim)
         Return:
-            out: (N, Tf, H, W, embed_dim), for the next layer query_pos init
-            out_proj: (N, Tf, in_C, H, W), final output feature for the decoder
-            memory: (N, Tp, H, W, embed_dim)
+            pred: (N, T, 528, 8, 8)
         """
         src = input_feat
         N, T, _, _, _ = src.shape
         src = src.permute(0, 1, 3, 4, 2)
-        pred = self.encoder(src, local_window_pos_embed, temporal_pos_embed[0:T, ...])
+        print(f"input_feat_shape: {input_feat.shape}")
+        print(f"temporal_pos_embed_shape: {temporal_pos_embed.shape}")
+        
+        if temporal_pos_embed.shape[0] < T:
+            T = temporal_pos_embed.shape[0]
+            src = src[:, :T]
+            print(f"Adjusted T in VidHRFormerFAR: {T}")
+            
+        #ensure temporal_pos_embed is sliced correctly
+        pred = self.encoder(src, local_window_pos_embed, temporal_pos_embed[:T, ...])
         pred = F.relu_(pred.permute(0, 1, 4, 2, 3))
         
         return pred
