@@ -1,0 +1,1200 @@
+Sun, 28 Jul 2024 00:05:32 - epoch 159, T_total 3.4590208530e-01 (3.4463495016e-01)
+Sun, 28 Jul 2024 00:05:32 - Estimated remaining training time: 4.0097586027777785 Hours
+Sun, 28 Jul 2024 00:06:11 - epoch 160, T_total 3.4408757091e-01 (3.4238599986e-01)
+Sun, 28 Jul 2024 00:06:11 - Estimated remaining training time: 3.296133713888889 Hours
+Sun, 28 Jul 2024 00:06:44 - epoch 161, T_total 3.3723479509e-01 (3.4117840230e-01)
+Sun, 28 Jul 2024 00:06:44 - Estimated remaining training time: 2.6994726824999997 Hours
+Sun, 28 Jul 2024 00:07:18 - epoch 162, T_total 3.3590131998e-01 (3.4185368568e-01)
+Sun, 28 Jul 2024 00:07:18 - Estimated remaining training time: 2.8005307400000006 Hours
+Sun, 28 Jul 2024 00:07:53 - epoch 163, T_total 3.3856099844e-01 (3.3930773288e-01)
+Sun, 28 Jul 2024 00:07:53 - Estimated remaining training time: 2.839495622222222 Hours
+Sun, 28 Jul 2024 00:08:26 - epoch 164, T_total 3.4403434396e-01 (3.4045146406e-01)
+Sun, 28 Jul 2024 00:08:26 - Estimated remaining training time: 2.7418989616666667 Hours
+Sun, 28 Jul 2024 00:08:59 - epoch 165, T_total 3.3715093136e-01 (3.4074223787e-01)
+Sun, 28 Jul 2024 00:08:59 - Estimated remaining training time: 2.641887402777778 Hours
+Sun, 28 Jul 2024 00:09:31 - epoch 166, T_total 3.3653202653e-01 (3.3984652907e-01)
+Sun, 28 Jul 2024 00:09:31 - Estimated remaining training time: 2.6208988844444443 Hours
+Sun, 28 Jul 2024 00:10:03 - epoch 167, T_total 3.4002840519e-01 (3.3875925839e-01)
+Sun, 28 Jul 2024 00:10:03 - Estimated remaining training time: 2.548393780833333 Hours
+Sun, 28 Jul 2024 00:10:35 - epoch 168, T_total 3.3548122644e-01 (3.3936432749e-01)
+Sun, 28 Jul 2024 00:10:35 - Estimated remaining training time: 2.560153188888889 Hours
+Sun, 28 Jul 2024 00:11:06 - epoch 169, T_total 3.3892101049e-01 (3.3840116113e-01)
+Sun, 28 Jul 2024 00:11:06 - Estimated remaining training time: 2.5410460669444443 Hours
+Sun, 28 Jul 2024 00:11:43 - epoch 170, T_total 3.4275186062e-01 (3.3925471455e-01)
+Sun, 28 Jul 2024 00:11:43 - Estimated remaining training time: 2.9445867199999998 Hours
+Sun, 28 Jul 2024 00:12:14 - epoch 171, T_total 3.4376376867e-01 (3.3919893950e-01)
+Sun, 28 Jul 2024 00:12:14 - Estimated remaining training time: 2.4779141527777777 Hours
+Sun, 28 Jul 2024 00:12:46 - epoch 172, T_total 3.4038981795e-01 (3.3796296269e-01)
+Sun, 28 Jul 2024 00:12:46 - Estimated remaining training time: 2.548965069444444 Hours
+Sun, 28 Jul 2024 00:13:18 - epoch 173, T_total 3.4078580141e-01 (3.3774428070e-01)
+Sun, 28 Jul 2024 00:13:18 - Estimated remaining training time: 2.481486529166667 Hours
+Sun, 28 Jul 2024 00:13:49 - epoch 174, T_total 3.3726093173e-01 (3.3899204433e-01)
+Sun, 28 Jul 2024 00:13:49 - Estimated remaining training time: 2.506131493333333 Hours
+Sun, 28 Jul 2024 00:14:21 - epoch 175, T_total 3.4099274874e-01 (3.3824311197e-01)
+Sun, 28 Jul 2024 00:14:21 - Estimated remaining training time: 2.4751176069444445 Hours
+Sun, 28 Jul 2024 00:14:53 - epoch 176, T_total 3.4317621589e-01 (3.3814475685e-01)
+Sun, 28 Jul 2024 00:14:53 - Estimated remaining training time: 2.499463055 Hours
+Sun, 28 Jul 2024 00:15:24 - epoch 177, T_total 3.3810755610e-01 (3.3854687214e-01)
+Sun, 28 Jul 2024 00:15:24 - Estimated remaining training time: 2.4593297186111114 Hours
+Sun, 28 Jul 2024 00:15:57 - epoch 178, T_total 3.4064784646e-01 (3.3741419017e-01)
+Sun, 28 Jul 2024 00:15:57 - Estimated remaining training time: 2.5127570222222224 Hours
+Sun, 28 Jul 2024 00:16:28 - epoch 179, T_total 3.3800345659e-01 (3.3817904443e-01)
+Sun, 28 Jul 2024 00:16:28 - Estimated remaining training time: 2.427748105 Hours
+Sun, 28 Jul 2024 00:17:05 - epoch 180, T_total 3.3282023668e-01 (3.3663571626e-01)
+Sun, 28 Jul 2024 00:17:05 - Estimated remaining training time: 2.8928762627777775 Hours
+Sun, 28 Jul 2024 00:17:37 - epoch 181, T_total 3.4003734589e-01 (3.3891686052e-01)
+Sun, 28 Jul 2024 00:17:37 - Estimated remaining training time: 2.4343899547222225 Hours
+Sun, 28 Jul 2024 00:18:09 - epoch 182, T_total 3.4260243177e-01 (3.3843821287e-01)
+Sun, 28 Jul 2024 00:18:09 - Estimated remaining training time: 2.4737365566666667 Hours
+Sun, 28 Jul 2024 00:18:41 - epoch 183, T_total 3.3585202694e-01 (3.3656010032e-01)
+Sun, 28 Jul 2024 00:18:41 - Estimated remaining training time: 2.392184972222222 Hours
+Sun, 28 Jul 2024 00:19:13 - epoch 184, T_total 3.3999261260e-01 (3.3878177404e-01)
+Sun, 28 Jul 2024 00:19:13 - Estimated remaining training time: 2.442769671111111 Hours
+Sun, 28 Jul 2024 00:19:44 - epoch 185, T_total 3.4427896142e-01 (3.3798570186e-01)
+Sun, 28 Jul 2024 00:19:44 - Estimated remaining training time: 2.3864867541666666 Hours
+Sun, 28 Jul 2024 00:20:16 - epoch 186, T_total 3.3868178725e-01 (3.3846687526e-01)
+Sun, 28 Jul 2024 00:20:16 - Estimated remaining training time: 2.415144137777778 Hours
+Sun, 28 Jul 2024 00:20:48 - epoch 187, T_total 3.3766415715e-01 (3.3749461174e-01)
+Sun, 28 Jul 2024 00:20:48 - Estimated remaining training time: 2.380292291388889 Hours
+Sun, 28 Jul 2024 00:21:20 - epoch 188, T_total 3.4055370092e-01 (3.3843750507e-01)
+Sun, 28 Jul 2024 00:21:20 - Estimated remaining training time: 2.402647425 Hours
+Sun, 28 Jul 2024 00:21:51 - epoch 189, T_total 3.3449140191e-01 (3.3700632304e-01)
+Sun, 28 Jul 2024 00:21:51 - Estimated remaining training time: 2.345434836388889 Hours
+Sun, 28 Jul 2024 00:22:28 - epoch 190, T_total 3.4170371294e-01 (3.3793067187e-01)
+Sun, 28 Jul 2024 00:22:28 - Estimated remaining training time: 2.7553652477777777 Hours
+Sun, 28 Jul 2024 00:23:02 - epoch 191, T_total 3.3754855394e-01 (3.3699886501e-01)
+Sun, 28 Jul 2024 00:23:02 - Estimated remaining training time: 2.546608545833333 Hours
+Sun, 28 Jul 2024 00:23:35 - epoch 192, T_total 3.3912321925e-01 (3.3739769459e-01)
+Sun, 28 Jul 2024 00:23:35 - Estimated remaining training time: 2.438434487222222 Hours
+Sun, 28 Jul 2024 00:24:08 - epoch 193, T_total 3.4223616123e-01 (3.3736692369e-01)
+Sun, 28 Jul 2024 00:24:08 - Estimated remaining training time: 2.3594157958333337 Hours
+Sun, 28 Jul 2024 00:24:41 - epoch 194, T_total 3.3932483196e-01 (3.3764345199e-01)
+Sun, 28 Jul 2024 00:24:41 - Estimated remaining training time: 2.481243086666667 Hours
+Sun, 28 Jul 2024 00:25:12 - epoch 195, T_total 3.3698871732e-01 (3.3658618480e-01)
+Sun, 28 Jul 2024 00:25:12 - Estimated remaining training time: 2.2517666230555555 Hours
+Sun, 28 Jul 2024 00:25:44 - epoch 196, T_total 3.3488759398e-01 (3.3638719469e-01)
+Sun, 28 Jul 2024 00:25:44 - Estimated remaining training time: 2.3463535905555557 Hours
+Sun, 28 Jul 2024 00:26:16 - epoch 197, T_total 3.3186024427e-01 (3.3812516183e-01)
+Sun, 28 Jul 2024 00:26:16 - Estimated remaining training time: 2.2576862500000003 Hours
+Sun, 28 Jul 2024 00:26:48 - epoch 198, T_total 3.3814889193e-01 (3.3861254156e-01)
+Sun, 28 Jul 2024 00:26:48 - Estimated remaining training time: 2.3170305166666667 Hours
+Sun, 28 Jul 2024 00:27:19 - epoch 199, T_total 3.3834499121e-01 (3.3684919029e-01)
+Sun, 28 Jul 2024 00:27:19 - Estimated remaining training time: 2.2599147880555557 Hours
+Sun, 28 Jul 2024 00:27:56 - epoch 200, T_total 3.4081301093e-01 (3.3726028353e-01)
+Sun, 28 Jul 2024 00:27:56 - Estimated remaining training time: 2.64321 Hours
+Sun, 28 Jul 2024 00:28:27 - epoch 201, T_total 3.3917319775e-01 (3.3802924305e-01)
+Sun, 28 Jul 2024 00:28:27 - Estimated remaining training time: 2.2467187719444444 Hours
+Sun, 28 Jul 2024 00:29:00 - epoch 202, T_total 3.4372618794e-01 (3.3721236140e-01)
+Sun, 28 Jul 2024 00:29:00 - Estimated remaining training time: 2.291120711111111 Hours
+Sun, 28 Jul 2024 00:29:32 - epoch 203, T_total 3.4131878614e-01 (3.3807906508e-01)
+Sun, 28 Jul 2024 00:29:32 - Estimated remaining training time: 2.2748474916666663 Hours
+Sun, 28 Jul 2024 00:30:07 - epoch 204, T_total 3.3771130443e-01 (3.3719031513e-01)
+Sun, 28 Jul 2024 00:30:07 - Estimated remaining training time: 2.4727396005555558 Hours
+Sun, 28 Jul 2024 00:30:39 - epoch 205, T_total 3.3831107616e-01 (3.3723980933e-01)
+Sun, 28 Jul 2024 00:30:39 - Estimated remaining training time: 2.2394034972222223 Hours
+Sun, 28 Jul 2024 00:31:11 - epoch 206, T_total 3.3803319931e-01 (3.3835548908e-01)
+Sun, 28 Jul 2024 00:31:11 - Estimated remaining training time: 2.23090294 Hours
+Sun, 28 Jul 2024 00:31:42 - epoch 207, T_total 3.4095400572e-01 (3.3780368418e-01)
+Sun, 28 Jul 2024 00:31:42 - Estimated remaining training time: 2.2053005022222223 Hours
+Sun, 28 Jul 2024 00:32:14 - epoch 208, T_total 3.3802542090e-01 (3.3851651847e-01)
+Sun, 28 Jul 2024 00:32:14 - Estimated remaining training time: 2.2195430555555555 Hours
+Sun, 28 Jul 2024 00:32:46 - epoch 209, T_total 3.3486244082e-01 (3.3835946769e-01)
+Sun, 28 Jul 2024 00:32:46 - Estimated remaining training time: 2.196870145 Hours
+Sun, 28 Jul 2024 00:33:23 - epoch 210, T_total 3.3244490623e-01 (3.3696600050e-01)
+Sun, 28 Jul 2024 00:33:23 - Estimated remaining training time: 2.5539259755555554 Hours
+Sun, 28 Jul 2024 00:33:54 - epoch 211, T_total 3.3398747444e-01 (3.3618857712e-01)
+Sun, 28 Jul 2024 00:33:54 - Estimated remaining training time: 2.1649395625 Hours
+Sun, 28 Jul 2024 00:34:28 - epoch 212, T_total 3.4182217717e-01 (3.3797821403e-01)
+Sun, 28 Jul 2024 00:34:28 - Estimated remaining training time: 2.2905902550000006 Hours
+Sun, 28 Jul 2024 00:35:01 - epoch 213, T_total 3.3330711722e-01 (3.3722845465e-01)
+Sun, 28 Jul 2024 00:35:01 - Estimated remaining training time: 2.2711647 Hours
+Sun, 28 Jul 2024 00:35:35 - epoch 214, T_total 3.4002238512e-01 (3.3728676289e-01)
+Sun, 28 Jul 2024 00:35:35 - Estimated remaining training time: 2.2789075400000005 Hours
+Sun, 28 Jul 2024 00:36:07 - epoch 215, T_total 3.3421877027e-01 (3.3803902566e-01)
+Sun, 28 Jul 2024 00:36:07 - Estimated remaining training time: 2.1579104025 Hours
+Sun, 28 Jul 2024 00:36:40 - epoch 216, T_total 3.3910498023e-01 (3.3844388276e-01)
+Sun, 28 Jul 2024 00:36:40 - Estimated remaining training time: 2.202183328888889 Hours
+Sun, 28 Jul 2024 00:37:11 - epoch 217, T_total 3.4364944696e-01 (3.3795313537e-01)
+Sun, 28 Jul 2024 00:37:11 - Estimated remaining training time: 2.0996649694444445 Hours
+Sun, 28 Jul 2024 00:37:46 - epoch 218, T_total 3.4314653277e-01 (3.3803968132e-01)
+Sun, 28 Jul 2024 00:37:46 - Estimated remaining training time: 2.3283434 Hours
+Sun, 28 Jul 2024 00:38:17 - epoch 219, T_total 3.3971938491e-01 (3.3824878931e-01)
+Sun, 28 Jul 2024 00:38:17 - Estimated remaining training time: 2.047808563333333 Hours
+Sun, 28 Jul 2024 00:38:54 - epoch 220, T_total 3.3897626400e-01 (3.3794682473e-01)
+Sun, 28 Jul 2024 00:38:54 - Estimated remaining training time: 2.477469792777778 Hours
+Sun, 28 Jul 2024 00:39:26 - epoch 221, T_total 3.4108337760e-01 (3.3836859465e-01)
+Sun, 28 Jul 2024 00:39:26 - Estimated remaining training time: 2.0598334916666667 Hours
+Sun, 28 Jul 2024 00:39:59 - epoch 222, T_total 3.3643314242e-01 (3.3698777854e-01)
+Sun, 28 Jul 2024 00:39:59 - Estimated remaining training time: 2.1627726366666664 Hours
+Sun, 28 Jul 2024 00:40:30 - epoch 223, T_total 3.3343756199e-01 (3.3785963804e-01)
+Sun, 28 Jul 2024 00:40:30 - Estimated remaining training time: 2.0490997333333336 Hours
+Sun, 28 Jul 2024 00:41:03 - epoch 224, T_total 3.3623057604e-01 (3.3712245524e-01)
+Sun, 28 Jul 2024 00:41:03 - Estimated remaining training time: 2.1348568149999996 Hours
+Sun, 28 Jul 2024 00:41:34 - epoch 225, T_total 3.3742740750e-01 (3.3728446811e-01)
+Sun, 28 Jul 2024 00:41:34 - Estimated remaining training time: 2.0439847980555554 Hours
+Sun, 28 Jul 2024 00:42:07 - epoch 226, T_total 3.3249777555e-01 (3.3698493242e-01)
+Sun, 28 Jul 2024 00:42:07 - Estimated remaining training time: 2.099170671111111 Hours
+Sun, 28 Jul 2024 00:42:39 - epoch 227, T_total 3.2972225547e-01 (3.3700054884e-01)
+Sun, 28 Jul 2024 00:42:39 - Estimated remaining training time: 2.036157328333333 Hours
+Sun, 28 Jul 2024 00:43:11 - epoch 228, T_total 3.3375912905e-01 (3.3821147680e-01)
+Sun, 28 Jul 2024 00:43:11 - Estimated remaining training time: 2.0844587583333336 Hours
+Sun, 28 Jul 2024 00:43:43 - epoch 229, T_total 3.3388954401e-01 (3.3763331175e-01)
+Sun, 28 Jul 2024 00:43:43 - Estimated remaining training time: 2.007864811944444 Hours
+Sun, 28 Jul 2024 00:44:21 - epoch 230, T_total 3.3790186048e-01 (3.3820733428e-01)
+Sun, 28 Jul 2024 00:44:21 - Estimated remaining training time: 2.4032528733333334 Hours
+Sun, 28 Jul 2024 00:44:52 - epoch 231, T_total 3.3571076393e-01 (3.3802910149e-01)
+Sun, 28 Jul 2024 00:44:52 - Estimated remaining training time: 1.9917196280555554 Hours
+Sun, 28 Jul 2024 00:45:24 - epoch 232, T_total 3.3908993006e-01 (3.3833891153e-01)
+Sun, 28 Jul 2024 00:45:24 - Estimated remaining training time: 2.0009908794444446 Hours
+Sun, 28 Jul 2024 00:45:56 - epoch 233, T_total 3.3943718672e-01 (3.3681657165e-01)
+Sun, 28 Jul 2024 00:45:56 - Estimated remaining training time: 1.9949273125000002 Hours
+Sun, 28 Jul 2024 00:46:28 - epoch 234, T_total 3.3584272861e-01 (3.3662986010e-01)
+Sun, 28 Jul 2024 00:46:28 - Estimated remaining training time: 2.00476192 Hours
+Sun, 28 Jul 2024 00:47:00 - epoch 235, T_total 3.3813944459e-01 (3.3717685938e-01)
+Sun, 28 Jul 2024 00:47:00 - Estimated remaining training time: 1.9790763116666665 Hours
+Sun, 28 Jul 2024 00:47:33 - epoch 236, T_total 3.3548635244e-01 (3.3776403964e-01)
+Sun, 28 Jul 2024 00:47:33 - Estimated remaining training time: 1.998921485 Hours
+Sun, 28 Jul 2024 00:48:05 - epoch 237, T_total 3.3952018619e-01 (3.3744613826e-01)
+Sun, 28 Jul 2024 00:48:05 - Estimated remaining training time: 1.9495584983333334 Hours
+Sun, 28 Jul 2024 00:48:37 - epoch 238, T_total 3.3467233181e-01 (3.3711434156e-01)
+Sun, 28 Jul 2024 00:48:37 - Estimated remaining training time: 1.9905829777777777 Hours
+Sun, 28 Jul 2024 00:49:09 - epoch 239, T_total 3.3404487371e-01 (3.3773922175e-01)
+Sun, 28 Jul 2024 00:49:09 - Estimated remaining training time: 1.9226909725000003 Hours
+Sun, 28 Jul 2024 00:49:46 - epoch 240, T_total 3.3696493506e-01 (3.3812014759e-01)
+Sun, 28 Jul 2024 00:49:46 - Estimated remaining training time: 2.2416178816666665 Hours
+Sun, 28 Jul 2024 00:50:17 - epoch 241, T_total 3.4652814269e-01 (3.3798487484e-01)
+Sun, 28 Jul 2024 00:50:17 - Estimated remaining training time: 1.883912926388889 Hours
+Sun, 28 Jul 2024 00:50:49 - epoch 242, T_total 3.3487814665e-01 (3.3746600896e-01)
+Sun, 28 Jul 2024 00:50:49 - Estimated remaining training time: 1.93500378 Hours
+Sun, 28 Jul 2024 00:51:21 - epoch 243, T_total 3.3593887091e-01 (3.3750507981e-01)
+Sun, 28 Jul 2024 00:51:21 - Estimated remaining training time: 1.9087843930555557 Hours
+Sun, 28 Jul 2024 00:51:54 - epoch 244, T_total 3.4220263362e-01 (3.3860934526e-01)
+Sun, 28 Jul 2024 00:51:54 - Estimated remaining training time: 1.9189903705555555 Hours
+Sun, 28 Jul 2024 00:52:25 - epoch 245, T_total 3.3170545101e-01 (3.3794193715e-01)
+Sun, 28 Jul 2024 00:52:25 - Estimated remaining training time: 1.8881094491666668 Hours
+Sun, 28 Jul 2024 00:53:00 - epoch 246, T_total 3.3826452494e-01 (3.3666674048e-01)
+Sun, 28 Jul 2024 00:53:00 - Estimated remaining training time: 2.0515023877777776 Hours
+Sun, 28 Jul 2024 00:53:32 - epoch 247, T_total 3.4013012052e-01 (3.3773567528e-01)
+Sun, 28 Jul 2024 00:53:32 - Estimated remaining training time: 1.8543213947222223 Hours
+Sun, 28 Jul 2024 00:54:05 - epoch 248, T_total 3.3471933007e-01 (3.3840538561e-01)
+Sun, 28 Jul 2024 00:54:05 - Estimated remaining training time: 1.9177847499999996 Hours
+Sun, 28 Jul 2024 00:54:37 - epoch 249, T_total 3.4061512351e-01 (3.3899965137e-01)
+Sun, 28 Jul 2024 00:54:37 - Estimated remaining training time: 1.8547311383333331 Hours
+Sun, 28 Jul 2024 00:55:17 - epoch 250, T_total 3.3934861422e-01 (3.3882416040e-01)
+Sun, 28 Jul 2024 00:55:17 - Estimated remaining training time: 2.3010466844444446 Hours
+Sun, 28 Jul 2024 00:55:49 - epoch 251, T_total 3.4193742275e-01 (3.3823613822e-01)
+Sun, 28 Jul 2024 00:55:49 - Estimated remaining training time: 1.8367455575 Hours
+Sun, 28 Jul 2024 00:56:21 - epoch 252, T_total 3.4317997098e-01 (3.3909945190e-01)
+Sun, 28 Jul 2024 00:56:21 - Estimated remaining training time: 1.8742470533333333 Hours
+Sun, 28 Jul 2024 00:56:53 - epoch 253, T_total 3.3176967502e-01 (3.3898935467e-01)
+Sun, 28 Jul 2024 00:56:53 - Estimated remaining training time: 1.819685575 Hours
+Sun, 28 Jul 2024 00:57:26 - epoch 254, T_total 3.4378224611e-01 (3.3781685680e-01)
+Sun, 28 Jul 2024 00:57:26 - Estimated remaining training time: 1.8439620066666669 Hours
+Sun, 28 Jul 2024 00:57:58 - epoch 255, T_total 3.3764418960e-01 (3.3893443644e-01)
+Sun, 28 Jul 2024 00:57:58 - Estimated remaining training time: 1.7914995291666667 Hours
+Sun, 28 Jul 2024 00:58:30 - epoch 256, T_total 3.4096172452e-01 (3.3833515644e-01)
+Sun, 28 Jul 2024 00:58:30 - Estimated remaining training time: 1.8338146922222223 Hours
+Sun, 28 Jul 2024 00:59:02 - epoch 257, T_total 3.4435442090e-01 (3.3664839715e-01)
+Sun, 28 Jul 2024 00:59:02 - Estimated remaining training time: 1.7608358775 Hours
+Sun, 28 Jul 2024 00:59:35 - epoch 258, T_total 3.4028813243e-01 (3.3874156326e-01)
+Sun, 28 Jul 2024 00:59:35 - Estimated remaining training time: 1.8234075555555556 Hours
+Sun, 28 Jul 2024 01:00:06 - epoch 259, T_total 3.3924975991e-01 (3.3761559427e-01)
+Sun, 28 Jul 2024 01:00:06 - Estimated remaining training time: 1.7619855236111113 Hours
+Sun, 28 Jul 2024 01:00:44 - epoch 260, T_total 3.3239248395e-01 (3.3836333454e-01)
+Sun, 28 Jul 2024 01:00:44 - Estimated remaining training time: 2.0521114899999997 Hours
+Sun, 28 Jul 2024 01:01:16 - epoch 261, T_total 3.3689340949e-01 (3.3744924515e-01)
+Sun, 28 Jul 2024 01:01:16 - Estimated remaining training time: 1.7420637219444444 Hours
+Sun, 28 Jul 2024 01:01:48 - epoch 262, T_total 3.3475911617e-01 (3.3818407357e-01)
+Sun, 28 Jul 2024 01:01:48 - Estimated remaining training time: 1.7620509433333333 Hours
+Sun, 28 Jul 2024 01:02:20 - epoch 263, T_total 3.4088370204e-01 (3.3815161884e-01)
+Sun, 28 Jul 2024 01:02:20 - Estimated remaining training time: 1.7189860458333333 Hours
+Sun, 28 Jul 2024 01:02:52 - epoch 264, T_total 3.4491384029e-01 (3.3862389624e-01)
+Sun, 28 Jul 2024 01:02:52 - Estimated remaining training time: 1.738782715 Hours
+Sun, 28 Jul 2024 01:03:24 - epoch 265, T_total 3.3500322700e-01 (3.3706442267e-01)
+Sun, 28 Jul 2024 01:03:24 - Estimated remaining training time: 1.6959611233333332 Hours
+Sun, 28 Jul 2024 01:03:56 - epoch 266, T_total 3.3210316300e-01 (3.3779622614e-01)
+Sun, 28 Jul 2024 01:03:56 - Estimated remaining training time: 1.7166654933333334 Hours
+Sun, 28 Jul 2024 01:04:28 - epoch 267, T_total 3.3814677596e-01 (3.3817239106e-01)
+Sun, 28 Jul 2024 01:04:28 - Estimated remaining training time: 1.7113991019444446 Hours
+Sun, 28 Jul 2024 01:05:00 - epoch 268, T_total 3.3794677258e-01 (3.3919553459e-01)
+Sun, 28 Jul 2024 01:05:00 - Estimated remaining training time: 1.7019869083333334 Hours
+Sun, 28 Jul 2024 01:05:32 - epoch 269, T_total 3.3791530132e-01 (3.3768216521e-01)
+Sun, 28 Jul 2024 01:05:32 - Estimated remaining training time: 1.6768958325 Hours
+Sun, 28 Jul 2024 01:06:09 - epoch 270, T_total 3.3172354102e-01 (3.3689282835e-01)
+Sun, 28 Jul 2024 01:06:09 - Estimated remaining training time: 1.9317121155555554 Hours
+Sun, 28 Jul 2024 01:06:40 - epoch 271, T_total 3.3941769600e-01 (3.3871036768e-01)
+Sun, 28 Jul 2024 01:06:40 - Estimated remaining training time: 1.6162723225 Hours
+Sun, 28 Jul 2024 01:07:14 - epoch 272, T_total 3.3750480413e-01 (3.3856657892e-01)
+Sun, 28 Jul 2024 01:07:14 - Estimated remaining training time: 1.7144063299999999 Hours
+Sun, 28 Jul 2024 01:07:45 - epoch 273, T_total 3.3861809969e-01 (3.3864550292e-01)
+Sun, 28 Jul 2024 01:07:45 - Estimated remaining training time: 1.5994289597222222 Hours
+Sun, 28 Jul 2024 01:08:20 - epoch 274, T_total 3.3175045252e-01 (3.3858308941e-01)
+Sun, 28 Jul 2024 01:08:20 - Estimated remaining training time: 1.794709728888889 Hours
+Sun, 28 Jul 2024 01:08:51 - epoch 275, T_total 3.3811897039e-01 (3.3818516135e-01)
+Sun, 28 Jul 2024 01:08:51 - Estimated remaining training time: 1.5848782608333334 Hours
+Sun, 28 Jul 2024 01:09:24 - epoch 276, T_total 3.4457486868e-01 (3.3754715323e-01)
+Sun, 28 Jul 2024 01:09:24 - Estimated remaining training time: 1.669060221111111 Hours
+Sun, 28 Jul 2024 01:09:55 - epoch 277, T_total 3.3894470334e-01 (3.3882532269e-01)
+Sun, 28 Jul 2024 01:09:55 - Estimated remaining training time: 1.5656306933333335 Hours
+Sun, 28 Jul 2024 01:10:28 - epoch 278, T_total 3.4037226439e-01 (3.3736983687e-01)
+Sun, 28 Jul 2024 01:10:28 - Estimated remaining training time: 1.6591310000000001 Hours
+Sun, 28 Jul 2024 01:11:00 - epoch 279, T_total 3.3287793398e-01 (3.3813312650e-01)
+Sun, 28 Jul 2024 01:11:00 - Estimated remaining training time: 1.5833276938888887 Hours
+Sun, 28 Jul 2024 01:11:38 - epoch 280, T_total 3.3600977063e-01 (3.3737135679e-01)
+Sun, 28 Jul 2024 01:11:38 - Estimated remaining training time: 1.8698758588888889 Hours
+Sun, 28 Jul 2024 01:12:10 - epoch 281, T_total 3.4057623148e-01 (3.3770758659e-01)
+Sun, 28 Jul 2024 01:12:10 - Estimated remaining training time: 1.5645875175 Hours
+Sun, 28 Jul 2024 01:12:42 - epoch 282, T_total 3.3868917823e-01 (3.3868018538e-01)
+Sun, 28 Jul 2024 01:12:42 - Estimated remaining training time: 1.577874711111111 Hours
+Sun, 28 Jul 2024 01:13:14 - epoch 283, T_total 3.4692913294e-01 (3.3840291202e-01)
+Sun, 28 Jul 2024 01:13:14 - Estimated remaining training time: 1.5427108472222222 Hours
+Sun, 28 Jul 2024 01:13:46 - epoch 284, T_total 3.3341377974e-01 (3.3707041293e-01)
+Sun, 28 Jul 2024 01:13:46 - Estimated remaining training time: 1.5686205850000003 Hours
+Sun, 28 Jul 2024 01:14:18 - epoch 285, T_total 3.3510136604e-01 (3.3718229830e-01)
+Sun, 28 Jul 2024 01:14:18 - Estimated remaining training time: 1.541647643611111 Hours
+Sun, 28 Jul 2024 01:14:51 - epoch 286, T_total 3.4243926406e-01 (3.3921459317e-01)
+Sun, 28 Jul 2024 01:14:51 - Estimated remaining training time: 1.5644482644444446 Hours
+Sun, 28 Jul 2024 01:15:23 - epoch 287, T_total 3.3229064941e-01 (3.3731511235e-01)
+Sun, 28 Jul 2024 01:15:23 - Estimated remaining training time: 1.5056077849999998 Hours
+Sun, 28 Jul 2024 01:15:56 - epoch 288, T_total 3.4272286296e-01 (3.3797004074e-01)
+Sun, 28 Jul 2024 01:15:56 - Estimated remaining training time: 1.556054388888889 Hours
+Sun, 28 Jul 2024 01:16:28 - epoch 289, T_total 3.3754763007e-01 (3.3807213604e-01)
+Sun, 28 Jul 2024 01:16:28 - Estimated remaining training time: 1.4932388863888888 Hours
+Sun, 28 Jul 2024 01:17:05 - epoch 290, T_total 3.3718162775e-01 (3.3731941134e-01)
+Sun, 28 Jul 2024 01:17:05 - Estimated remaining training time: 1.747547806666667 Hours
+Sun, 28 Jul 2024 01:17:37 - epoch 291, T_total 3.3545032144e-01 (3.3865191787e-01)
+Sun, 28 Jul 2024 01:17:37 - Estimated remaining training time: 1.4777765983333333 Hours
+Sun, 28 Jul 2024 01:18:09 - epoch 292, T_total 3.4709823132e-01 (3.3840259165e-01)
+Sun, 28 Jul 2024 01:18:09 - Estimated remaining training time: 1.5015440083333333 Hours
+Sun, 28 Jul 2024 01:18:41 - epoch 293, T_total 3.4783026576e-01 (3.3914335072e-01)
+Sun, 28 Jul 2024 01:18:41 - Estimated remaining training time: 1.4541862958333334 Hours
+Sun, 28 Jul 2024 01:19:14 - epoch 294, T_total 3.3320710063e-01 (3.3820343018e-01)
+Sun, 28 Jul 2024 01:19:14 - Estimated remaining training time: 1.4925086955555553 Hours
+Sun, 28 Jul 2024 01:19:45 - epoch 295, T_total 3.3120179176e-01 (3.3728057146e-01)
+Sun, 28 Jul 2024 01:19:45 - Estimated remaining training time: 1.4300938569444444 Hours
+Sun, 28 Jul 2024 01:20:18 - epoch 296, T_total 3.3530139923e-01 (3.3765797317e-01)
+Sun, 28 Jul 2024 01:20:18 - Estimated remaining training time: 1.4610518100000003 Hours
+Sun, 28 Jul 2024 01:20:50 - epoch 297, T_total 3.4073990583e-01 (3.3764636517e-01)
+Sun, 28 Jul 2024 01:20:50 - Estimated remaining training time: 1.4250046494444446 Hours
+Sun, 28 Jul 2024 01:21:22 - epoch 298, T_total 3.3954757452e-01 (3.3724396676e-01)
+Sun, 28 Jul 2024 01:21:22 - Estimated remaining training time: 1.4452019111111112 Hours
+Sun, 28 Jul 2024 01:21:54 - epoch 299, T_total 3.4227117896e-01 (3.3906302601e-01)
+Sun, 28 Jul 2024 01:21:54 - Estimated remaining training time: 1.416033595 Hours
+Sun, 28 Jul 2024 01:22:32 - epoch 300, T_total 3.3858013153e-01 (3.3868851513e-01)
+Sun, 28 Jul 2024 01:22:32 - Estimated remaining training time: 1.639167971666667 Hours
+Sun, 28 Jul 2024 01:23:05 - epoch 301, T_total 3.4416547418e-01 (3.3864795417e-01)
+Sun, 28 Jul 2024 01:23:05 - Estimated remaining training time: 1.4711187397222223 Hours
+Sun, 28 Jul 2024 01:23:39 - epoch 302, T_total 3.4190881252e-01 (3.3771768212e-01)
+Sun, 28 Jul 2024 01:23:39 - Estimated remaining training time: 1.4342467099999998 Hours
+Sun, 28 Jul 2024 01:24:11 - epoch 303, T_total 3.3887612820e-01 (3.3841949701e-01)
+Sun, 28 Jul 2024 01:24:11 - Estimated remaining training time: 1.3797923902777778 Hours
+Sun, 28 Jul 2024 01:24:44 - epoch 304, T_total 3.3730328083e-01 (3.3934605122e-01)
+Sun, 28 Jul 2024 01:24:44 - Estimated remaining training time: 1.4276287666666667 Hours
+Sun, 28 Jul 2024 01:25:16 - epoch 305, T_total 3.4299996495e-01 (3.3785214275e-01)
+Sun, 28 Jul 2024 01:25:16 - Estimated remaining training time: 1.3586835625 Hours
+Sun, 28 Jul 2024 01:25:49 - epoch 306, T_total 3.4249851108e-01 (3.3839556575e-01)
+Sun, 28 Jul 2024 01:25:49 - Estimated remaining training time: 1.395023531111111 Hours
+Sun, 28 Jul 2024 01:26:21 - epoch 307, T_total 3.4116709232e-01 (3.3927498758e-01)
+Sun, 28 Jul 2024 01:26:21 - Estimated remaining training time: 1.3395734305555553 Hours
+Sun, 28 Jul 2024 01:26:54 - epoch 308, T_total 3.3453214169e-01 (3.3764103800e-01)
+Sun, 28 Jul 2024 01:26:54 - Estimated remaining training time: 1.3737072083333333 Hours
+Sun, 28 Jul 2024 01:27:26 - epoch 309, T_total 3.4327989817e-01 (3.3941522986e-01)
+Sun, 28 Jul 2024 01:27:26 - Estimated remaining training time: 1.3178438272222222 Hours
+Sun, 28 Jul 2024 01:28:03 - epoch 310, T_total 3.3389547467e-01 (3.3650404960e-01)
+Sun, 28 Jul 2024 01:28:03 - Estimated remaining training time: 1.54284561 Hours
+Sun, 28 Jul 2024 01:28:36 - epoch 311, T_total 3.3932331204e-01 (3.3745274693e-01)
+Sun, 28 Jul 2024 01:28:36 - Estimated remaining training time: 1.3171894166666667 Hours
+Sun, 28 Jul 2024 01:29:08 - epoch 312, T_total 3.3977150917e-01 (3.3960031718e-01)
+Sun, 28 Jul 2024 01:29:08 - Estimated remaining training time: 1.328380716111111 Hours
+Sun, 28 Jul 2024 01:29:40 - epoch 313, T_total 3.3036321402e-01 (3.3732339740e-01)
+Sun, 28 Jul 2024 01:29:40 - Estimated remaining training time: 1.2951250569444444 Hours
+Sun, 28 Jul 2024 01:30:13 - epoch 314, T_total 3.4012085199e-01 (3.3877061307e-01)
+Sun, 28 Jul 2024 01:30:13 - Estimated remaining training time: 1.3131882799999999 Hours
+Sun, 28 Jul 2024 01:30:45 - epoch 315, T_total 3.3605787158e-01 (3.3819440752e-01)
+Sun, 28 Jul 2024 01:30:45 - Estimated remaining training time: 1.2735369472222224 Hours
+Sun, 28 Jul 2024 01:31:18 - epoch 316, T_total 3.3374369144e-01 (3.3849586546e-01)
+Sun, 28 Jul 2024 01:31:18 - Estimated remaining training time: 1.2938784794444445 Hours
+Sun, 28 Jul 2024 01:31:50 - epoch 317, T_total 3.4726032615e-01 (3.3837378025e-01)
+Sun, 28 Jul 2024 01:31:50 - Estimated remaining training time: 1.2394988050000002 Hours
+Sun, 28 Jul 2024 01:32:22 - epoch 318, T_total 3.3660620451e-01 (3.3855224401e-01)
+Sun, 28 Jul 2024 01:32:22 - Estimated remaining training time: 1.252831261111111 Hours
+Sun, 28 Jul 2024 01:32:54 - epoch 319, T_total 3.4439960122e-01 (3.3930347860e-01)
+Sun, 28 Jul 2024 01:32:54 - Estimated remaining training time: 1.239636055 Hours
+Sun, 28 Jul 2024 01:33:31 - epoch 320, T_total 3.3863955736e-01 (3.3854807913e-01)
+Sun, 28 Jul 2024 01:33:31 - Estimated remaining training time: 1.42773857 Hours
+Sun, 28 Jul 2024 01:34:03 - epoch 321, T_total 3.4160992503e-01 (3.3743496984e-01)
+Sun, 28 Jul 2024 01:34:03 - Estimated remaining training time: 1.2138939419444443 Hours
+Sun, 28 Jul 2024 01:34:37 - epoch 322, T_total 3.4186437726e-01 (3.3904264122e-01)
+Sun, 28 Jul 2024 01:34:37 - Estimated remaining training time: 1.2586893688888887 Hours
+Sun, 28 Jul 2024 01:35:08 - epoch 323, T_total 3.3399936557e-01 (3.3832536638e-01)
+Sun, 28 Jul 2024 01:35:08 - Estimated remaining training time: 1.1845389375000002 Hours
+Sun, 28 Jul 2024 01:35:42 - epoch 324, T_total 3.3903780580e-01 (3.3652584255e-01)
+Sun, 28 Jul 2024 01:35:42 - Estimated remaining training time: 1.2426383544444444 Hours
+Sun, 28 Jul 2024 01:36:13 - epoch 325, T_total 3.3507663012e-01 (3.3709274232e-01)
+Sun, 28 Jul 2024 01:36:13 - Estimated remaining training time: 1.163188222777778 Hours
+Sun, 28 Jul 2024 01:36:46 - epoch 326, T_total 3.3601769805e-01 (3.3831470460e-01)
+Sun, 28 Jul 2024 01:36:46 - Estimated remaining training time: 1.21742599 Hours
+Sun, 28 Jul 2024 01:37:17 - epoch 327, T_total 3.4320086241e-01 (3.3788996190e-01)
+Sun, 28 Jul 2024 01:37:17 - Estimated remaining training time: 1.1352652861111112 Hours
+Sun, 28 Jul 2024 01:37:51 - epoch 328, T_total 3.3512189984e-01 (3.3888276666e-01)
+Sun, 28 Jul 2024 01:37:51 - Estimated remaining training time: 1.2037351083333334 Hours
+Sun, 28 Jul 2024 01:38:25 - epoch 329, T_total 3.3501338959e-01 (3.3915719390e-01)
+Sun, 28 Jul 2024 01:38:25 - Estimated remaining training time: 1.2159809825 Hours
+Sun, 28 Jul 2024 01:39:02 - epoch 330, T_total 3.3995258808e-01 (3.3859355748e-01)
+Sun, 28 Jul 2024 01:39:02 - Estimated remaining training time: 1.3392936533333333 Hours
+Sun, 28 Jul 2024 01:39:35 - epoch 331, T_total 3.4555113316e-01 (3.3921023458e-01)
+Sun, 28 Jul 2024 01:39:35 - Estimated remaining training time: 1.1383310566666665 Hours
+Sun, 28 Jul 2024 01:40:07 - epoch 332, T_total 3.4233370423e-01 (3.3917801082e-01)
+Sun, 28 Jul 2024 01:40:07 - Estimated remaining training time: 1.148955955 Hours
+Sun, 28 Jul 2024 01:40:40 - epoch 333, T_total 3.3634009957e-01 (3.3792565018e-01)
+Sun, 28 Jul 2024 01:40:40 - Estimated remaining training time: 1.1251833333333332 Hours
+Sun, 28 Jul 2024 01:41:13 - epoch 334, T_total 3.3181110024e-01 (3.3935815096e-01)
+Sun, 28 Jul 2024 01:41:13 - Estimated remaining training time: 1.1331836444444445 Hours
+Sun, 28 Jul 2024 01:41:45 - epoch 335, T_total 3.3108195662e-01 (3.3921752125e-01)
+Sun, 28 Jul 2024 01:41:45 - Estimated remaining training time: 1.1044336049999999 Hours
+Sun, 28 Jul 2024 01:42:18 - epoch 336, T_total 3.3506748080e-01 (3.3902789652e-01)
+Sun, 28 Jul 2024 01:42:18 - Estimated remaining training time: 1.1140545899999998 Hours
+Sun, 28 Jul 2024 01:42:50 - epoch 337, T_total 3.4096512198e-01 (3.3813557774e-01)
+Sun, 28 Jul 2024 01:42:50 - Estimated remaining training time: 1.0859554047222224 Hours
+Sun, 28 Jul 2024 01:43:23 - epoch 338, T_total 3.3707964420e-01 (3.3783079684e-01)
+Sun, 28 Jul 2024 01:43:23 - Estimated remaining training time: 1.0930045333333331 Hours
+Sun, 28 Jul 2024 01:43:55 - epoch 339, T_total 3.4040746093e-01 (3.3777542412e-01)
+Sun, 28 Jul 2024 01:43:55 - Estimated remaining training time: 1.0724259505555556 Hours
+Sun, 28 Jul 2024 01:44:33 - epoch 340, T_total 3.3808711171e-01 (3.3834324032e-01)
+Sun, 28 Jul 2024 01:44:33 - Estimated remaining training time: 1.2397398272222224 Hours
+Sun, 28 Jul 2024 01:45:05 - epoch 341, T_total 3.4003660083e-01 (3.3807575703e-01)
+Sun, 28 Jul 2024 01:45:05 - Estimated remaining training time: 1.03203893 Hours
+Sun, 28 Jul 2024 01:45:38 - epoch 342, T_total 3.4380167723e-01 (3.3954028040e-01)
+Sun, 28 Jul 2024 01:45:38 - Estimated remaining training time: 1.0642078122222223 Hours
+Sun, 28 Jul 2024 01:46:10 - epoch 343, T_total 3.3475670218e-01 (3.3744344860e-01)
+Sun, 28 Jul 2024 01:46:10 - Estimated remaining training time: 1.0279736597222222 Hours
+Sun, 28 Jul 2024 01:46:43 - epoch 344, T_total 3.4176695347e-01 (3.3837163448e-01)
+Sun, 28 Jul 2024 01:46:43 - Estimated remaining training time: 1.0424436766666667 Hours
+Sun, 28 Jul 2024 01:47:16 - epoch 345, T_total 3.4133875370e-01 (3.3890049905e-01)
+Sun, 28 Jul 2024 01:47:16 - Estimated remaining training time: 1.0140253691666667 Hours
+Sun, 28 Jul 2024 01:47:49 - epoch 346, T_total 3.3478605747e-01 (3.3674158901e-01)
+Sun, 28 Jul 2024 01:47:49 - Estimated remaining training time: 1.0304978755555554 Hours
+Sun, 28 Jul 2024 01:48:21 - epoch 347, T_total 3.3451762795e-01 (3.3665958047e-01)
+Sun, 28 Jul 2024 01:48:21 - Estimated remaining training time: 0.9914940258333333 Hours
+Sun, 28 Jul 2024 01:48:54 - epoch 348, T_total 3.4139692783e-01 (3.3809234947e-01)
+Sun, 28 Jul 2024 01:48:54 - Estimated remaining training time: 1.0069375249999999 Hours
+Sun, 28 Jul 2024 01:49:26 - epoch 349, T_total 3.3477827907e-01 (3.3909393847e-01)
+Sun, 28 Jul 2024 01:49:26 - Estimated remaining training time: 0.9640836541666666 Hours
+Sun, 28 Jul 2024 01:50:03 - epoch 350, T_total 3.4195831418e-01 (3.3732946217e-01)
+Sun, 28 Jul 2024 01:50:03 - Estimated remaining training time: 1.13250771 Hours
+Sun, 28 Jul 2024 01:50:35 - epoch 351, T_total 3.3435097337e-01 (3.3784316480e-01)
+Sun, 28 Jul 2024 01:50:35 - Estimated remaining training time: 0.9422320430555556 Hours
+Sun, 28 Jul 2024 01:51:09 - epoch 352, T_total 3.3284115791e-01 (3.3859299123e-01)
+Sun, 28 Jul 2024 01:51:09 - Estimated remaining training time: 0.9854430744444443 Hours
+Sun, 28 Jul 2024 01:51:40 - epoch 353, T_total 3.3952170610e-01 (3.3921228349e-01)
+Sun, 28 Jul 2024 01:51:40 - Estimated remaining training time: 0.9246550250000001 Hours
+Sun, 28 Jul 2024 01:52:14 - epoch 354, T_total 3.3859241009e-01 (3.3894324303e-01)
+Sun, 28 Jul 2024 01:52:14 - Estimated remaining training time: 0.96362838 Hours
+Sun, 28 Jul 2024 01:52:46 - epoch 355, T_total 3.3833324909e-01 (3.3825232089e-01)
+Sun, 28 Jul 2024 01:52:46 - Estimated remaining training time: 0.914828003611111 Hours
+Sun, 28 Jul 2024 01:53:21 - epoch 356, T_total 3.3601298928e-01 (3.3874634653e-01)
+Sun, 28 Jul 2024 01:53:21 - Estimated remaining training time: 1.0135003333333334 Hours
+Sun, 28 Jul 2024 01:53:54 - epoch 357, T_total 3.4313988686e-01 (3.3849578351e-01)
+Sun, 28 Jul 2024 01:53:54 - Estimated remaining training time: 0.9079319811111113 Hours
+Sun, 28 Jul 2024 01:54:27 - epoch 358, T_total 3.4452894330e-01 (3.3870767057e-01)
+Sun, 28 Jul 2024 01:54:27 - Estimated remaining training time: 0.9174671944444444 Hours
+Sun, 28 Jul 2024 01:54:59 - epoch 359, T_total 3.3536618948e-01 (3.3923713118e-01)
+Sun, 28 Jul 2024 01:54:59 - Estimated remaining training time: 0.8931879 Hours
+Sun, 28 Jul 2024 01:55:37 - epoch 360, T_total 3.4270793200e-01 (3.3805612475e-01)
+Sun, 28 Jul 2024 01:55:37 - Estimated remaining training time: 1.0288993594444447 Hours
+Sun, 28 Jul 2024 01:56:08 - epoch 361, T_total 3.3880823851e-01 (3.3772747219e-01)
+Sun, 28 Jul 2024 01:56:08 - Estimated remaining training time: 0.8444554597222221 Hours
+Sun, 28 Jul 2024 01:56:42 - epoch 362, T_total 3.4031701088e-01 (3.3801235259e-01)
+Sun, 28 Jul 2024 01:56:42 - Estimated remaining training time: 0.89396264 Hours
+Sun, 28 Jul 2024 01:57:13 - epoch 363, T_total 3.3464595675e-01 (3.3875893056e-01)
+Sun, 28 Jul 2024 01:57:13 - Estimated remaining training time: 0.8326508277777778 Hours
+Sun, 28 Jul 2024 01:57:47 - epoch 364, T_total 3.3306667209e-01 (3.3708890527e-01)
+Sun, 28 Jul 2024 01:57:47 - Estimated remaining training time: 0.8730965183333335 Hours
+Sun, 28 Jul 2024 01:58:19 - epoch 365, T_total 3.3422756195e-01 (3.3766561747e-01)
+Sun, 28 Jul 2024 01:58:19 - Estimated remaining training time: 0.8211179766666667 Hours
+Sun, 28 Jul 2024 01:58:52 - epoch 366, T_total 3.3517143130e-01 (3.3647997677e-01)
+Sun, 28 Jul 2024 01:58:52 - Estimated remaining training time: 0.8557571922222221 Hours
+Sun, 28 Jul 2024 01:59:24 - epoch 367, T_total 3.4670862556e-01 (3.3878993243e-01)
+Sun, 28 Jul 2024 01:59:24 - Estimated remaining training time: 0.7996018838888889 Hours
+Sun, 28 Jul 2024 01:59:57 - epoch 368, T_total 3.4544739127e-01 (3.3807636797e-01)
+Sun, 28 Jul 2024 01:59:57 - Estimated remaining training time: 0.8422131 Hours
+Sun, 28 Jul 2024 02:00:29 - epoch 369, T_total 3.3868563175e-01 (3.3675204962e-01)
+Sun, 28 Jul 2024 02:00:29 - Estimated remaining training time: 0.7823024844444444 Hours
+Sun, 28 Jul 2024 02:01:07 - epoch 370, T_total 3.3736699820e-01 (3.3852013946e-01)
+Sun, 28 Jul 2024 02:01:07 - Estimated remaining training time: 0.9258985266666667 Hours
+Sun, 28 Jul 2024 02:01:39 - epoch 371, T_total 3.3809074759e-01 (3.3717111498e-01)
+Sun, 28 Jul 2024 02:01:39 - Estimated remaining training time: 0.7836521375000001 Hours
+Sun, 28 Jul 2024 02:02:12 - epoch 372, T_total 3.3723258972e-01 (3.3912912011e-01)
+Sun, 28 Jul 2024 02:02:12 - Estimated remaining training time: 0.7843673955555556 Hours
+Sun, 28 Jul 2024 02:02:45 - epoch 373, T_total 3.4103304148e-01 (3.3769335598e-01)
+Sun, 28 Jul 2024 02:02:45 - Estimated remaining training time: 0.7652297124999999 Hours
+Sun, 28 Jul 2024 02:03:18 - epoch 374, T_total 3.3035734296e-01 (3.3677529544e-01)
+Sun, 28 Jul 2024 02:03:18 - Estimated remaining training time: 0.7704987499999999 Hours
+Sun, 28 Jul 2024 02:03:50 - epoch 375, T_total 3.3786994219e-01 (3.3902972937e-01)
+Sun, 28 Jul 2024 02:03:50 - Estimated remaining training time: 0.745688185 Hours
+Sun, 28 Jul 2024 02:04:24 - epoch 376, T_total 3.4816494584e-01 (3.3909061551e-01)
+Sun, 28 Jul 2024 02:04:24 - Estimated remaining training time: 0.7741296100000001 Hours
+Sun, 28 Jul 2024 02:04:56 - epoch 377, T_total 3.3584770560e-01 (3.3742935210e-01)
+Sun, 28 Jul 2024 02:04:56 - Estimated remaining training time: 0.72085113 Hours
+Sun, 28 Jul 2024 02:05:29 - epoch 378, T_total 3.3866906166e-01 (3.3836627007e-01)
+Sun, 28 Jul 2024 02:05:29 - Estimated remaining training time: 0.7263098222222222 Hours
+Sun, 28 Jul 2024 02:06:01 - epoch 379, T_total 3.4073647857e-01 (3.3910073340e-01)
+Sun, 28 Jul 2024 02:06:01 - Estimated remaining training time: 0.710129025 Hours
+Sun, 28 Jul 2024 02:06:39 - epoch 380, T_total 3.3060044050e-01 (3.3986934274e-01)
+Sun, 28 Jul 2024 02:06:39 - Estimated remaining training time: 0.8160778816666666 Hours
+Sun, 28 Jul 2024 02:07:10 - epoch 381, T_total 3.3364596963e-01 (3.3829917759e-01)
+Sun, 28 Jul 2024 02:07:10 - Estimated remaining training time: 0.6762332713888889 Hours
+Sun, 28 Jul 2024 02:07:44 - epoch 382, T_total 3.3930790424e-01 (3.3870574832e-01)
+Sun, 28 Jul 2024 02:07:44 - Estimated remaining training time: 0.7070782233333333 Hours
+Sun, 28 Jul 2024 02:08:18 - epoch 383, T_total 3.3906242251e-01 (3.3929302543e-01)
+Sun, 28 Jul 2024 02:08:18 - Estimated remaining training time: 0.7109487499999999 Hours
+Sun, 28 Jul 2024 02:08:52 - epoch 384, T_total 3.3956018090e-01 (3.3875197172e-01)
+Sun, 28 Jul 2024 02:08:52 - Estimated remaining training time: 0.6940694949999999 Hours
+Sun, 28 Jul 2024 02:09:23 - epoch 385, T_total 3.5119780898e-01 (3.3893514425e-01)
+Sun, 28 Jul 2024 02:09:23 - Estimated remaining training time: 0.637713846111111 Hours
+Sun, 28 Jul 2024 02:09:57 - epoch 386, T_total 3.3823400736e-01 (3.3775985241e-01)
+Sun, 28 Jul 2024 02:09:57 - Estimated remaining training time: 0.67866838 Hours
+Sun, 28 Jul 2024 02:10:29 - epoch 387, T_total 3.4000629187e-01 (3.3866988122e-01)
+Sun, 28 Jul 2024 02:10:29 - Estimated remaining training time: 0.6228445022222222 Hours
+Sun, 28 Jul 2024 02:11:02 - epoch 388, T_total 3.3759257197e-01 (3.3722871542e-01)
+Sun, 28 Jul 2024 02:11:02 - Estimated remaining training time: 0.6520904055555556 Hours
+Sun, 28 Jul 2024 02:11:34 - epoch 389, T_total 3.3122953773e-01 (3.3784425259e-01)
+Sun, 28 Jul 2024 02:11:34 - Estimated remaining training time: 0.6038218750000001 Hours
+Sun, 28 Jul 2024 02:12:11 - epoch 390, T_total 3.3967369795e-01 (3.3886554837e-01)
+Sun, 28 Jul 2024 02:12:11 - Estimated remaining training time: 0.71297881 Hours
+Sun, 28 Jul 2024 02:12:44 - epoch 391, T_total 3.3798938990e-01 (3.3897726238e-01)
+Sun, 28 Jul 2024 02:12:44 - Estimated remaining training time: 0.6045364775000001 Hours
+Sun, 28 Jul 2024 02:13:17 - epoch 392, T_total 3.4271559119e-01 (3.3975148946e-01)
+Sun, 28 Jul 2024 02:13:17 - Estimated remaining training time: 0.6026205349999999 Hours
+Sun, 28 Jul 2024 02:13:49 - epoch 393, T_total 3.3146718144e-01 (3.3830683678e-01)
+Sun, 28 Jul 2024 02:13:49 - Estimated remaining training time: 0.5826704902777777 Hours
+Sun, 28 Jul 2024 02:14:23 - epoch 394, T_total 3.3843788505e-01 (3.3947331458e-01)
+Sun, 28 Jul 2024 02:14:23 - Estimated remaining training time: 0.5955697066666666 Hours
+Sun, 28 Jul 2024 02:14:55 - epoch 395, T_total 3.3890628815e-01 (3.3940359950e-01)
+Sun, 28 Jul 2024 02:14:55 - Estimated remaining training time: 0.564443495 Hours
+Sun, 28 Jul 2024 02:15:28 - epoch 396, T_total 3.3665642142e-01 (3.3912181854e-01)
+Sun, 28 Jul 2024 02:15:28 - Estimated remaining training time: 0.5659588711111111 Hours
+Sun, 28 Jul 2024 02:16:00 - epoch 397, T_total 3.3967486024e-01 (3.3981945366e-01)
+Sun, 28 Jul 2024 02:16:00 - Estimated remaining training time: 0.5522059058333334 Hours
+Sun, 28 Jul 2024 02:16:33 - epoch 398, T_total 3.4583801031e-01 (3.3994967490e-01)
+Sun, 28 Jul 2024 02:16:33 - Estimated remaining training time: 0.5475130166666666 Hours
+Sun, 28 Jul 2024 02:17:06 - epoch 399, T_total 3.3121097088e-01 (3.3978309482e-01)
+Sun, 28 Jul 2024 02:17:06 - Estimated remaining training time: 0.5305827880555556 Hours
+Sun, 28 Jul 2024 02:17:43 - epoch 400, T_total 3.4219673276e-01 (3.3790400624e-01)
+Sun, 28 Jul 2024 02:17:43 - Estimated remaining training time: 0.6066072261111111 Hours
+Sun, 28 Jul 2024 02:18:15 - epoch 401, T_total 3.4322381020e-01 (3.3937944472e-01)
+Sun, 28 Jul 2024 02:18:15 - Estimated remaining training time: 0.503654945 Hours
+Sun, 28 Jul 2024 02:18:48 - epoch 402, T_total 3.4024682641e-01 (3.3954869956e-01)
+Sun, 28 Jul 2024 02:18:48 - Estimated remaining training time: 0.5201587377777778 Hours
+Sun, 28 Jul 2024 02:19:20 - epoch 403, T_total 3.4805396199e-01 (3.3779426664e-01)
+Sun, 28 Jul 2024 02:19:20 - Estimated remaining training time: 0.4791723138888889 Hours
+Sun, 28 Jul 2024 02:19:53 - epoch 404, T_total 3.3981764317e-01 (3.3801946044e-01)
+Sun, 28 Jul 2024 02:19:53 - Estimated remaining training time: 0.49988731499999994 Hours
+Sun, 28 Jul 2024 02:20:25 - epoch 405, T_total 3.4222379327e-01 (3.3854760230e-01)
+Sun, 28 Jul 2024 02:20:25 - Estimated remaining training time: 0.46801795749999997 Hours
+Sun, 28 Jul 2024 02:20:58 - epoch 406, T_total 3.4505701065e-01 (3.3947088569e-01)
+Sun, 28 Jul 2024 02:20:58 - Estimated remaining training time: 0.48272822000000004 Hours
+Sun, 28 Jul 2024 02:21:30 - epoch 407, T_total 3.3769330382e-01 (3.3817373216e-01)
+Sun, 28 Jul 2024 02:21:30 - Estimated remaining training time: 0.4518078383333333 Hours
+Sun, 28 Jul 2024 02:22:04 - epoch 408, T_total 3.4789606929e-01 (3.3973786235e-01)
+Sun, 28 Jul 2024 02:22:04 - Estimated remaining training time: 0.46835547222222224 Hours
+Sun, 28 Jul 2024 02:22:36 - epoch 409, T_total 3.4352967143e-01 (3.3963491768e-01)
+Sun, 28 Jul 2024 02:22:36 - Estimated remaining training time: 0.4313919302777778 Hours
+Sun, 28 Jul 2024 02:23:13 - epoch 410, T_total 3.3980861306e-01 (3.3770557493e-01)
+Sun, 28 Jul 2024 02:23:13 - Estimated remaining training time: 0.5024879466666667 Hours
+Sun, 28 Jul 2024 02:23:45 - epoch 411, T_total 3.4054389596e-01 (3.3794149011e-01)
+Sun, 28 Jul 2024 02:23:45 - Estimated remaining training time: 0.4181453047222222 Hours
+Sun, 28 Jul 2024 02:24:19 - epoch 412, T_total 3.3683782816e-01 (3.3739728481e-01)
+Sun, 28 Jul 2024 02:24:19 - Estimated remaining training time: 0.42704870500000003 Hours
+Sun, 28 Jul 2024 02:24:51 - epoch 413, T_total 3.3434125781e-01 (3.3725327998e-01)
+Sun, 28 Jul 2024 02:24:51 - Estimated remaining training time: 0.40698416249999997 Hours
+Sun, 28 Jul 2024 02:25:24 - epoch 414, T_total 3.4044989944e-01 (3.3902527392e-01)
+Sun, 28 Jul 2024 02:25:24 - Estimated remaining training time: 0.40271058666666665 Hours
+Sun, 28 Jul 2024 02:25:57 - epoch 415, T_total 3.4321701527e-01 (3.3893038332e-01)
+Sun, 28 Jul 2024 02:25:57 - Estimated remaining training time: 0.38797661361111113 Hours
+Sun, 28 Jul 2024 02:26:29 - epoch 416, T_total 3.3707392216e-01 (3.3836354315e-01)
+Sun, 28 Jul 2024 02:26:29 - Estimated remaining training time: 0.38170473833333335 Hours
+Sun, 28 Jul 2024 02:27:02 - epoch 417, T_total 3.3921980858e-01 (3.3810395002e-01)
+Sun, 28 Jul 2024 02:27:02 - Estimated remaining training time: 0.3714855908333333 Hours
+Sun, 28 Jul 2024 02:27:35 - epoch 418, T_total 3.3901441097e-01 (3.3736563474e-01)
+Sun, 28 Jul 2024 02:27:35 - Estimated remaining training time: 0.3661288111111111 Hours
+Sun, 28 Jul 2024 02:28:08 - epoch 419, T_total 3.5045096278e-01 (3.3924757689e-01)
+Sun, 28 Jul 2024 02:28:08 - Estimated remaining training time: 0.35244667249999995 Hours
+Sun, 28 Jul 2024 02:28:45 - epoch 420, T_total 3.3706903458e-01 (3.3862575889e-01)
+Sun, 28 Jul 2024 02:28:45 - Estimated remaining training time: 0.3953229827777777 Hours
+Sun, 28 Jul 2024 02:29:17 - epoch 421, T_total 3.3445689082e-01 (3.3910061419e-01)
+Sun, 28 Jul 2024 02:29:17 - Estimated remaining training time: 0.3306854855555556 Hours
+Sun, 28 Jul 2024 02:29:50 - epoch 422, T_total 3.4303104877e-01 (3.3940643817e-01)
+Sun, 28 Jul 2024 02:29:50 - Estimated remaining training time: 0.3315591 Hours
+Sun, 28 Jul 2024 02:30:23 - epoch 423, T_total 3.3781254292e-01 (3.4009651095e-01)
+Sun, 28 Jul 2024 02:30:23 - Estimated remaining training time: 0.3134307652777778 Hours
+Sun, 28 Jul 2024 02:30:56 - epoch 424, T_total 3.3940407634e-01 (3.3834221959e-01)
+Sun, 28 Jul 2024 02:30:56 - Estimated remaining training time: 0.3151421844444445 Hours
+Sun, 28 Jul 2024 02:31:27 - epoch 425, T_total 3.3742791414e-01 (3.3993502706e-01)
+Sun, 28 Jul 2024 02:31:27 - Estimated remaining training time: 0.288651 Hours
+Sun, 28 Jul 2024 02:32:01 - epoch 426, T_total 3.3034875989e-01 (3.3820907772e-01)
+Sun, 28 Jul 2024 02:32:01 - Estimated remaining training time: 0.29963626666666665 Hours
+Sun, 28 Jul 2024 02:32:33 - epoch 427, T_total 3.4056466818e-01 (3.3890068531e-01)
+Sun, 28 Jul 2024 02:32:33 - Estimated remaining training time: 0.27275369805555555 Hours
+Sun, 28 Jul 2024 02:33:07 - epoch 428, T_total 3.3926507831e-01 (3.3728048950e-01)
+Sun, 28 Jul 2024 02:33:07 - Estimated remaining training time: 0.2808635916666667 Hours
+Sun, 28 Jul 2024 02:33:38 - epoch 429, T_total 3.3619177341e-01 (3.3821701258e-01)
+Sun, 28 Jul 2024 02:33:38 - Estimated remaining training time: 0.2514996322222222 Hours
+Sun, 28 Jul 2024 02:34:16 - epoch 430, T_total 3.3410134912e-01 (3.3753878623e-01)
+Sun, 28 Jul 2024 02:34:16 - Estimated remaining training time: 0.29829653777777776 Hours
+Sun, 28 Jul 2024 02:34:49 - epoch 431, T_total 3.3639416099e-01 (3.3936886489e-01)
+Sun, 28 Jul 2024 02:34:49 - Estimated remaining training time: 0.24400043250000003 Hours
+Sun, 28 Jul 2024 02:35:22 - epoch 432, T_total 3.4802028537e-01 (3.3957079053e-01)
+Sun, 28 Jul 2024 02:35:22 - Estimated remaining training time: 0.23810077777777777 Hours
+Sun, 28 Jul 2024 02:35:54 - epoch 433, T_total 3.3930858970e-01 (3.3672661334e-01)
+Sun, 28 Jul 2024 02:35:54 - Estimated remaining training time: 0.22586429861111113 Hours
+Sun, 28 Jul 2024 02:36:27 - epoch 434, T_total 3.3032190800e-01 (3.3860766143e-01)
+Sun, 28 Jul 2024 02:36:27 - Estimated remaining training time: 0.2197715666666667 Hours
+Sun, 28 Jul 2024 02:37:00 - epoch 435, T_total 3.3941093087e-01 (3.3894793689e-01)
+Sun, 28 Jul 2024 02:37:00 - Estimated remaining training time: 0.20738150611111109 Hours
+Sun, 28 Jul 2024 02:37:32 - epoch 436, T_total 3.4164580703e-01 (3.3800769597e-01)
+Sun, 28 Jul 2024 02:37:32 - Estimated remaining training time: 0.20020777944444446 Hours
+Sun, 28 Jul 2024 02:38:05 - epoch 437, T_total 3.4565564990e-01 (3.3811320364e-01)
+Sun, 28 Jul 2024 02:38:05 - Estimated remaining training time: 0.18950073333333337 Hours
+Sun, 28 Jul 2024 02:38:37 - epoch 438, T_total 3.3363169432e-01 (3.3965771645e-01)
+Sun, 28 Jul 2024 02:38:37 - Estimated remaining training time: 0.18146533888888888 Hours
+Sun, 28 Jul 2024 02:39:10 - epoch 439, T_total 3.3963274956e-01 (3.3982779831e-01)
+Sun, 28 Jul 2024 02:39:10 - Estimated remaining training time: 0.1730965127777778 Hours
+Sun, 28 Jul 2024 02:39:48 - epoch 440, T_total 3.3676099777e-01 (3.3914637566e-01)
+Sun, 28 Jul 2024 02:39:48 - Estimated remaining training time: 0.18732916 Hours
+Sun, 28 Jul 2024 02:40:20 - epoch 441, T_total 3.3291721344e-01 (3.3836083859e-01)
+Sun, 28 Jul 2024 02:40:20 - Estimated remaining training time: 0.1537764136111111 Hours
+Sun, 28 Jul 2024 02:40:53 - epoch 442, T_total 3.3739426732e-01 (3.3906847984e-01)
+Sun, 28 Jul 2024 02:40:53 - Estimated remaining training time: 0.14713245777777775 Hours
+Sun, 28 Jul 2024 02:41:26 - epoch 443, T_total 3.4353074431e-01 (3.4000257403e-01)
+Sun, 28 Jul 2024 02:41:26 - Estimated remaining training time: 0.13554083333333333 Hours
+Sun, 28 Jul 2024 02:41:59 - epoch 444, T_total 3.3467152715e-01 (3.3938568085e-01)
+Sun, 28 Jul 2024 02:41:59 - Estimated remaining training time: 0.12967554444444443 Hours
+Sun, 28 Jul 2024 02:42:32 - epoch 445, T_total 3.3822572231e-01 (3.3862074465e-01)
+Sun, 28 Jul 2024 02:42:32 - Estimated remaining training time: 0.11659198055555557 Hours
+Sun, 28 Jul 2024 02:43:05 - epoch 446, T_total 3.3798599243e-01 (3.3734935522e-01)
+Sun, 28 Jul 2024 02:43:05 - Estimated remaining training time: 0.11265193666666666 Hours
+Sun, 28 Jul 2024 02:43:37 - epoch 447, T_total 3.4028097987e-01 (3.3870112896e-01)
+Sun, 28 Jul 2024 02:43:37 - Estimated remaining training time: 0.09628741527777777 Hours
+Sun, 28 Jul 2024 02:44:11 - epoch 448, T_total 3.3119076490e-01 (3.3918971568e-01)
+Sun, 28 Jul 2024 02:44:11 - Estimated remaining training time: 0.09521636111111112 Hours
+Sun, 28 Jul 2024 02:44:44 - epoch 449, T_total 3.3653002977e-01 (3.3771093935e-01)
+Sun, 28 Jul 2024 02:44:44 - Estimated remaining training time: 0.0815993325 Hours
+Sun, 28 Jul 2024 02:45:22 - epoch 450, T_total 3.3871322870e-01 (3.3944097161e-01)
+Sun, 28 Jul 2024 02:45:22 - Estimated remaining training time: 0.08469381333333333 Hours
+Sun, 28 Jul 2024 02:45:55 - epoch 451, T_total 3.3884790540e-01 (3.3775547892e-01)
+Sun, 28 Jul 2024 02:45:55 - Estimated remaining training time: 0.06379144138888888 Hours
+Sun, 28 Jul 2024 02:46:28 - epoch 452, T_total 3.4003344178e-01 (3.3921259642e-01)
+Sun, 28 Jul 2024 02:46:28 - Estimated remaining training time: 0.05547852 Hours
+Sun, 28 Jul 2024 02:47:01 - epoch 453, T_total 3.3832857013e-01 (3.3919083327e-01)
+Sun, 28 Jul 2024 02:47:01 - Estimated remaining training time: 0.04535473333333333 Hours
+Sun, 28 Jul 2024 02:47:34 - epoch 454, T_total 3.4203267097e-01 (3.3907888830e-01)
+Sun, 28 Jul 2024 02:47:34 - Estimated remaining training time: 0.03664810555555555 Hours
+Sun, 28 Jul 2024 02:48:06 - epoch 455, T_total 3.4065687656e-01 (3.3886696398e-01)
+Sun, 28 Jul 2024 02:48:06 - Estimated remaining training time: 0.0272406775 Hours
+Sun, 28 Jul 2024 02:48:40 - epoch 456, T_total 3.3741104603e-01 (3.3891483396e-01)
+Sun, 28 Jul 2024 02:48:40 - Estimated remaining training time: 0.018459705 Hours
+Sun, 28 Jul 2024 02:49:12 - epoch 457, T_total 3.3355891705e-01 (3.3790268749e-01)
+Sun, 28 Jul 2024 02:49:12 - Estimated remaining training time: 0.009035013055555555 Hours
+Sun, 28 Jul 2024 02:49:45 - epoch 458, T_total 3.4125262499e-01 (3.3890785277e-01)
+Sun, 28 Jul 2024 02:49:45 - Estimated remaining training time: 0.0 Hours
+Sun, 28 Jul 2024 18:18:11 - epoch 459, T_total 3.3969268203e-01 (3.3822682500e-01)
+Sun, 28 Jul 2024 18:18:11 - Estimated remaining training time: 2.621642963333333 Hours
+Sun, 28 Jul 2024 18:18:46 - epoch 460, T_total 3.4050187469e-01 (3.3770046383e-01)
+Sun, 28 Jul 2024 18:18:46 - Estimated remaining training time: 2.927035301111111 Hours
+Sun, 28 Jul 2024 18:19:16 - epoch 461, T_total 3.3117404580e-01 (3.3756405860e-01)
+Sun, 28 Jul 2024 18:19:16 - Estimated remaining training time: 2.484667845 Hours
+Sun, 28 Jul 2024 18:19:48 - epoch 462, T_total 3.3111268282e-01 (3.3965990692e-01)
+Sun, 28 Jul 2024 18:19:48 - Estimated remaining training time: 2.5757567266666666 Hours
+Sun, 28 Jul 2024 18:20:18 - epoch 463, T_total 3.3504855633e-01 (3.3694281429e-01)
+Sun, 28 Jul 2024 18:20:18 - Estimated remaining training time: 2.480872398611111 Hours
+Sun, 28 Jul 2024 18:20:49 - epoch 464, T_total 3.4475108981e-01 (3.3937820792e-01)
+Sun, 28 Jul 2024 18:20:49 - Estimated remaining training time: 2.537950018333333 Hours
+Sun, 28 Jul 2024 18:21:22 - epoch 465, T_total 3.3497464657e-01 (3.3988927305e-01)
+Sun, 28 Jul 2024 18:21:22 - Estimated remaining training time: 2.6607619744444446 Hours
+Sun, 28 Jul 2024 18:21:53 - epoch 466, T_total 3.3388221264e-01 (3.3932231367e-01)
+Sun, 28 Jul 2024 18:21:53 - Estimated remaining training time: 2.557287576666667 Hours
+Sun, 28 Jul 2024 18:22:24 - epoch 467, T_total 3.3803281188e-01 (3.3842336386e-01)
+Sun, 28 Jul 2024 18:22:24 - Estimated remaining training time: 2.455866450833333 Hours
+Sun, 28 Jul 2024 18:22:55 - epoch 468, T_total 3.3295547962e-01 (3.3887907118e-01)
+Sun, 28 Jul 2024 18:22:55 - Estimated remaining training time: 2.539814038888889 Hours
+Sun, 28 Jul 2024 18:23:26 - epoch 469, T_total 3.3774718642e-01 (3.3805782348e-01)
+Sun, 28 Jul 2024 18:23:26 - Estimated remaining training time: 2.4406973997222225 Hours
+Sun, 28 Jul 2024 18:24:02 - epoch 470, T_total 3.4372872114e-01 (3.3937297016e-01)
+Sun, 28 Jul 2024 18:24:02 - Estimated remaining training time: 2.8934124000000003 Hours
+Sun, 28 Jul 2024 18:24:32 - epoch 471, T_total 3.4487050772e-01 (3.3958052844e-01)
+Sun, 28 Jul 2024 18:24:32 - Estimated remaining training time: 2.4469570572222223 Hours
+Sun, 28 Jul 2024 18:25:04 - epoch 472, T_total 3.3976298571e-01 (3.3763899654e-01)
+Sun, 28 Jul 2024 18:25:04 - Estimated remaining training time: 2.496062219444444 Hours
+Sun, 28 Jul 2024 18:25:34 - epoch 473, T_total 3.4053948522e-01 (3.3760427684e-01)
+Sun, 28 Jul 2024 18:25:34 - Estimated remaining training time: 2.399708470833333 Hours
+Sun, 28 Jul 2024 18:26:05 - epoch 474, T_total 3.3587491512e-01 (3.3946764469e-01)
+Sun, 28 Jul 2024 18:26:05 - Estimated remaining training time: 2.4704625133333336 Hours
+Sun, 28 Jul 2024 18:26:36 - epoch 475, T_total 3.4297835827e-01 (3.3899147063e-01)
+Sun, 28 Jul 2024 18:26:36 - Estimated remaining training time: 2.3843347444444447 Hours
+Sun, 28 Jul 2024 18:27:07 - epoch 476, T_total 3.4712132812e-01 (3.3861745894e-01)
+Sun, 28 Jul 2024 18:27:07 - Estimated remaining training time: 2.4596189616666666 Hours
+Sun, 28 Jul 2024 18:27:38 - epoch 477, T_total 3.3870100975e-01 (3.3883053064e-01)
+Sun, 28 Jul 2024 18:27:38 - Estimated remaining training time: 2.378182772777778 Hours
+Sun, 28 Jul 2024 18:28:09 - epoch 478, T_total 3.4171181917e-01 (3.3755456656e-01)
+Sun, 28 Jul 2024 18:28:09 - Estimated remaining training time: 2.446451388888889 Hours
+Sun, 28 Jul 2024 18:28:40 - epoch 479, T_total 3.3878934383e-01 (3.3869675547e-01)
+Sun, 28 Jul 2024 18:28:40 - Estimated remaining training time: 2.358702115 Hours
+Sun, 28 Jul 2024 18:29:15 - epoch 480, T_total 3.3243846893e-01 (3.3632953465e-01)
+Sun, 28 Jul 2024 18:29:15 - Estimated remaining training time: 2.7660318900000003 Hours
+Sun, 28 Jul 2024 18:29:46 - epoch 481, T_total 3.4207373857e-01 (3.3990333229e-01)
+Sun, 28 Jul 2024 18:29:46 - Estimated remaining training time: 2.3545804069444443 Hours
+Sun, 28 Jul 2024 18:30:18 - epoch 482, T_total 3.4452584386e-01 (3.3923061192e-01)
+Sun, 28 Jul 2024 18:30:18 - Estimated remaining training time: 2.4527120266666667 Hours
+Sun, 28 Jul 2024 18:30:48 - epoch 483, T_total 3.3582666516e-01 (3.3671002835e-01)
+Sun, 28 Jul 2024 18:30:48 - Estimated remaining training time: 2.335081451388889 Hours
+Sun, 28 Jul 2024 18:31:20 - epoch 484, T_total 3.4129491448e-01 (3.3992429078e-01)
+Sun, 28 Jul 2024 18:31:20 - Estimated remaining training time: 2.40516104 Hours
+Sun, 28 Jul 2024 18:31:50 - epoch 485, T_total 3.4768453240e-01 (3.3891921490e-01)
+Sun, 28 Jul 2024 18:31:50 - Estimated remaining training time: 2.3015357516666666 Hours
+Sun, 28 Jul 2024 18:32:22 - epoch 486, T_total 3.4026271105e-01 (3.3970998228e-01)
+Sun, 28 Jul 2024 18:32:22 - Estimated remaining training time: 2.3839406 Hours
+Sun, 28 Jul 2024 18:32:53 - epoch 487, T_total 3.3835521340e-01 (3.3826825768e-01)
+Sun, 28 Jul 2024 18:32:53 - Estimated remaining training time: 2.3212759438888884 Hours
+Sun, 28 Jul 2024 18:33:24 - epoch 488, T_total 3.4380412102e-01 (3.3955091238e-01)
+Sun, 28 Jul 2024 18:33:24 - Estimated remaining training time: 2.3679324 Hours
+Sun, 28 Jul 2024 18:33:55 - epoch 489, T_total 3.3338069916e-01 (3.3799425513e-01)
+Sun, 28 Jul 2024 18:33:55 - Estimated remaining training time: 2.3007345086111113 Hours
+Sun, 28 Jul 2024 18:34:31 - epoch 490, T_total 3.4385129809e-01 (3.3884937316e-01)
+Sun, 28 Jul 2024 18:34:31 - Estimated remaining training time: 2.6878952055555554 Hours
+Sun, 28 Jul 2024 18:35:02 - epoch 491, T_total 3.3965083957e-01 (3.3775633574e-01)
+Sun, 28 Jul 2024 18:35:02 - Estimated remaining training time: 2.259073798333333 Hours
+Sun, 28 Jul 2024 18:35:34 - epoch 492, T_total 3.4055528045e-01 (3.3844400197e-01)
+Sun, 28 Jul 2024 18:35:34 - Estimated remaining training time: 2.3537025516666668 Hours
+Sun, 28 Jul 2024 18:36:07 - epoch 493, T_total 3.4506601095e-01 (3.3822582662e-01)
+Sun, 28 Jul 2024 18:36:07 - Estimated remaining training time: 2.4411769819444444 Hours
+Sun, 28 Jul 2024 18:36:38 - epoch 494, T_total 3.3958828449e-01 (3.3892527968e-01)
+Sun, 28 Jul 2024 18:36:38 - Estimated remaining training time: 2.323873346666667 Hours
+Sun, 28 Jul 2024 18:37:09 - epoch 495, T_total 3.3671751618e-01 (3.3724909276e-01)
+Sun, 28 Jul 2024 18:37:09 - Estimated remaining training time: 2.215523835 Hours
+Sun, 28 Jul 2024 18:37:40 - epoch 496, T_total 3.3485364914e-01 (3.3709085733e-01)
+Sun, 28 Jul 2024 18:37:40 - Estimated remaining training time: 2.292620592777778 Hours
+Sun, 28 Jul 2024 18:38:11 - epoch 497, T_total 3.3118242025e-01 (3.3976292610e-01)
+Sun, 28 Jul 2024 18:38:11 - Estimated remaining training time: 2.233887835 Hours
+Sun, 28 Jul 2024 18:38:44 - epoch 498, T_total 3.3884775639e-01 (3.4001231194e-01)
+Sun, 28 Jul 2024 18:38:44 - Estimated remaining training time: 2.3537984888888888 Hours
+Sun, 28 Jul 2024 18:39:15 - epoch 499, T_total 3.3981326222e-01 (3.3774618804e-01)
+Sun, 28 Jul 2024 18:39:15 - Estimated remaining training time: 2.2241978247222223 Hours
+Sun, 28 Jul 2024 18:39:51 - epoch 500, T_total 3.4378895164e-01 (3.3832802624e-01)
+Sun, 28 Jul 2024 18:39:51 - Estimated remaining training time: 2.5859069100000003 Hours
+Sun, 28 Jul 2024 18:40:21 - epoch 501, T_total 3.4064188600e-01 (3.3907578886e-01)
+Sun, 28 Jul 2024 18:40:21 - Estimated remaining training time: 2.1942689269444444 Hours
+Sun, 28 Jul 2024 18:40:53 - epoch 502, T_total 3.4697052836e-01 (3.3833514154e-01)
+Sun, 28 Jul 2024 18:40:53 - Estimated remaining training time: 2.2487453866666667 Hours
+Sun, 28 Jul 2024 18:41:24 - epoch 503, T_total 3.4418696165e-01 (3.3960731328e-01)
+Sun, 28 Jul 2024 18:41:24 - Estimated remaining training time: 2.1703367333333334 Hours
+Sun, 28 Jul 2024 18:41:55 - epoch 504, T_total 3.3977818489e-01 (3.3840531856e-01)
+Sun, 28 Jul 2024 18:41:55 - Estimated remaining training time: 2.24011236 Hours
+Sun, 28 Jul 2024 18:42:26 - epoch 505, T_total 3.3985474706e-01 (3.3861959726e-01)
+Sun, 28 Jul 2024 18:42:26 - Estimated remaining training time: 2.155601745 Hours
+Sun, 28 Jul 2024 18:42:58 - epoch 506, T_total 3.4060958028e-01 (3.4005054832e-01)
+Sun, 28 Jul 2024 18:42:58 - Estimated remaining training time: 2.2166033400000003 Hours
+Sun, 28 Jul 2024 18:43:28 - epoch 507, T_total 3.4374031425e-01 (3.3920666575e-01)
+Sun, 28 Jul 2024 18:43:28 - Estimated remaining training time: 2.126679911666667 Hours
+Sun, 28 Jul 2024 18:44:00 - epoch 508, T_total 3.3934542537e-01 (3.4000664204e-01)
+Sun, 28 Jul 2024 18:44:00 - Estimated remaining training time: 2.199359583333333 Hours
+Sun, 28 Jul 2024 18:44:33 - epoch 509, T_total 3.3545982838e-01 (3.3990731090e-01)
+Sun, 28 Jul 2024 18:44:33 - Estimated remaining training time: 2.3020478833333335 Hours
+Sun, 28 Jul 2024 18:45:10 - epoch 510, T_total 3.3132570982e-01 (3.3802987635e-01)
+Sun, 28 Jul 2024 18:45:10 - Estimated remaining training time: 2.5164518666666664 Hours
+Sun, 28 Jul 2024 18:45:41 - epoch 511, T_total 3.3402660489e-01 (3.3689992130e-01)
+Sun, 28 Jul 2024 18:45:41 - Estimated remaining training time: 2.110836819722222 Hours
+Sun, 28 Jul 2024 18:46:12 - epoch 512, T_total 3.4499880672e-01 (3.3940170705e-01)
+Sun, 28 Jul 2024 18:46:12 - Estimated remaining training time: 2.1624660066666666 Hours
+Sun, 28 Jul 2024 18:46:43 - epoch 513, T_total 3.3379355073e-01 (3.3827903122e-01)
+Sun, 28 Jul 2024 18:46:43 - Estimated remaining training time: 2.102605788888889 Hours
+Sun, 28 Jul 2024 18:47:15 - epoch 514, T_total 3.4261351824e-01 (3.3830777556e-01)
+Sun, 28 Jul 2024 18:47:15 - Estimated remaining training time: 2.1481146611111113 Hours
+Sun, 28 Jul 2024 18:47:46 - epoch 515, T_total 3.3490365744e-01 (3.3935586363e-01)
+Sun, 28 Jul 2024 18:47:46 - Estimated remaining training time: 2.09358054 Hours
+Sun, 28 Jul 2024 18:48:17 - epoch 516, T_total 3.4088179469e-01 (3.4006995708e-01)
+Sun, 28 Jul 2024 18:48:17 - Estimated remaining training time: 2.12746435 Hours
+Sun, 28 Jul 2024 18:48:48 - epoch 517, T_total 3.4687560797e-01 (3.3928943425e-01)
+Sun, 28 Jul 2024 18:48:48 - Estimated remaining training time: 2.0582046683333335 Hours
+Sun, 28 Jul 2024 18:49:20 - epoch 518, T_total 3.4626653790e-01 (3.3948311955e-01)
+Sun, 28 Jul 2024 18:49:20 - Estimated remaining training time: 2.1128798 Hours
+Sun, 28 Jul 2024 18:49:50 - epoch 519, T_total 3.4166881442e-01 (3.3964073658e-01)
+Sun, 28 Jul 2024 18:49:50 - Estimated remaining training time: 2.020539592777778 Hours
+Sun, 28 Jul 2024 18:50:26 - epoch 520, T_total 3.4022054076e-01 (3.3923667669e-01)
+Sun, 28 Jul 2024 18:50:26 - Estimated remaining training time: 2.3641926349999998 Hours
+Sun, 28 Jul 2024 18:50:57 - epoch 521, T_total 3.4331595898e-01 (3.3994945139e-01)
+Sun, 28 Jul 2024 18:50:57 - Estimated remaining training time: 2.0175981825 Hours
+Sun, 28 Jul 2024 18:51:31 - epoch 522, T_total 3.3792132139e-01 (3.3808297664e-01)
+Sun, 28 Jul 2024 18:51:31 - Estimated remaining training time: 2.2415680544444445 Hours
+Sun, 28 Jul 2024 18:52:01 - epoch 523, T_total 3.3277025819e-01 (3.3906526119e-01)
+Sun, 28 Jul 2024 18:52:01 - Estimated remaining training time: 1.9967507416666666 Hours
+Sun, 28 Jul 2024 18:52:33 - epoch 524, T_total 3.3742466569e-01 (3.3831746131e-01)
+Sun, 28 Jul 2024 18:52:33 - Estimated remaining training time: 2.0661179499999998 Hours
+Sun, 28 Jul 2024 18:53:04 - epoch 525, T_total 3.3831605315e-01 (3.3837317675e-01)
+Sun, 28 Jul 2024 18:53:04 - Estimated remaining training time: 1.9818207216666663 Hours
+Sun, 28 Jul 2024 18:53:36 - epoch 526, T_total 3.3271238208e-01 (3.3820112795e-01)
+Sun, 28 Jul 2024 18:53:36 - Estimated remaining training time: 2.0542395533333337 Hours
+Sun, 28 Jul 2024 18:54:07 - epoch 527, T_total 3.2930099964e-01 (3.3826024830e-01)
+Sun, 28 Jul 2024 18:54:07 - Estimated remaining training time: 1.9788074716666666 Hours
+Sun, 28 Jul 2024 18:54:38 - epoch 528, T_total 3.3364444971e-01 (3.3949495852e-01)
+Sun, 28 Jul 2024 18:54:38 - Estimated remaining training time: 2.0330616166666666 Hours
+Sun, 28 Jul 2024 18:55:09 - epoch 529, T_total 3.3373677731e-01 (3.3897648752e-01)
+Sun, 28 Jul 2024 18:55:09 - Estimated remaining training time: 1.9495708899999997 Hours
+Sun, 28 Jul 2024 18:55:45 - epoch 530, T_total 3.3840245008e-01 (3.3954590559e-01)
+Sun, 28 Jul 2024 18:55:45 - Estimated remaining training time: 2.263959186666667 Hours
+Sun, 28 Jul 2024 18:56:16 - epoch 531, T_total 3.3625593781e-01 (3.3942336589e-01)
+Sun, 28 Jul 2024 18:56:16 - Estimated remaining training time: 1.937671810833333 Hours
+Sun, 28 Jul 2024 18:56:47 - epoch 532, T_total 3.3971852064e-01 (3.3946071565e-01)
+Sun, 28 Jul 2024 18:56:47 - Estimated remaining training time: 2.003816318888889 Hours
+Sun, 28 Jul 2024 18:57:18 - epoch 533, T_total 3.4130552411e-01 (3.3781866729e-01)
+Sun, 28 Jul 2024 18:57:18 - Estimated remaining training time: 1.923976625 Hours
+Sun, 28 Jul 2024 18:57:50 - epoch 534, T_total 3.3622944355e-01 (3.3730433881e-01)
+Sun, 28 Jul 2024 18:57:50 - Estimated remaining training time: 1.981220577777778 Hours
+Sun, 28 Jul 2024 18:58:21 - epoch 535, T_total 3.3951941133e-01 (3.3841544390e-01)
+Sun, 28 Jul 2024 18:58:21 - Estimated remaining training time: 1.9076005375 Hours
+Sun, 28 Jul 2024 18:58:53 - epoch 536, T_total 3.3614915609e-01 (3.3908367902e-01)
+Sun, 28 Jul 2024 18:58:53 - Estimated remaining training time: 1.9594986016666665 Hours
+Sun, 28 Jul 2024 18:59:24 - epoch 537, T_total 3.4064567089e-01 (3.3864134550e-01)
+Sun, 28 Jul 2024 18:59:24 - Estimated remaining training time: 1.9103820125 Hours
+Sun, 28 Jul 2024 18:59:56 - epoch 538, T_total 3.3552876115e-01 (3.3805761486e-01)
+Sun, 28 Jul 2024 18:59:56 - Estimated remaining training time: 1.9420638111111113 Hours
+Sun, 28 Jul 2024 19:00:26 - epoch 539, T_total 3.3460935950e-01 (3.3895089477e-01)
+Sun, 28 Jul 2024 19:00:26 - Estimated remaining training time: 1.8707810983333333 Hours
+Sun, 28 Jul 2024 19:01:02 - epoch 540, T_total 3.3797508478e-01 (3.3909277618e-01)
+Sun, 28 Jul 2024 19:01:02 - Estimated remaining training time: 2.1806199677777776 Hours
+Sun, 28 Jul 2024 19:01:33 - epoch 541, T_total 3.5003793240e-01 (3.3925229311e-01)
+Sun, 28 Jul 2024 19:01:33 - Estimated remaining training time: 1.8509572569444444 Hours
+Sun, 28 Jul 2024 19:02:05 - epoch 542, T_total 3.3522921801e-01 (3.3843777329e-01)
+Sun, 28 Jul 2024 19:02:05 - Estimated remaining training time: 1.91003166 Hours
+Sun, 28 Jul 2024 19:02:36 - epoch 543, T_total 3.3614030480e-01 (3.3845479041e-01)
+Sun, 28 Jul 2024 19:02:36 - Estimated remaining training time: 1.8377476166666666 Hours
+Sun, 28 Jul 2024 19:03:08 - epoch 544, T_total 3.4375956655e-01 (3.3961538225e-01)
+Sun, 28 Jul 2024 19:03:08 - Estimated remaining training time: 1.9081150094444446 Hours
+Sun, 28 Jul 2024 19:03:38 - epoch 545, T_total 3.3166837692e-01 (3.3912913501e-01)
+Sun, 28 Jul 2024 19:03:38 - Estimated remaining training time: 1.8164570183333333 Hours
+Sun, 28 Jul 2024 19:04:11 - epoch 546, T_total 3.4007728100e-01 (3.3751588315e-01)
+Sun, 28 Jul 2024 19:04:11 - Estimated remaining training time: 1.8919821044444443 Hours
+Sun, 28 Jul 2024 19:04:42 - epoch 547, T_total 3.4144103527e-01 (3.3888760954e-01)
+Sun, 28 Jul 2024 19:04:42 - Estimated remaining training time: 1.8206946177777779 Hours
+Sun, 28 Jul 2024 19:05:14 - epoch 548, T_total 3.3489313722e-01 (3.3946454525e-01)
+Sun, 28 Jul 2024 19:05:14 - Estimated remaining training time: 1.8601420833333333 Hours
+Sun, 28 Jul 2024 19:05:44 - epoch 549, T_total 3.4226673841e-01 (3.4030197561e-01)
+Sun, 28 Jul 2024 19:05:44 - Estimated remaining training time: 1.7890104497222223 Hours
+Sun, 28 Jul 2024 19:06:23 - epoch 550, T_total 3.4008884430e-01 (3.3957699686e-01)
+Sun, 28 Jul 2024 19:06:23 - Estimated remaining training time: 2.208521928888889 Hours
+Sun, 28 Jul 2024 19:06:53 - epoch 551, T_total 3.4354743361e-01 (3.3938354254e-01)
+Sun, 28 Jul 2024 19:06:53 - Estimated remaining training time: 1.7608587249999998 Hours
+Sun, 28 Jul 2024 19:07:25 - epoch 552, T_total 3.4541466832e-01 (3.4027527273e-01)
+Sun, 28 Jul 2024 19:07:25 - Estimated remaining training time: 1.8163454888888886 Hours
+Sun, 28 Jul 2024 19:07:56 - epoch 553, T_total 3.3180445433e-01 (3.4019280970e-01)
+Sun, 28 Jul 2024 19:07:56 - Estimated remaining training time: 1.7569890013888891 Hours
+Sun, 28 Jul 2024 19:08:28 - epoch 554, T_total 3.4620192647e-01 (3.3885095268e-01)
+Sun, 28 Jul 2024 19:08:28 - Estimated remaining training time: 1.8192126699999998 Hours
+Sun, 28 Jul 2024 19:08:59 - epoch 555, T_total 3.3872067928e-01 (3.4014632553e-01)
+Sun, 28 Jul 2024 19:08:59 - Estimated remaining training time: 1.7408345636111113 Hours
+Sun, 28 Jul 2024 19:09:31 - epoch 556, T_total 3.4250962734e-01 (3.3951128274e-01)
+Sun, 28 Jul 2024 19:09:31 - Estimated remaining training time: 1.7922866905555557 Hours
+Sun, 28 Jul 2024 19:10:02 - epoch 557, T_total 3.4671142697e-01 (3.3758222312e-01)
+Sun, 28 Jul 2024 19:10:02 - Estimated remaining training time: 1.7208030425 Hours
+Sun, 28 Jul 2024 19:10:34 - epoch 558, T_total 3.4179714322e-01 (3.3975777775e-01)
+Sun, 28 Jul 2024 19:10:34 - Estimated remaining training time: 1.7823543333333334 Hours
+Sun, 28 Jul 2024 19:11:05 - epoch 559, T_total 3.3999741077e-01 (3.3826778829e-01)
+Sun, 28 Jul 2024 19:11:05 - Estimated remaining training time: 1.7106308097222225 Hours
+Sun, 28 Jul 2024 19:11:41 - epoch 560, T_total 3.3223533630e-01 (3.3931161463e-01)
+Sun, 28 Jul 2024 19:11:41 - Estimated remaining training time: 1.99023462 Hours
+Sun, 28 Jul 2024 19:12:12 - epoch 561, T_total 3.3709007502e-01 (3.3826525509e-01)
+Sun, 28 Jul 2024 19:12:12 - Estimated remaining training time: 1.6930801097222223 Hours
+Sun, 28 Jul 2024 19:12:44 - epoch 562, T_total 3.3514031768e-01 (3.3926361799e-01)
+Sun, 28 Jul 2024 19:12:44 - Estimated remaining training time: 1.7526456655555553 Hours
+Sun, 28 Jul 2024 19:13:15 - epoch 563, T_total 3.4301233292e-01 (3.3911962807e-01)
+Sun, 28 Jul 2024 19:13:15 - Estimated remaining training time: 1.6706987916666667 Hours
+Sun, 28 Jul 2024 19:13:47 - epoch 564, T_total 3.4771680832e-01 (3.3977571130e-01)
+Sun, 28 Jul 2024 19:13:47 - Estimated remaining training time: 1.7214389533333334 Hours
+Sun, 28 Jul 2024 19:14:18 - epoch 565, T_total 3.3584237099e-01 (3.3807902038e-01)
+Sun, 28 Jul 2024 19:14:18 - Estimated remaining training time: 1.6715544505555555 Hours
+Sun, 28 Jul 2024 19:14:50 - epoch 566, T_total 3.3209678531e-01 (3.3867476881e-01)
+Sun, 28 Jul 2024 19:14:50 - Estimated remaining training time: 1.71752848 Hours
+Sun, 28 Jul 2024 19:15:21 - epoch 567, T_total 3.3916980028e-01 (3.3918146044e-01)
+Sun, 28 Jul 2024 19:15:21 - Estimated remaining training time: 1.6678618722222223 Hours
+Sun, 28 Jul 2024 19:15:54 - epoch 568, T_total 3.3837428689e-01 (3.4018810093e-01)
+Sun, 28 Jul 2024 19:15:54 - Estimated remaining training time: 1.7048281472222224 Hours
+Sun, 28 Jul 2024 19:16:25 - epoch 569, T_total 3.3894494176e-01 (3.3846788853e-01)
+Sun, 28 Jul 2024 19:16:25 - Estimated remaining training time: 1.62406356 Hours
+Sun, 28 Jul 2024 19:17:01 - epoch 570, T_total 3.3244481683e-01 (3.3775516599e-01)
+Sun, 28 Jul 2024 19:17:01 - Estimated remaining training time: 1.8902303333333332 Hours
+Sun, 28 Jul 2024 19:17:32 - epoch 571, T_total 3.4056854248e-01 (3.3981033415e-01)
+Sun, 28 Jul 2024 19:17:32 - Estimated remaining training time: 1.6034095275 Hours
+Sun, 28 Jul 2024 19:18:04 - epoch 572, T_total 3.3806255460e-01 (3.3952438831e-01)
+Sun, 28 Jul 2024 19:18:04 - Estimated remaining training time: 1.6585157583333332 Hours
+Sun, 28 Jul 2024 19:18:35 - epoch 573, T_total 3.3953344822e-01 (3.3960933238e-01)
+Sun, 28 Jul 2024 19:18:35 - Estimated remaining training time: 1.588706976388889 Hours
+Sun, 28 Jul 2024 19:19:07 - epoch 574, T_total 3.3166611195e-01 (3.3944384009e-01)
+Sun, 28 Jul 2024 19:19:07 - Estimated remaining training time: 1.6322599622222225 Hours
+Sun, 28 Jul 2024 19:19:38 - epoch 575, T_total 3.3939582109e-01 (3.3901658654e-01)
+Sun, 28 Jul 2024 19:19:38 - Estimated remaining training time: 1.5665506583333333 Hours
+Sun, 28 Jul 2024 19:20:10 - epoch 576, T_total 3.4630066156e-01 (3.3843413740e-01)
+Sun, 28 Jul 2024 19:20:10 - Estimated remaining training time: 1.616966108333333 Hours
+Sun, 28 Jul 2024 19:20:40 - epoch 577, T_total 3.4056031704e-01 (3.4003469348e-01)
+Sun, 28 Jul 2024 19:20:40 - Estimated remaining training time: 1.552303965 Hours
+Sun, 28 Jul 2024 19:21:12 - epoch 578, T_total 3.4033596516e-01 (3.3795043826e-01)
+Sun, 28 Jul 2024 19:21:12 - Estimated remaining training time: 1.6029045499999999 Hours
+Sun, 28 Jul 2024 19:21:43 - epoch 579, T_total 3.3214083314e-01 (3.3893005550e-01)
+Sun, 28 Jul 2024 19:21:43 - Estimated remaining training time: 1.5346426275 Hours
+Sun, 28 Jul 2024 19:22:20 - epoch 580, T_total 3.3654677868e-01 (3.3817473054e-01)
+Sun, 28 Jul 2024 19:22:20 - Estimated remaining training time: 1.7913838911111108 Hours
+Sun, 28 Jul 2024 19:22:51 - epoch 581, T_total 3.4132006764e-01 (3.3846831322e-01)
+Sun, 28 Jul 2024 19:22:51 - Estimated remaining training time: 1.5236447133333333 Hours
+Sun, 28 Jul 2024 19:23:23 - epoch 582, T_total 3.4038001299e-01 (3.3973170817e-01)
+Sun, 28 Jul 2024 19:23:23 - Estimated remaining training time: 1.5756797466666665 Hours
+Sun, 28 Jul 2024 19:23:54 - epoch 583, T_total 3.4905669093e-01 (3.3952908963e-01)
+Sun, 28 Jul 2024 19:23:54 - Estimated remaining training time: 1.5043199305555555 Hours
+Sun, 28 Jul 2024 19:24:26 - epoch 584, T_total 3.3391374350e-01 (3.3809188008e-01)
+Sun, 28 Jul 2024 19:24:26 - Estimated remaining training time: 1.5724147033333336 Hours
+Sun, 28 Jul 2024 19:24:58 - epoch 585, T_total 3.3547431231e-01 (3.3799943328e-01)
+Sun, 28 Jul 2024 19:24:58 - Estimated remaining training time: 1.514286059722222 Hours
+Sun, 28 Jul 2024 19:25:30 - epoch 586, T_total 3.4353461862e-01 (3.4032285959e-01)
+Sun, 28 Jul 2024 19:25:30 - Estimated remaining training time: 1.5430390422222222 Hours
+Sun, 28 Jul 2024 19:26:01 - epoch 587, T_total 3.3203274012e-01 (3.3827380091e-01)
+Sun, 28 Jul 2024 19:26:01 - Estimated remaining training time: 1.4708232975 Hours
+Sun, 28 Jul 2024 19:26:33 - epoch 588, T_total 3.4536510706e-01 (3.3885227144e-01)
+Sun, 28 Jul 2024 19:26:33 - Estimated remaining training time: 1.5154510222222222 Hours
+Sun, 28 Jul 2024 19:27:04 - epoch 589, T_total 3.3874359727e-01 (3.3887491375e-01)
+Sun, 28 Jul 2024 19:27:04 - Estimated remaining training time: 1.4519085280555557 Hours
+Sun, 28 Jul 2024 19:27:40 - epoch 590, T_total 3.3855921030e-01 (3.3832035959e-01)
+Sun, 28 Jul 2024 19:27:40 - Estimated remaining training time: 1.6919837199999999 Hours
+Sun, 28 Jul 2024 19:28:11 - epoch 591, T_total 3.3616387844e-01 (3.3942317963e-01)
+Sun, 28 Jul 2024 19:28:11 - Estimated remaining training time: 1.4357611147222222 Hours
+Sun, 28 Jul 2024 19:28:44 - epoch 592, T_total 3.4927624464e-01 (3.3920090646e-01)
+Sun, 28 Jul 2024 19:28:44 - Estimated remaining training time: 1.4860989072222224 Hours
+Sun, 28 Jul 2024 19:29:15 - epoch 593, T_total 3.4996640682e-01 (3.4023533016e-01)
+Sun, 28 Jul 2024 19:29:15 - Estimated remaining training time: 1.4285491916666668 Hours
+Sun, 28 Jul 2024 19:29:47 - epoch 594, T_total 3.3348828554e-01 (3.3912888914e-01)
+Sun, 28 Jul 2024 19:29:47 - Estimated remaining training time: 1.474120468888889 Hours
+Sun, 28 Jul 2024 19:30:18 - epoch 595, T_total 3.3120125532e-01 (3.3835941553e-01)
+Sun, 28 Jul 2024 19:30:18 - Estimated remaining training time: 1.406475021111111 Hours
+Sun, 28 Jul 2024 19:30:50 - epoch 596, T_total 3.3670112491e-01 (3.3854101598e-01)
+Sun, 28 Jul 2024 19:30:50 - Estimated remaining training time: 1.45676889 Hours
+Sun, 28 Jul 2024 19:31:22 - epoch 597, T_total 3.4219169617e-01 (3.3844657987e-01)
+Sun, 28 Jul 2024 19:31:22 - Estimated remaining training time: 1.388880140277778 Hours
+Sun, 28 Jul 2024 19:31:54 - epoch 598, T_total 3.4014442563e-01 (3.3807088435e-01)
+Sun, 28 Jul 2024 19:31:54 - Estimated remaining training time: 1.4286962222222221 Hours
+Sun, 28 Jul 2024 19:32:25 - epoch 599, T_total 3.4405893087e-01 (3.4019208699e-01)
+Sun, 28 Jul 2024 19:32:25 - Estimated remaining training time: 1.3682725125 Hours
+Sun, 28 Jul 2024 19:33:01 - epoch 600, T_total 3.3951982856e-01 (3.3979310095e-01)
+Sun, 28 Jul 2024 19:33:01 - Estimated remaining training time: 1.5771012266666666 Hours
+Sun, 28 Jul 2024 19:33:31 - epoch 601, T_total 3.4542378783e-01 (3.3969305456e-01)
+Sun, 28 Jul 2024 19:33:31 - Estimated remaining training time: 1.3440862019444444 Hours
+Sun, 28 Jul 2024 19:34:04 - epoch 602, T_total 3.4279105067e-01 (3.3863177150e-01)
+Sun, 28 Jul 2024 19:34:04 - Estimated remaining training time: 1.3980557066666668 Hours
+Sun, 28 Jul 2024 19:34:35 - epoch 603, T_total 3.3935412765e-01 (3.3929550648e-01)
+Sun, 28 Jul 2024 19:34:35 - Estimated remaining training time: 1.3459646736111113 Hours
+Sun, 28 Jul 2024 19:35:07 - epoch 604, T_total 3.3759233356e-01 (3.4049162269e-01)
+Sun, 28 Jul 2024 19:35:07 - Estimated remaining training time: 1.369993068888889 Hours
+Sun, 28 Jul 2024 19:35:38 - epoch 605, T_total 3.4411999583e-01 (3.3855018765e-01)
+Sun, 28 Jul 2024 19:35:38 - Estimated remaining training time: 1.3191878025 Hours
+Sun, 28 Jul 2024 19:36:10 - epoch 606, T_total 3.4339833260e-01 (3.3940768987e-01)
+Sun, 28 Jul 2024 19:36:10 - Estimated remaining training time: 1.3523573422222221 Hours
+Sun, 28 Jul 2024 19:36:43 - epoch 607, T_total 3.4239041805e-01 (3.4035907686e-01)
+Sun, 28 Jul 2024 19:36:43 - Estimated remaining training time: 1.3989297269444445 Hours
+Sun, 28 Jul 2024 19:37:15 - epoch 608, T_total 3.3505189419e-01 (3.3825254440e-01)
+Sun, 28 Jul 2024 19:37:15 - Estimated remaining training time: 1.3306210833333334 Hours
+Sun, 28 Jul 2024 19:37:46 - epoch 609, T_total 3.4561979771e-01 (3.4035240114e-01)
+Sun, 28 Jul 2024 19:37:46 - Estimated remaining training time: 1.281048318611111 Hours
+Sun, 28 Jul 2024 19:38:22 - epoch 610, T_total 3.3403396606e-01 (3.3726009727e-01)
+Sun, 28 Jul 2024 19:38:22 - Estimated remaining training time: 1.4762137899999999 Hours
+Sun, 28 Jul 2024 19:38:53 - epoch 611, T_total 3.4060326219e-01 (3.3826549351e-01)
+Sun, 28 Jul 2024 19:38:53 - Estimated remaining training time: 1.2616789499999999 Hours
+Sun, 28 Jul 2024 19:39:25 - epoch 612, T_total 3.4145107865e-01 (3.4052082151e-01)
+Sun, 28 Jul 2024 19:39:25 - Estimated remaining training time: 1.2997843044444444 Hours
+Sun, 28 Jul 2024 19:39:56 - epoch 613, T_total 3.2989144325e-01 (3.3777442575e-01)
+Sun, 28 Jul 2024 19:39:56 - Estimated remaining training time: 1.2392215555555555 Hours
+Sun, 28 Jul 2024 19:40:28 - epoch 614, T_total 3.4142613411e-01 (3.3960042149e-01)
+Sun, 28 Jul 2024 19:40:28 - Estimated remaining training time: 1.27810944 Hours
+Sun, 28 Jul 2024 19:40:59 - epoch 615, T_total 3.3644267917e-01 (3.3898087591e-01)
+Sun, 28 Jul 2024 19:40:59 - Estimated remaining training time: 1.2349018825000002 Hours
+Sun, 28 Jul 2024 19:41:31 - epoch 616, T_total 3.3340865374e-01 (3.3948636055e-01)
+Sun, 28 Jul 2024 19:41:31 - Estimated remaining training time: 1.2705128527777778 Hours
+Sun, 28 Jul 2024 19:42:02 - epoch 617, T_total 3.4911757708e-01 (3.3910918236e-01)
+Sun, 28 Jul 2024 19:42:02 - Estimated remaining training time: 1.2115059575 Hours
+Sun, 28 Jul 2024 19:42:34 - epoch 618, T_total 3.3762729168e-01 (3.3930956572e-01)
+Sun, 28 Jul 2024 19:42:34 - Estimated remaining training time: 1.2471183666666668 Hours
+Sun, 28 Jul 2024 19:43:05 - epoch 619, T_total 3.4617376328e-01 (3.4038559347e-01)
+Sun, 28 Jul 2024 19:43:05 - Estimated remaining training time: 1.200121173611111 Hours
+Sun, 28 Jul 2024 19:43:41 - epoch 620, T_total 3.3924272656e-01 (3.3931481093e-01)
+Sun, 28 Jul 2024 19:43:41 - Estimated remaining training time: 1.3787231166666667 Hours
+Sun, 28 Jul 2024 19:44:12 - epoch 621, T_total 3.4347054362e-01 (3.3838496357e-01)
+Sun, 28 Jul 2024 19:44:12 - Estimated remaining training time: 1.1841324044444446 Hours
+Sun, 28 Jul 2024 19:44:44 - epoch 622, T_total 3.4316036105e-01 (3.3977710456e-01)
+Sun, 28 Jul 2024 19:44:44 - Estimated remaining training time: 1.2155730244444445 Hours
+Sun, 28 Jul 2024 19:45:16 - epoch 623, T_total 3.3426943421e-01 (3.3923760056e-01)
+Sun, 28 Jul 2024 19:45:16 - Estimated remaining training time: 1.1713455750000001 Hours
+Sun, 28 Jul 2024 19:45:48 - epoch 624, T_total 3.4055659175e-01 (3.3717188984e-01)
+Sun, 28 Jul 2024 19:45:48 - Estimated remaining training time: 1.1998650705555554 Hours
+Sun, 28 Jul 2024 19:46:19 - epoch 625, T_total 3.3571046591e-01 (3.3794688433e-01)
+Sun, 28 Jul 2024 19:46:19 - Estimated remaining training time: 1.1494615883333332 Hours
+Sun, 28 Jul 2024 19:46:51 - epoch 626, T_total 3.3675336838e-01 (3.3894558996e-01)
+Sun, 28 Jul 2024 19:46:51 - Estimated remaining training time: 1.1756287766666667 Hours
+Sun, 28 Jul 2024 19:47:22 - epoch 627, T_total 3.4427934885e-01 (3.3875046670e-01)
+Sun, 28 Jul 2024 19:47:22 - Estimated remaining training time: 1.1311892211111112 Hours
+Sun, 28 Jul 2024 19:47:54 - epoch 628, T_total 3.3554452658e-01 (3.3948003501e-01)
+Sun, 28 Jul 2024 19:47:54 - Estimated remaining training time: 1.1617019555555557 Hours
+Sun, 28 Jul 2024 19:48:26 - epoch 629, T_total 3.3543545008e-01 (3.3997803181e-01)
+Sun, 28 Jul 2024 19:48:26 - Estimated remaining training time: 1.1160844933333331 Hours
+Sun, 28 Jul 2024 19:49:02 - epoch 630, T_total 3.3991944790e-01 (3.3924430609e-01)
+Sun, 28 Jul 2024 19:49:02 - Estimated remaining training time: 1.2934021688888888 Hours
+Sun, 28 Jul 2024 19:49:33 - epoch 631, T_total 3.4731942415e-01 (3.3997427672e-01)
+Sun, 28 Jul 2024 19:49:33 - Estimated remaining training time: 1.0891777880555555 Hours
+Sun, 28 Jul 2024 19:50:05 - epoch 632, T_total 3.4360277653e-01 (3.3987887204e-01)
+Sun, 28 Jul 2024 19:50:05 - Estimated remaining training time: 1.1220794200000002 Hours
+Sun, 28 Jul 2024 19:50:36 - epoch 633, T_total 3.3719363809e-01 (3.3858774602e-01)
+Sun, 28 Jul 2024 19:50:36 - Estimated remaining training time: 1.0798458333333334 Hours
+Sun, 28 Jul 2024 19:51:08 - epoch 634, T_total 3.3187580109e-01 (3.4014462680e-01)
+Sun, 28 Jul 2024 19:51:08 - Estimated remaining training time: 1.1093507755555554 Hours
+Sun, 28 Jul 2024 19:51:42 - epoch 635, T_total 3.3083084226e-01 (3.3997714520e-01)
+Sun, 28 Jul 2024 19:51:42 - Estimated remaining training time: 1.1417740475 Hours
+Sun, 28 Jul 2024 19:52:14 - epoch 636, T_total 3.3447444439e-01 (3.3918291330e-01)
+Sun, 28 Jul 2024 19:52:14 - Estimated remaining training time: 1.094831693888889 Hours
+Sun, 28 Jul 2024 19:52:45 - epoch 637, T_total 3.4290248156e-01 (3.3896772563e-01)
+Sun, 28 Jul 2024 19:52:45 - Estimated remaining training time: 1.0540008508333332 Hours
+Sun, 28 Jul 2024 19:53:17 - epoch 638, T_total 3.3772897720e-01 (3.3859573305e-01)
+Sun, 28 Jul 2024 19:53:17 - Estimated remaining training time: 1.0730920999999998 Hours
+Sun, 28 Jul 2024 19:53:49 - epoch 639, T_total 3.4148535132e-01 (3.3858263493e-01)
+Sun, 28 Jul 2024 19:53:49 - Estimated remaining training time: 1.0343120686111111 Hours
+Sun, 28 Jul 2024 19:54:25 - epoch 640, T_total 3.3854216337e-01 (3.3913403749e-01)
+Sun, 28 Jul 2024 19:54:25 - Estimated remaining training time: 1.2021152977777776 Hours
+Sun, 28 Jul 2024 19:54:56 - epoch 641, T_total 3.4210896492e-01 (3.3914994448e-01)
+Sun, 28 Jul 2024 19:54:56 - Estimated remaining training time: 1.00760881 Hours
+Sun, 28 Jul 2024 19:55:29 - epoch 642, T_total 3.4563219547e-01 (3.4047307819e-01)
+Sun, 28 Jul 2024 19:55:29 - Estimated remaining training time: 1.0548845377777778 Hours
+Sun, 28 Jul 2024 19:56:01 - epoch 643, T_total 3.3529165387e-01 (3.3808593452e-01)
+Sun, 28 Jul 2024 19:56:01 - Estimated remaining training time: 1.015706673611111 Hours
+Sun, 28 Jul 2024 19:56:33 - epoch 644, T_total 3.4409821033e-01 (3.3906876296e-01)
+Sun, 28 Jul 2024 19:56:33 - Estimated remaining training time: 1.0229042033333333 Hours
+Sun, 28 Jul 2024 19:57:05 - epoch 645, T_total 3.4319287539e-01 (3.3960191905e-01)
+Sun, 28 Jul 2024 19:57:05 - Estimated remaining training time: 0.9868444433333333 Hours
+Sun, 28 Jul 2024 19:57:37 - epoch 646, T_total 3.3597674966e-01 (3.3718004078e-01)
+Sun, 28 Jul 2024 19:57:37 - Estimated remaining training time: 0.9965737911111111 Hours
+Sun, 28 Jul 2024 19:58:08 - epoch 647, T_total 3.3429813385e-01 (3.3727784455e-01)
+Sun, 28 Jul 2024 19:58:08 - Estimated remaining training time: 0.9588735616666666 Hours
+Sun, 28 Jul 2024 19:58:40 - epoch 648, T_total 3.4255948663e-01 (3.3873239905e-01)
+Sun, 28 Jul 2024 19:58:40 - Estimated remaining training time: 0.9883799444444444 Hours
+Sun, 28 Jul 2024 19:59:11 - epoch 649, T_total 3.3583429456e-01 (3.3992253989e-01)
+Sun, 28 Jul 2024 19:59:11 - Estimated remaining training time: 0.9435348833333334 Hours
+Sun, 28 Jul 2024 19:59:48 - epoch 650, T_total 3.4285902977e-01 (3.3794194460e-01)
+Sun, 28 Jul 2024 19:59:48 - Estimated remaining training time: 1.0874523299999999 Hours
+Sun, 28 Jul 2024 20:00:19 - epoch 651, T_total 3.3460840583e-01 (3.3824456483e-01)
+Sun, 28 Jul 2024 20:00:19 - Estimated remaining training time: 0.9198108172222222 Hours
+Sun, 28 Jul 2024 20:00:51 - epoch 652, T_total 3.3315470815e-01 (3.3920386434e-01)
+Sun, 28 Jul 2024 20:00:51 - Estimated remaining training time: 0.9483858866666668 Hours
+Sun, 28 Jul 2024 20:01:22 - epoch 653, T_total 3.4021988511e-01 (3.3958972245e-01)
+Sun, 28 Jul 2024 20:01:22 - Estimated remaining training time: 0.9026512541666667 Hours
+Sun, 28 Jul 2024 20:01:54 - epoch 654, T_total 3.3910825849e-01 (3.3982998133e-01)
+Sun, 28 Jul 2024 20:01:54 - Estimated remaining training time: 0.9207262422222223 Hours
+Sun, 28 Jul 2024 20:02:25 - epoch 655, T_total 3.3951988816e-01 (3.3884323388e-01)
+Sun, 28 Jul 2024 20:02:25 - Estimated remaining training time: 0.8864770247222222 Hours
+Sun, 28 Jul 2024 20:02:56 - epoch 656, T_total 3.3713266253e-01 (3.3938553929e-01)
+Sun, 28 Jul 2024 20:02:56 - Estimated remaining training time: 0.9050552366666665 Hours
+Sun, 28 Jul 2024 20:03:28 - epoch 657, T_total 3.4527119994e-01 (3.3896980435e-01)
+Sun, 28 Jul 2024 20:03:28 - Estimated remaining training time: 0.8714183488888888 Hours
+Sun, 28 Jul 2024 20:04:00 - epoch 658, T_total 3.4582871199e-01 (3.3932448924e-01)
+Sun, 28 Jul 2024 20:04:00 - Estimated remaining training time: 0.8988050277777777 Hours
+Sun, 28 Jul 2024 20:04:31 - epoch 659, T_total 3.3590060472e-01 (3.3985529840e-01)
+Sun, 28 Jul 2024 20:04:31 - Estimated remaining training time: 0.8685046974999999 Hours
+Sun, 28 Jul 2024 20:05:08 - epoch 660, T_total 3.4348544478e-01 (3.3870206028e-01)
+Sun, 28 Jul 2024 20:05:08 - Estimated remaining training time: 0.9901963283333333 Hours
+Sun, 28 Jul 2024 20:05:39 - epoch 661, T_total 3.3947557211e-01 (3.3842229098e-01)
+Sun, 28 Jul 2024 20:05:39 - Estimated remaining training time: 0.8413823919444445 Hours
+Sun, 28 Jul 2024 20:06:11 - epoch 662, T_total 3.4073916078e-01 (3.3903189749e-01)
+Sun, 28 Jul 2024 20:06:11 - Estimated remaining training time: 0.8628509599999998 Hours
+Sun, 28 Jul 2024 20:06:45 - epoch 663, T_total 3.3546257019e-01 (3.3938484639e-01)
+Sun, 28 Jul 2024 20:06:45 - Estimated remaining training time: 0.8864406458333333 Hours
+Sun, 28 Jul 2024 20:07:17 - epoch 664, T_total 3.3340835571e-01 (3.3784393221e-01)
+Sun, 28 Jul 2024 20:07:17 - Estimated remaining training time: 0.8417655350000001 Hours
+Sun, 28 Jul 2024 20:07:48 - epoch 665, T_total 3.3389690518e-01 (3.3823356777e-01)
+Sun, 28 Jul 2024 20:07:48 - Estimated remaining training time: 0.7984755508333332 Hours
+Sun, 28 Jul 2024 20:08:20 - epoch 666, T_total 3.3584058285e-01 (3.3703403175e-01)
+Sun, 28 Jul 2024 20:08:20 - Estimated remaining training time: 0.8200307555555556 Hours
+Sun, 28 Jul 2024 20:08:51 - epoch 667, T_total 3.4776443243e-01 (3.3934684098e-01)
+Sun, 28 Jul 2024 20:08:51 - Estimated remaining training time: 0.7813156866666667 Hours
+Sun, 28 Jul 2024 20:09:23 - epoch 668, T_total 3.4618657827e-01 (3.3853548765e-01)
+Sun, 28 Jul 2024 20:09:23 - Estimated remaining training time: 0.8037338249999999 Hours
+Sun, 28 Jul 2024 20:09:54 - epoch 669, T_total 3.3848348260e-01 (3.3719429374e-01)
+Sun, 28 Jul 2024 20:09:54 - Estimated remaining training time: 0.7631039236111112 Hours
+Sun, 28 Jul 2024 20:10:31 - epoch 670, T_total 3.3738404512e-01 (3.3872727305e-01)
+Sun, 28 Jul 2024 20:10:31 - Estimated remaining training time: 0.8879962177777777 Hours
+Sun, 28 Jul 2024 20:11:02 - epoch 671, T_total 3.3883386850e-01 (3.3744601905e-01)
+Sun, 28 Jul 2024 20:11:02 - Estimated remaining training time: 0.7528684925 Hours
+Sun, 28 Jul 2024 20:11:34 - epoch 672, T_total 3.3785742521e-01 (3.3972374350e-01)
+Sun, 28 Jul 2024 20:11:34 - Estimated remaining training time: 0.7756715055555556 Hours
+Sun, 28 Jul 2024 20:12:05 - epoch 673, T_total 3.4152719378e-01 (3.3820493519e-01)
+Sun, 28 Jul 2024 20:12:05 - Estimated remaining training time: 0.7379887708333334 Hours
+Sun, 28 Jul 2024 20:12:38 - epoch 674, T_total 3.3023357391e-01 (3.3720135689e-01)
+Sun, 28 Jul 2024 20:12:38 - Estimated remaining training time: 0.7504543433333333 Hours
+Sun, 28 Jul 2024 20:13:09 - epoch 675, T_total 3.3802300692e-01 (3.3970516175e-01)
+Sun, 28 Jul 2024 20:13:09 - Estimated remaining training time: 0.7155040591666667 Hours
+Sun, 28 Jul 2024 20:13:41 - epoch 676, T_total 3.4893730283e-01 (3.3974622190e-01)
+Sun, 28 Jul 2024 20:13:41 - Estimated remaining training time: 0.7282629783333334 Hours
+Sun, 28 Jul 2024 20:14:12 - epoch 677, T_total 3.3687090874e-01 (3.3803264052e-01)
+Sun, 28 Jul 2024 20:14:12 - Estimated remaining training time: 0.7024514625 Hours
+Sun, 28 Jul 2024 20:14:44 - epoch 678, T_total 3.3954811096e-01 (3.3893922716e-01)
+Sun, 28 Jul 2024 20:14:44 - Estimated remaining training time: 0.7193854222222222 Hours
+Sun, 28 Jul 2024 20:15:15 - epoch 679, T_total 3.4120169282e-01 (3.3958410472e-01)
+Sun, 28 Jul 2024 20:15:15 - Estimated remaining training time: 0.6817293588888889 Hours
+Sun, 28 Jul 2024 20:15:52 - epoch 680, T_total 3.3086386323e-01 (3.4043692797e-01)
+Sun, 28 Jul 2024 20:15:52 - Estimated remaining training time: 0.7869327483333333 Hours
+Sun, 28 Jul 2024 20:16:23 - epoch 681, T_total 3.3362543583e-01 (3.3866152912e-01)
+Sun, 28 Jul 2024 20:16:23 - Estimated remaining training time: 0.6685244377777777 Hours
+Sun, 28 Jul 2024 20:16:55 - epoch 682, T_total 3.3984461427e-01 (3.3912717551e-01)
+Sun, 28 Jul 2024 20:16:55 - Estimated remaining training time: 0.6828581844444446 Hours
+Sun, 28 Jul 2024 20:17:27 - epoch 683, T_total 3.3955058455e-01 (3.3989115804e-01)
+Sun, 28 Jul 2024 20:17:27 - Estimated remaining training time: 0.6542972708333333 Hours
+Sun, 28 Jul 2024 20:17:59 - epoch 684, T_total 3.4106028080e-01 (3.3926625550e-01)
+Sun, 28 Jul 2024 20:17:59 - Estimated remaining training time: 0.6623098666666667 Hours
+Sun, 28 Jul 2024 20:18:30 - epoch 685, T_total 3.5256391764e-01 (3.3939595520e-01)
+Sun, 28 Jul 2024 20:18:30 - Estimated remaining training time: 0.6323787019444445 Hours
+Sun, 28 Jul 2024 20:19:02 - epoch 686, T_total 3.3907464147e-01 (3.3826489002e-01)
+Sun, 28 Jul 2024 20:19:02 - Estimated remaining training time: 0.6411475799999999 Hours
+Sun, 28 Jul 2024 20:19:33 - epoch 687, T_total 3.4115284681e-01 (3.3918898553e-01)
+Sun, 28 Jul 2024 20:19:33 - Estimated remaining training time: 0.6114786447222222 Hours
+Sun, 28 Jul 2024 20:20:05 - epoch 688, T_total 3.3844989538e-01 (3.3780770004e-01)
+Sun, 28 Jul 2024 20:20:05 - Estimated remaining training time: 0.6262807055555556 Hours
+Sun, 28 Jul 2024 20:20:36 - epoch 689, T_total 3.3138808608e-01 (3.3826602250e-01)
+Sun, 28 Jul 2024 20:20:36 - Estimated remaining training time: 0.5966523916666667 Hours
+Sun, 28 Jul 2024 20:21:13 - epoch 690, T_total 3.4110507369e-01 (3.3948883414e-01)
+Sun, 28 Jul 2024 20:21:13 - Estimated remaining training time: 0.6877536244444444 Hours
+Sun, 28 Jul 2024 20:21:46 - epoch 691, T_total 3.3901920915e-01 (3.3964866400e-01)
+Sun, 28 Jul 2024 20:21:46 - Estimated remaining training time: 0.6261810322222222 Hours
+Sun, 28 Jul 2024 20:22:19 - epoch 692, T_total 3.4275382757e-01 (3.4042716771e-01)
+Sun, 28 Jul 2024 20:22:19 - Estimated remaining training time: 0.59090163 Hours
+Sun, 28 Jul 2024 20:22:50 - epoch 693, T_total 3.3155936003e-01 (3.3889786899e-01)
+Sun, 28 Jul 2024 20:22:50 - Estimated remaining training time: 0.5663203180555555 Hours
+Sun, 28 Jul 2024 20:23:23 - epoch 694, T_total 3.3918035030e-01 (3.4012094885e-01)
+Sun, 28 Jul 2024 20:23:23 - Estimated remaining training time: 0.57780016 Hours
+Sun, 28 Jul 2024 20:23:54 - epoch 695, T_total 3.3974584937e-01 (3.4002534300e-01)
+Sun, 28 Jul 2024 20:23:54 - Estimated remaining training time: 0.551230855 Hours
+Sun, 28 Jul 2024 20:24:27 - epoch 696, T_total 3.3656027913e-01 (3.3922936767e-01)
+Sun, 28 Jul 2024 20:24:27 - Estimated remaining training time: 0.5619300422222223 Hours
+Sun, 28 Jul 2024 20:24:58 - epoch 697, T_total 3.4046795964e-01 (3.4028369188e-01)
+Sun, 28 Jul 2024 20:24:58 - Estimated remaining training time: 0.5298003686111111 Hours
+Sun, 28 Jul 2024 20:25:30 - epoch 698, T_total 3.4675329924e-01 (3.4031040967e-01)
+Sun, 28 Jul 2024 20:25:30 - Estimated remaining training time: 0.5361978333333334 Hours
+Sun, 28 Jul 2024 20:26:01 - epoch 699, T_total 3.3118331432e-01 (3.4022421390e-01)
+Sun, 28 Jul 2024 20:26:01 - Estimated remaining training time: 0.5109101066666667 Hours
+Sun, 28 Jul 2024 20:26:37 - epoch 700, T_total 3.4253209829e-01 (3.3824057132e-01)
+Sun, 28 Jul 2024 20:26:37 - Estimated remaining training time: 0.5825446694444445 Hours
+Sun, 28 Jul 2024 20:27:09 - epoch 701, T_total 3.4306320548e-01 (3.3969067782e-01)
+Sun, 28 Jul 2024 20:27:09 - Estimated remaining training time: 0.4946283616666666 Hours
+Sun, 28 Jul 2024 20:27:41 - epoch 702, T_total 3.4075272083e-01 (3.3999934793e-01)
+Sun, 28 Jul 2024 20:27:41 - Estimated remaining training time: 0.5048907577777778 Hours
+Sun, 28 Jul 2024 20:28:12 - epoch 703, T_total 3.4866103530e-01 (3.3803285658e-01)
+Sun, 28 Jul 2024 20:28:12 - Estimated remaining training time: 0.4795346111111111 Hours
+Sun, 28 Jul 2024 20:28:45 - epoch 704, T_total 3.3946841955e-01 (3.3828489482e-01)
+Sun, 28 Jul 2024 20:28:45 - Estimated remaining training time: 0.48742698 Hours
+Sun, 28 Jul 2024 20:29:17 - epoch 705, T_total 3.4310537577e-01 (3.3899939805e-01)
+Sun, 28 Jul 2024 20:29:17 - Estimated remaining training time: 0.4727877661111111 Hours
+Sun, 28 Jul 2024 20:29:50 - epoch 706, T_total 3.4527528286e-01 (3.3988166600e-01)
+Sun, 28 Jul 2024 20:29:50 - Estimated remaining training time: 0.46906712666666667 Hours
+Sun, 28 Jul 2024 20:30:21 - epoch 707, T_total 3.3797913790e-01 (3.3854195476e-01)
+Sun, 28 Jul 2024 20:30:21 - Estimated remaining training time: 0.445461115 Hours
+Sun, 28 Jul 2024 20:30:54 - epoch 708, T_total 3.4905609488e-01 (3.4002683312e-01)
+Sun, 28 Jul 2024 20:30:54 - Estimated remaining training time: 0.45560893055555557 Hours
+Sun, 28 Jul 2024 20:31:25 - epoch 709, T_total 3.4338152409e-01 (3.4005215019e-01)
+Sun, 28 Jul 2024 20:31:25 - Estimated remaining training time: 0.42921873944444444 Hours
+Sun, 28 Jul 2024 20:32:03 - epoch 710, T_total 3.3966064453e-01 (3.3796824515e-01)
+Sun, 28 Jul 2024 20:32:03 - Estimated remaining training time: 0.4953229600000001 Hours
+Sun, 28 Jul 2024 20:32:34 - epoch 711, T_total 3.4081763029e-01 (3.3840026706e-01)
+Sun, 28 Jul 2024 20:32:34 - Estimated remaining training time: 0.41298896083333336 Hours
+Sun, 28 Jul 2024 20:33:07 - epoch 712, T_total 3.3731320500e-01 (3.3780743182e-01)
+Sun, 28 Jul 2024 20:33:07 - Estimated remaining training time: 0.41517598999999994 Hours
+Sun, 28 Jul 2024 20:33:38 - epoch 713, T_total 3.3486247063e-01 (3.3765941858e-01)
+Sun, 28 Jul 2024 20:33:38 - Estimated remaining training time: 0.3930102625 Hours
+Sun, 28 Jul 2024 20:34:11 - epoch 714, T_total 3.4071737528e-01 (3.3940809220e-01)
+Sun, 28 Jul 2024 20:34:11 - Estimated remaining training time: 0.39995899777777777 Hours
+Sun, 28 Jul 2024 20:34:43 - epoch 715, T_total 3.4334516525e-01 (3.3933979273e-01)
+Sun, 28 Jul 2024 20:34:43 - Estimated remaining training time: 0.37914375666666666 Hours
+Sun, 28 Jul 2024 20:35:15 - epoch 716, T_total 3.3689802885e-01 (3.3858110756e-01)
+Sun, 28 Jul 2024 20:35:15 - Estimated remaining training time: 0.3820514016666666 Hours
+Sun, 28 Jul 2024 20:35:47 - epoch 717, T_total 3.3975523710e-01 (3.3848828077e-01)
+Sun, 28 Jul 2024 20:35:47 - Estimated remaining training time: 0.3602905408333333 Hours
+Sun, 28 Jul 2024 20:36:20 - epoch 718, T_total 3.3946472406e-01 (3.3778005093e-01)
+Sun, 28 Jul 2024 20:36:20 - Estimated remaining training time: 0.3628862666666667 Hours
+Sun, 28 Jul 2024 20:36:51 - epoch 719, T_total 3.5152435303e-01 (3.3960759640e-01)
+Sun, 28 Jul 2024 20:36:51 - Estimated remaining training time: 0.3411547208333333 Hours
+Sun, 28 Jul 2024 20:37:28 - epoch 720, T_total 3.3766192198e-01 (3.3903979510e-01)
+Sun, 28 Jul 2024 20:37:28 - Estimated remaining training time: 0.38585290777777775 Hours
+Sun, 28 Jul 2024 20:37:59 - epoch 721, T_total 3.3437865973e-01 (3.3943215758e-01)
+Sun, 28 Jul 2024 20:37:59 - Estimated remaining training time: 0.3228932958333333 Hours
+Sun, 28 Jul 2024 20:38:31 - epoch 722, T_total 3.4306651354e-01 (3.3974510431e-01)
+Sun, 28 Jul 2024 20:38:31 - Estimated remaining training time: 0.32423436 Hours
+Sun, 28 Jul 2024 20:39:03 - epoch 723, T_total 3.3812385798e-01 (3.4047495574e-01)
+Sun, 28 Jul 2024 20:39:03 - Estimated remaining training time: 0.3068186916666667 Hours
+Sun, 28 Jul 2024 20:39:36 - epoch 724, T_total 3.4001618624e-01 (3.3863280714e-01)
+Sun, 28 Jul 2024 20:39:36 - Estimated remaining training time: 0.3090598961111112 Hours
+Sun, 28 Jul 2024 20:40:07 - epoch 725, T_total 3.3827593923e-01 (3.4026344121e-01)
+Sun, 28 Jul 2024 20:40:07 - Estimated remaining training time: 0.2890230933333333 Hours
+Sun, 28 Jul 2024 20:40:40 - epoch 726, T_total 3.3045589924e-01 (3.3845454454e-01)
+Sun, 28 Jul 2024 20:40:40 - Estimated remaining training time: 0.29016972444444444 Hours
+Sun, 28 Jul 2024 20:41:12 - epoch 727, T_total 3.4093824029e-01 (3.3935607970e-01)
+Sun, 28 Jul 2024 20:41:12 - Estimated remaining training time: 0.2734807427777778 Hours
+Sun, 28 Jul 2024 20:41:45 - epoch 728, T_total 3.3903324604e-01 (3.3741404861e-01)
+Sun, 28 Jul 2024 20:41:45 - Estimated remaining training time: 0.2747938833333333 Hours
+Sun, 28 Jul 2024 20:42:17 - epoch 729, T_total 3.3634611964e-01 (3.3850426972e-01)
+Sun, 28 Jul 2024 20:42:17 - Estimated remaining training time: 0.2577285663888889 Hours
+Sun, 28 Jul 2024 20:42:54 - epoch 730, T_total 3.3397942781e-01 (3.3782330155e-01)
+Sun, 28 Jul 2024 20:42:54 - Estimated remaining training time: 0.2884270822222222 Hours
+Sun, 28 Jul 2024 20:43:25 - epoch 731, T_total 3.3668485284e-01 (3.3976215869e-01)
+Sun, 28 Jul 2024 20:43:25 - Estimated remaining training time: 0.23588331750000002 Hours
+Sun, 28 Jul 2024 20:43:58 - epoch 732, T_total 3.4786924720e-01 (3.3996706456e-01)
+Sun, 28 Jul 2024 20:43:58 - Estimated remaining training time: 0.23547815777777772 Hours
+Sun, 28 Jul 2024 20:44:30 - epoch 733, T_total 3.4037142992e-01 (3.3705934882e-01)
+Sun, 28 Jul 2024 20:44:30 - Estimated remaining training time: 0.22049788194444445 Hours
+Sun, 28 Jul 2024 20:45:02 - epoch 734, T_total 3.3047154546e-01 (3.3875808120e-01)
+Sun, 28 Jul 2024 20:45:02 - Estimated remaining training time: 0.21908006666666666 Hours
+Sun, 28 Jul 2024 20:45:34 - epoch 735, T_total 3.4004601836e-01 (3.3944781870e-01)
+Sun, 28 Jul 2024 20:45:34 - Estimated remaining training time: 0.2024197161111111 Hours
+Sun, 28 Jul 2024 20:46:07 - epoch 736, T_total 3.4178364277e-01 (3.3847864717e-01)
+Sun, 28 Jul 2024 20:46:07 - Estimated remaining training time: 0.20123215444444442 Hours
+Sun, 28 Jul 2024 20:46:39 - epoch 737, T_total 3.4617435932e-01 (3.3831443638e-01)
+Sun, 28 Jul 2024 20:46:39 - Estimated remaining training time: 0.18492208000000002 Hours
+Sun, 28 Jul 2024 20:47:12 - epoch 738, T_total 3.3381667733e-01 (3.4013158083e-01)
+Sun, 28 Jul 2024 20:47:12 - Estimated remaining training time: 0.1830055833333333 Hours
+Sun, 28 Jul 2024 20:47:43 - epoch 739, T_total 3.4020596743e-01 (3.4017656744e-01)
+Sun, 28 Jul 2024 20:47:43 - Estimated remaining training time: 0.16740365888888886 Hours
+Sun, 28 Jul 2024 20:48:20 - epoch 740, T_total 3.3726003766e-01 (3.3958896995e-01)
+Sun, 28 Jul 2024 20:48:20 - Estimated remaining training time: 0.18434956499999997 Hours
+Sun, 28 Jul 2024 20:48:52 - epoch 741, T_total 3.3337941766e-01 (3.3856686950e-01)
+Sun, 28 Jul 2024 20:48:52 - Estimated remaining training time: 0.15085783944444445 Hours
+Sun, 28 Jul 2024 20:49:25 - epoch 742, T_total 3.3815363050e-01 (3.3939082921e-01)
+Sun, 28 Jul 2024 20:49:25 - Estimated remaining training time: 0.14507672444444444 Hours
+Sun, 28 Jul 2024 20:49:56 - epoch 743, T_total 3.4445732832e-01 (3.4031229466e-01)
+Sun, 28 Jul 2024 20:49:56 - Estimated remaining training time: 0.13190732916666667 Hours
+Sun, 28 Jul 2024 20:50:29 - epoch 744, T_total 3.3512517810e-01 (3.3979315311e-01)
+Sun, 28 Jul 2024 20:50:29 - Estimated remaining training time: 0.12719995166666667 Hours
+Sun, 28 Jul 2024 20:51:01 - epoch 745, T_total 3.3847981691e-01 (3.3899312466e-01)
+Sun, 28 Jul 2024 20:51:01 - Estimated remaining training time: 0.11430075583333332 Hours
+Sun, 28 Jul 2024 20:51:34 - epoch 746, T_total 3.3843463659e-01 (3.3760023117e-01)
+Sun, 28 Jul 2024 20:51:34 - Estimated remaining training time: 0.10921646333333332 Hours
+Sun, 28 Jul 2024 20:52:05 - epoch 747, T_total 3.4089800715e-01 (3.3905368298e-01)
+Sun, 28 Jul 2024 20:52:05 - Estimated remaining training time: 0.09711386666666667 Hours
+Sun, 28 Jul 2024 20:52:38 - epoch 748, T_total 3.3108308911e-01 (3.3944431692e-01)
+Sun, 28 Jul 2024 20:52:38 - Estimated remaining training time: 0.0911939611111111 Hours
+Sun, 28 Jul 2024 20:53:10 - epoch 749, T_total 3.3674246073e-01 (3.3788298815e-01)
+Sun, 28 Jul 2024 20:53:10 - Estimated remaining training time: 0.0798820825 Hours
+Sun, 28 Jul 2024 20:53:47 - epoch 750, T_total 3.3853024244e-01 (3.3976117522e-01)
+Sun, 28 Jul 2024 20:53:47 - Estimated remaining training time: 0.08160951333333333 Hours
+Sun, 28 Jul 2024 20:54:19 - epoch 751, T_total 3.3926302195e-01 (3.3809310943e-01)
+Sun, 28 Jul 2024 20:54:19 - Estimated remaining training time: 0.06179347027777778 Hours
+Sun, 28 Jul 2024 20:54:52 - epoch 752, T_total 3.4042754769e-01 (3.3955716342e-01)
+Sun, 28 Jul 2024 20:54:52 - Estimated remaining training time: 0.05471486666666667 Hours
+Sun, 28 Jul 2024 20:55:23 - epoch 753, T_total 3.3858239651e-01 (3.3945573866e-01)
+Sun, 28 Jul 2024 20:55:23 - Estimated remaining training time: 0.043779644444444446 Hours
+Sun, 28 Jul 2024 20:55:56 - epoch 754, T_total 3.4222203493e-01 (3.3937182277e-01)
+Sun, 28 Jul 2024 20:55:56 - Estimated remaining training time: 0.03622004777777777 Hours
+Sun, 28 Jul 2024 20:56:27 - epoch 755, T_total 3.4041529894e-01 (3.3906432986e-01)
+Sun, 28 Jul 2024 20:56:27 - Estimated remaining training time: 0.026291260833333337 Hours
+Sun, 28 Jul 2024 20:57:00 - epoch 756, T_total 3.3767375350e-01 (3.3920205384e-01)
+Sun, 28 Jul 2024 20:57:00 - Estimated remaining training time: 0.01829802888888889 Hours
+Sun, 28 Jul 2024 20:57:32 - epoch 757, T_total 3.3360403776e-01 (3.3805519342e-01)
+Sun, 28 Jul 2024 20:57:32 - Estimated remaining training time: 0.008896883611111111 Hours
+Sun, 28 Jul 2024 20:58:05 - epoch 758, T_total 3.4179988503e-01 (3.3918166161e-01)
+Sun, 28 Jul 2024 20:58:05 - Estimated remaining training time: 0.0 Hours

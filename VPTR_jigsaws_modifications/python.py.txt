@@ -1,0 +1,3 @@
+import os
+os.system('python train_AutoEncoder.py')
+os.system('python train_FAR.py')
