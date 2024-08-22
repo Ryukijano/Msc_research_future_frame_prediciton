@@ -65,6 +65,7 @@ Train the AutoEncoder: Run train_AutoEncoder.py to train the AutoEncoder on the 
 Train the Transformer (FAR or NAR): Use either train_FAR.py or train_NAR.py to train the desired Transformer variant, loading the pretrained AutoEncoder weights.
 
 Test and Evaluate: Run test_VPTR.py to load a trained model, perform inference, calculate metrics, and generate visualizations.
+
 The Model files are available here 👉 https://leeds365-my.sharepoint.com/:f:/g/personal/sc23gd_leeds_ac_uk/ErcROKZKelFLtahFkWEbrNMBhLdT0Tkr34_DCOBTS__3Aw?e=t31Ucj
 
 References
@@ -79,4 +80,3 @@ This project is inspired by the VPTR paper [1] and the TPG-VAE paper [2]. We ack
 
 Feel free to modify this template with your specific details and add any additional sections or information that you think would be relevant for users of your repository.
 
-Good luck with your project, and I'm excited to see what you achieve with VPTR on the JIGSAWS Suturing dataset!
