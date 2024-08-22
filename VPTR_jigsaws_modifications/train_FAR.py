@@ -139,9 +139,9 @@ if __name__ == '__main__':
     set_seed(2021)
     ckpt_save_dir = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_FAR_MSEGDLgan_ckpt')
     tensorboard_save_dir = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_FAR_MSEGDLgan_tensorboard')
-    resume_AE_ckpt = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_ResNetAE_MSEGDLgan_ckpt').joinpath('epoch_200.tar')
-    #resume_ckpt = ckpt_save_dir.joinpath('epoch_300.tar')
-    resume_ckpt = None
+    resume_AE_ckpt = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_ResNetAE_MSEGDLgan_ckpt\epoch_200.tar')
+    resume_ckpt = ckpt_save_dir.joinpath('epoch_2200.tar')
+    #resume_ckpt = None
 
     #############Set the logger#########
     if not Path(ckpt_save_dir).exists():
@@ -155,10 +155,10 @@ if __name__ == '__main__':
     start_epoch = 0
     summary_writer = SummaryWriter(tensorboard_save_dir.absolute().as_posix())
     num_past_frames = 10
-    num_future_frames = 15
+    num_future_frames =20
     encH, encW, encC = 8, 8, 528
     img_channels = 3 #3 channels for BAIR
-    epochs = 300
+    epochs = 500
     N = 4
     #AE_lr = 2e-4
     Transformer_lr = 1e-4
@@ -173,7 +173,7 @@ if __name__ == '__main__':
     data_set_name = 'BAIR'
     dataset_dir = r"C:\VPTR_jigsaws_working\jigsaws_suturing\bair_format_dir"
     test_past_frames = 10
-    test_future_frames = 15
+    test_future_frames = 20
     train_loader, val_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, test_past_frames, test_future_frames)
 
     #####################Init model###########################

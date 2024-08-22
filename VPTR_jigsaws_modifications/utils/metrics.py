@@ -73,8 +73,10 @@ class SSIM(torch.nn.Module):
         return self._ssim(img1, img2, window, self.window_size, channel, self.size_average)
     
     def gaussian(self, window_size, sigma):
-        gauss = torch.Tensor([exp(-(x - window_size//2)**2/float(2*sigma**2)) for x in range(window_size)])
-        return gauss/gauss.sum()
+        x = torch.arange(window_size, dtype=torch.float32)  # Create a tensor for x values
+        # Perform the calculation using PyTorch functions
+        gauss = torch.exp(-(x - window_size // 2).pow(2) / (2 * sigma**2)) 
+        return gauss / gauss.sum()
 
     def create_window(self, window_size, channel):
         _1D_window = self.gaussian(window_size, 1.5).unsqueeze(1)

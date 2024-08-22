@@ -61,7 +61,7 @@ def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames, te
                                         generator=torch.Generator().manual_seed(2021))
 
         test_set = BAIRDataset(dataset_dir.joinpath('test'), transform, color_mode = 'RGB', 
-                                num_past_frames = 2, num_future_frames = test_future_frames)()
+                                num_past_frames = test_past_frames, num_future_frames = test_future_frames)()
 
     N = batch_size
     train_loader = DataLoader(train_set, batch_size=N, shuffle=True, num_workers=num_workers, drop_last = True)
@@ -175,7 +175,7 @@ class BAIRDataset(object):
     The train and test frames has been previously splitted: ref "Self-Supervised Visual Planning with Temporal Skip Connections"
     """
     def __init__(self, frames_dir: str, transform, color_mode = 'RGB', 
-                 num_past_frames = 4, num_future_frames = 6):
+                 num_past_frames = 10, num_future_frames = 20):
         """
         Args:
             frames_dir --- Directory of extracted video frames and original videos.

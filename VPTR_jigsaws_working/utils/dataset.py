@@ -1,5 +1,4 @@
 from numpy.core.fromnumeric import clip, searchsorted
-
 import torch
 from torch import select
 from torch.utils import data
@@ -19,7 +18,7 @@ import random
 
 import cv2
 
-def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames = 10, test_future_frames = 10, ngpus = 1, num_workers = 0):
+def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames = 10, test_future_frames = 11, ngpus = 1, num_workers = 0):
     if data_set_name == 'KTH':
         norm_transform = VidNormalize(mean = 0.6013795, std = 2.7570653)
         renorm_transform = VidReNormalize(mean = 0.6013795, std = 2.7570653)
@@ -54,7 +53,7 @@ def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames = 1
         transform = transforms.Compose([VidToTensor(), norm_transform])
 
         BAIR_train_whole_set = BAIRDataset(dataset_dir.joinpath('train'), transform, color_mode = 'RGB', 
-                                num_past_frames = 10, num_future_frames = 10)()
+                                num_past_frames = 10, num_future_frames = 20)()
         train_val_ratio = 0.95
         BAIR_train_set_length = int(len(BAIR_train_whole_set) * train_val_ratio)
         BAIR_val_set_length = len(BAIR_train_whole_set) - BAIR_train_set_length
@@ -62,22 +61,7 @@ def get_dataloader(data_set_name, batch_size, data_set_dir, test_past_frames = 1
                                         generator=torch.Generator().manual_seed(2021))
 
         test_set = BAIRDataset(dataset_dir.joinpath('test'), transform, color_mode = 'RGB', 
-                                num_past_frames = 2, num_future_frames = test_future_frames)()
-        
-    elif data_set_name == 'Suturing':
-        # Define transformations (adjust as needed)
-        norm_transform = VidNormalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-        renorm_transform = VidReNormalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-        train_transform = transforms.Compose([VidResize((128, 128)), VidRandomHorizontalFlip(0.5), 
-                                                VidRandomVerticalFlip(0.5), VidToTensor(), norm_transform])
-        test_transform = transforms.Compose([VidResize((128, 128)), VidToTensor(), norm_transform])
-
-        # Create train and test datasets directly 
-        train_data_dir = Path(data_set_dir) / 'frames_split' / 'train'
-        test_data_dir = Path(data_set_dir) / 'frames_split' / 'test' 
-
-        train_set = JIGSAWSDataset(train_data_dir, train_transform)
-        test_set = JIGSAWSDataset(test_data_dir, test_transform)
+                                num_past_frames = 10, num_future_frames = test_future_frames)()
 
     N = batch_size
     train_loader = DataLoader(train_set, batch_size=N, shuffle=True, num_workers=num_workers, drop_last = True)
@@ -191,7 +175,7 @@ class BAIRDataset(object):
     The train and test frames has been previously splitted: ref "Self-Supervised Visual Planning with Temporal Skip Connections"
     """
     def __init__(self, frames_dir: str, transform, color_mode = 'RGB', 
-                 num_past_frames = 10, num_future_frames = 10):
+                 num_past_frames = 4, num_future_frames = 6):
         """
         Args:
             frames_dir --- Directory of extracted video frames and original videos.
@@ -371,43 +355,6 @@ class MovingMNISTDataset(Dataset):
             imgs.append(img)
 
         imgs[0].save(str(Path(file_name).absolute()), save_all = True, append_images = imgs[1:])
-
-class SuturingDataset(Dataset):
-    def __init__(self, data_path, transform, num_past_frames=10, num_future_frames=10):
-        self.data_path = Path(data_path)
-        self.transform = transform
-        self.num_past_frames = num_past_frames
-        self.num_future_frames = num_future_frames
-        self.clip_length = num_past_frames + num_future_frames
-        self.clips = self.load_data()
-
-    def load_data(self):
-        clips = []
-        video_folders = sorted(self.data_path.glob('*'))
-        for folder in video_folders:
-            frame_files = sorted(folder.glob('*.png'))
-            for i in range(0, len(frame_files) - self.clip_length, self.clip_length):
-                past_clip = frame_files[i:i+self.num_past_frames]
-                future_clip = frame_files[i+self.num_past_frames:i+self.clip_length]
-                clips.append((past_clip, future_clip))
-        return clips
-
-    def __len__(self):
-        return len(self.clips)
-
-    def __getitem__(self, idx):
-        past_clip, future_clip = self.clips[idx]
-        past_images = [Image.open(f) for f in past_clip]
-        future_images = [Image.open(f) for f in future_clip]
-
-        if self.transform:
-            past_images = [self.transform(img) for img in past_images]
-            future_images = [self.transform(img) for img in future_images]
-
-        past_tensor = torch.stack([transforms.ToTensor()(img) for img in past_images])
-        future_tensor = torch.stack([transforms.ToTensor()(img) for img in future_images])
-
-        return past_tensor, future_tensor
 
 
 class VidResize(object):

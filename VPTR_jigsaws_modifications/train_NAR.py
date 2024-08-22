@@ -142,8 +142,8 @@ if __name__ == '__main__':
     ckpt_save_dir = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_NAR_MSEGDLgan_ckpt')
     tensorboard_save_dir = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_NAR_MSEGDLgan_tensorboard')
     resume_AE_ckpt = Path('C:\VPTR_jigsaws_modifications\jigsaws_suturing\JIGSAWS_ResNetAE_MSEGDLgan_ckpt').joinpath('BAIR_AE.tar')
-    resume_ckpt = ckpt_save_dir.joinpath('epoch_458.tar')
-    #resume_ckpt = None
+    resume_ckpt = ckpt_save_dir.joinpath('BAIR_NAR.tar')
+    resume_ckpt = None
 
     #############Set the logger#########
     if not Path(ckpt_save_dir).exists():
@@ -157,11 +157,11 @@ if __name__ == '__main__':
     start_epoch = 0
 
     summary_writer = SummaryWriter(tensorboard_save_dir.absolute().as_posix())
-    num_past_frames = 2
-    num_future_frames = 10
+    num_past_frames = 10
+    num_future_frames = 28
     encH, encW, encC = 8, 8, 528
     img_channels = 3
-    epochs = 300
+    epochs = 700
     N = 4
     #AE_lr = 2e-4
     Transformer_lr = 1e-4
@@ -175,13 +175,13 @@ if __name__ == '__main__':
     device = torch.device('cuda:0')
 
     show_example_epochs = 10
-    save_ckpt_epochs = 2
+    save_ckpt_epochs = 100
 
     #####################Init Dataset ###########################
     data_set_name = 'BAIR'
     dataset_dir = r"C:\VPTR_jigsaws_working\jigsaws_suturing\bair_format_dir"
-    test_past_frames = 2
-    test_future_frames = 10
+    test_past_frames = 10
+    test_future_frames = 28
     train_loader, val_loader, test_loader, renorm_transform = get_dataloader(data_set_name, N, dataset_dir, test_past_frames, test_future_frames)
 
     #####################Init model###########################
