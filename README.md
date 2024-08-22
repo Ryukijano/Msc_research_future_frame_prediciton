@@ -37,6 +37,7 @@ train_NAR.py: Script for training the NAR model.
 
 test_VPTR.py: Script for testing and evaluating trained models.
 
+"
 Dependencies
 
 Python 3.8
@@ -51,6 +52,8 @@ TensorBoard
 
 ... (list other required packages from your requirements.txt)
 
+"
+Any versions of these dependencies work by the way. It's just that the packages have to exist, the newer the better.
 Usage
 
 Download the JIGSAWS Suturing dataset: https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release/
