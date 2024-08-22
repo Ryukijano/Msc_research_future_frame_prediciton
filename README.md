@@ -58,12 +58,14 @@ Download the JIGSAWS Suturing dataset: https://cirl.lcsr.jhu.edu/research/hmm/da
 Preprocess the dataset:
 
 Extract frames, resize, and organize them using the provided scripts (e.g., preprocess_jigsaws.py, convert_to_bair.py).
+Or as a shortcut: The dataset is loaded from \VPTR_jigsaws_modifications\jigsaws_suturing\bair_format_dir
 
 Train the AutoEncoder: Run train_AutoEncoder.py to train the AutoEncoder on the preprocessed data.
 
 Train the Transformer (FAR or NAR): Use either train_FAR.py or train_NAR.py to train the desired Transformer variant, loading the pretrained AutoEncoder weights.
 
 Test and Evaluate: Run test_VPTR.py to load a trained model, perform inference, calculate metrics, and generate visualizations.
+The Model files are available here 👉 https://leeds365-my.sharepoint.com/:f:/g/personal/sc23gd_leeds_ac_uk/ErcROKZKelFLtahFkWEbrNMBhLdT0Tkr34_DCOBTS__3Aw?e=t31Ucj
 
 References
 
