@@ -7,7 +7,7 @@ Both produce spatially-structured patch tokens suitable for future feature predi
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from typing import Optional
+from typing import Optional, List
 
 
 class DINOv2Encoder(nn.Module):
@@ -33,7 +33,9 @@ class DINOv2Encoder(nn.Module):
         self.multi_layer = multi_layer
         self.pca_dim = pca_dim
 
-        # Load DINOv2 from torch.hub
+        # Ensure model_name has the dinov2_ prefix
+        if not model_name.startswith("dinov2_"):
+            model_name = f"dinov2_{model_name}"
         self.model = torch.hub.load("facebookresearch/dinov2", model_name)
         self.model.eval()
         for p in self.model.parameters():
@@ -44,13 +46,11 @@ class DINOv2Encoder(nn.Module):
         self.feat_dim = self.model.embed_dim
 
         if multi_layer:
-            # DINOv2 ViT-B has 12 layers; we use layers 3, 6, 9, 11 (following DINO-Foresight)
             self.layer_indices = [3, 6, 9, 11]
             self.feat_dim = self.model.embed_dim * len(self.layer_indices)
         else:
             self.layer_indices = [11]
 
-        # PCA projection (fit lazily on first batch)
         self.pca_proj = None
         if pca_dim is not None:
             self.pca_proj = nn.Linear(self.feat_dim, pca_dim, bias=False)
@@ -69,26 +69,41 @@ class DINOv2Encoder(nn.Module):
         B = x.shape[0]
 
         if self.multi_layer:
-            # Get intermediate layer features
             features = self.model.get_intermediate_layers(
                 x, n=self.layer_indices, reshape=True
             )
-            # Each is (B, D, H', W') -> flatten to (B, N, D) and concat
             tokens = []
             for feat in features:
-                B, D, H, W = feat.shape
-                tokens.append(feat.reshape(B, D, H * W).permute(0, 2, 1))  # (B, N, D)
-            features = torch.cat(tokens, dim=-1)  # (B, N, D*L)
+                B_, D, H, W = feat.shape
+                tokens.append(feat.reshape(B_, D, H * W).permute(0, 2, 1))
+            features = torch.cat(tokens, dim=-1)
         else:
-            # Use final layer only
             features = self.model.forward_features(x)
-            # Remove CLS token, keep patch tokens
-            features = features[:, 1:, :]  # (B, N, D)
+            features = features[:, 1:, :]
 
         if self.pca_proj is not None:
             features = self.pca_proj(features)
 
         return features
+
+    @torch.no_grad()
+    def forward_spatial(self, x: torch.Tensor) -> torch.Tensor:
+        """Extract features as spatial maps (for PCA visualization).
+
+        Args:
+            x: (B, C, H, W) input images
+
+        Returns:
+            features: (B, D, H', W') spatial feature maps
+        """
+        if self.multi_layer:
+            features = self.model.get_intermediate_layers(
+                x, n=self.layer_indices, reshape=True
+            )
+            return torch.cat(features, dim=1)  # (B, D*L, H', W')
+        else:
+            features = self.model.get_intermediate_layers(x, n=[11], reshape=True)
+            return features[0]
 
     def fit_pca(self, dataloader, device, n_samples=1000):
         """Fit PCA projection on a subset of the data."""
@@ -108,13 +123,12 @@ class DINOv2Encoder(nn.Module):
             if count >= n_samples:
                 break
 
-        all_feats = torch.cat(all_feats, dim=0)  # (N, n_patches, D)
-        # PCA via SVD
-        all_feats = all_feats.reshape(-1, all_feats.shape[-1])  # (N*n_patches, D)
+        all_feats = torch.cat(all_feats, dim=0)
+        all_feats = all_feats.reshape(-1, all_feats.shape[-1])
         mean = all_feats.mean(dim=0, keepdim=True)
         centered = all_feats - mean
         U, S, Vh = torch.linalg.svd(centered, full_matrices=False)
-        components = Vh[: self.pca_dim, :]  # (pca_dim, D)
+        components = Vh[: self.pca_dim, :]
         self.pca_proj.weight.data = components.to(self.pca_proj.weight.device)
 
 
@@ -127,6 +141,7 @@ class VJEPA2Encoder(nn.Module):
     Args:
         model_name: V-JEPA 2.1 variant (vjepa2_1_vit_base_384, vjepa2_1_vit_large_384)
         img_size: Input image size (must be 384 for V-JEPA 2.1)
+        n_frames: Number of duplicated frames for single-image mode
     """
 
     def __init__(
@@ -140,13 +155,11 @@ class VJEPA2Encoder(nn.Module):
         self.img_size = img_size
         self.n_frames = n_frames
 
-        # Load V-JEPA 2.1 from torch.hub
         self.model = torch.hub.load("facebookresearch/vjepa2", model_name)
         self.model.eval()
         for p in self.model.parameters():
             p.requires_grad = False
 
-        # V-JEPA 2.1 uses patch size 16
         self.patch_size = 16
         self.n_patches = (img_size // self.patch_size) ** 2
         self.feat_dim = self.model.embed_dim
@@ -162,20 +175,11 @@ class VJEPA2Encoder(nn.Module):
             features: (B, N_patches, D) spatial patch tokens
         """
         B, C, H, W = x.shape
-
-        # Duplicate to (B, T, C, H, W) then reshape for V-JEPA
         x_video = x.unsqueeze(1).expand(B, self.n_frames, C, H, W)
-        x_video = x_video.reshape(B * self.n_frames, C, H, W)
-
-        # V-JEPA expects (B, T, C, H, W) format
         x_video = x_video.reshape(B, self.n_frames, C, H, W)
 
-        # Forward through V-JEPA encoder
-        with torch.no_grad():
-            feats = self.model(x_video)  # (B, T, N_patches, D)
-
-        # Average over time dimension
-        features = feats.mean(dim=1)  # (B, N_patches, D)
+        feats = self.model(x_video)
+        features = feats.mean(dim=1)
 
         return features
 
@@ -190,30 +194,19 @@ class VJEPA2Encoder(nn.Module):
             features: (B, T, N_patches, D) per-frame patch tokens
         """
         B, T, C, H, W = x.shape
-
-        # Process each frame by duplicating to n_frames and averaging
-        # More efficient: process all frames at once
         x_flat = x.reshape(B * T, C, H, W)
         x_dup = x_flat.unsqueeze(1).expand(B * T, self.n_frames, C, H, W)
         x_dup = x_dup.reshape(B * T, self.n_frames, C, H, W)
 
-        feats = self.model(x_dup)  # (B*T, n_frames, N, D)
-        feats = feats.mean(dim=1)  # (B*T, N, D)
+        feats = self.model(x_dup)
+        feats = feats.mean(dim=1)
         feats = feats.reshape(B, T, feats.shape[1], feats.shape[2])
 
         return feats
 
 
 def build_encoder(encoder_type: str = "dinov2", **kwargs) -> nn.Module:
-    """Build a frozen encoder by type.
-
-    Args:
-        encoder_type: "dinov2" or "vjepa2"
-        **kwargs: Passed to encoder constructor
-
-    Returns:
-        Frozen encoder module
-    """
+    """Build a frozen encoder by type."""
     if encoder_type == "dinov2":
         return DINOv2Encoder(**kwargs)
     elif encoder_type == "vjepa2":

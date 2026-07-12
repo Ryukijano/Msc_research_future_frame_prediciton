@@ -1,0 +1,62 @@
+[
+  {
+    "encoder": "dinov2_vitb14",
+    "feat_shape": "(20, 256, 3072)",
+    "grid_size": 16,
+    "n_patches": 256,
+    "feat_dim": 3072,
+    "inference_ms": 27.24635601043701,
+    "inference_std_ms": 0.31602105657859325,
+    "peak_gpu_mb": 368.2216796875,
+    "feat_mean": -0.018840555101633072,
+    "feat_std": 3.1457245349884033,
+    "dims_90pct": 59,
+    "dims_95pct": 196,
+    "dims_99pct": 772,
+    "top3_variance": [
+      0.17543788254261017,
+      0.15592987835407257,
+      0.11594608426094055
+    ]
+  },
+  {
+    "encoder": "dinov2_vits14",
+    "feat_shape": "(20, 256, 1536)",
+    "grid_size": 16,
+    "n_patches": 256,
+    "feat_dim": 1536,
+    "inference_ms": 9.109222888946533,
+    "inference_std_ms": 0.009626406630768716,
+    "peak_gpu_mb": 113.78466796875,
+    "feat_mean": 0.015241142362356186,
+    "feat_std": 4.354398727416992,
+    "dims_90pct": 54,
+    "dims_95pct": 138,
+    "dims_99pct": 459,
+    "top3_variance": [
+      0.20187152922153473,
+      0.14170785248279572,
+      0.12343169003725052
+    ]
+  },
+  {
+    "encoder": "dinov2_vitb14_reg",
+    "feat_shape": "(20, 256, 3072)",
+    "grid_size": 16,
+    "n_patches": 256,
+    "feat_dim": 3072,
+    "inference_ms": 26.031160354614258,
+    "inference_std_ms": 0.2060216508266579,
+    "peak_gpu_mb": 368.8564453125,
+    "feat_mean": -0.056705426424741745,
+    "feat_std": 2.427886724472046,
+    "dims_90pct": 128,
+    "dims_95pct": 313,
+    "dims_99pct": 936,
+    "top3_variance": [
+      0.2683168053627014,
+      0.22683767974376678,
+      0.06881117075681686
+    ]
+  }
+]
