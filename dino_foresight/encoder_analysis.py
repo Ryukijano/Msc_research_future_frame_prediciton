@@ -39,7 +39,7 @@ def parse_args():
     parser.add_argument("--output_dir", type=str, default="./encoder_analysis")
     parser.add_argument("--img_size", type=int, default=224)
     parser.add_argument("--n_samples", type=int, default=50)
-    parser.add_argument("--encoders", type=str, nargs="+", default=["dinov2_vitb14", "dinov2_vits14", "dinov2_vitb14_reg"])
+    parser.add_argument("--encoders", type=str, nargs="+", default=["dinov2_vitb14", "dinov2_vits14", "dinov2_vitb14_reg", "tipsv2_b14", "lingbot_small"])
     return parser.parse_args()
 
 
@@ -90,6 +90,16 @@ def measure_encoder(encoder_name, frames, device, output_dir):
         encoder = VJEPA2Encoder(model_name=model_name, img_size=img_size)
         # Resize frames for V-JEPA
         frames = F.interpolate(frames, size=(img_size, img_size), mode="bilinear", align_corners=False)
+    elif encoder_name.startswith("tipsv2_"):
+        model_name = encoder_name.replace("tipsv2_", "")
+        img_size = frames.shape[-1]
+        from dino_foresight.encoders import TIPSv2Encoder
+        encoder = TIPSv2Encoder(model_name=model_name, img_size=img_size)
+    elif encoder_name.startswith("lingbot_"):
+        variant = encoder_name.replace("lingbot_", "")
+        img_size = frames.shape[-1]
+        from dino_foresight.encoders import LingBotVisionEncoder
+        encoder = LingBotVisionEncoder(model_name=variant, img_size=img_size)
     else:
         print(f"Unknown encoder: {encoder_name}")
         return None

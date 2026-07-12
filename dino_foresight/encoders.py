@@ -1,7 +1,8 @@
 """Frozen foundation encoder wrappers for surgical video prediction.
 
-Supports DINOv2 and V-JEPA 2.1 as frozen feature extractors.
-Both produce spatially-structured patch tokens suitable for future feature prediction.
+Supports DINOv2, V-JEPA 2.1, TIPSv2 (Google DeepMind), and LingBot-Vision
+as frozen feature extractors. All produce spatially-structured patch tokens
+suitable for future feature prediction.
 """
 
 import torch
@@ -211,5 +212,189 @@ def build_encoder(encoder_type: str = "dinov2", **kwargs) -> nn.Module:
         return DINOv2Encoder(**kwargs)
     elif encoder_type == "vjepa2":
         return VJEPA2Encoder(**kwargs)
+    elif encoder_type == "tipsv2":
+        return TIPSv2Encoder(**kwargs)
+    elif encoder_type == "lingbot":
+        return LingBotVisionEncoder(**kwargs)
     else:
         raise ValueError(f"Unknown encoder type: {encoder_type}")
+
+
+class TIPSv2Encoder(nn.Module):
+    """Frozen TIPSv2 encoder (Google DeepMind, CVPR 2026).
+
+    Text-Image Pretraining with Spatial Awareness — produces spatially rich
+    patch features aligned with text embeddings. Strong zero-shot segmentation.
+
+    Loaded from HuggingFace: google/tipsv2-{b14,l14,so14,g14}
+
+    Args:
+        model_name: TIPSv2 variant — "b14", "l14", "so14", "g14"
+        img_size: Input image size (flexible, TIPSv2 supports any resolution)
+    """
+
+    # Embed dims per variant
+    _EMBED_DIMS = {"b14": 768, "l14": 1024, "so14": 1152, "g14": 1536}
+
+    def __init__(
+        self,
+        model_name: str = "b14",
+        img_size: int = 224,
+    ):
+        super().__init__()
+        self.model_name = model_name
+        self.img_size = img_size
+
+        from transformers import AutoModel
+
+        hf_name = f"google/tipsv2-{model_name}"
+        # TIPSv2 uses xformers attention — needs CUDA + bf16/fp16
+        dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
+        self.model = AutoModel.from_pretrained(
+            hf_name, trust_remote_code=True, torch_dtype=dtype
+        )
+        self.model.eval()
+        for p in self.model.parameters():
+            p.requires_grad = False
+
+        # TIPSv2 uses patch size 14
+        self.patch_size = 14
+        self.n_patches = (img_size // self.patch_size) ** 2
+
+        # Get embed dim from config (TIPSv2Config has embed_dim directly)
+        if hasattr(self.model.config, "embed_dim"):
+            self.feat_dim = self.model.config.embed_dim
+        else:
+            self.feat_dim = self._EMBED_DIMS.get(model_name, 768)
+
+    @torch.no_grad()
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        """Extract spatial patch features.
+
+        TIPSv2 expects [0, 1] range (no ImageNet normalization).
+        Uses xformers attention — requires CUDA + bf16.
+
+        Args:
+            x: (B, C, H, W) input images (ImageNet-normalized)
+
+        Returns:
+            features: (B, N_patches, D) spatial patch tokens
+        """
+        # TIPSv2 expects [0, 1] range — denormalize from ImageNet norm
+        mean = torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1).to(x.device)
+        std = torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1).to(x.device)
+        x = x * std + mean  # back to [0, 1]
+        x = x.clamp(0, 1)
+
+        # Cast to model dtype (bf16 for xformers)
+        dtype = next(self.model.parameters()).dtype
+        x = x.to(dtype)
+
+        # Forward through vision encoder
+        vision_encoder = self.model.vision_encoder
+        outputs = vision_encoder(x)
+
+        # TIPSv2 vision_encoder returns a tuple:
+        # [0] = CLS token 1 (1, 1, D)
+        # [1] = CLS token 2 (1, 1, D)
+        # [2] = patch tokens (1, N_patches, D)
+        if isinstance(outputs, (tuple, list)):
+            features = outputs[-1]  # patch tokens are last
+        elif isinstance(outputs, torch.Tensor):
+            features = outputs
+        elif isinstance(outputs, dict):
+            features = outputs.get("last_hidden_state", outputs.get("features", list(outputs.values())[0]))
+        else:
+            features = outputs
+
+        # Remove any remaining CLS/register tokens
+        if features.shape[1] == self.n_patches + 2:
+            features = features[:, 2:, :]
+        elif features.shape[1] == self.n_patches + 1:
+            features = features[:, 1:, :]
+
+        # Cast back to float32 for consistent analysis
+        features = features.float()
+
+        return features
+
+    @torch.no_grad()
+    def forward_spatial(self, x: torch.Tensor) -> torch.Tensor:
+        """Extract features as spatial maps."""
+        features = self.forward(x)
+        B, N, D = features.shape
+        grid = int(N ** 0.5)
+        return features.reshape(B, grid, grid, D).permute(0, 3, 1, 2)
+
+
+class LingBotVisionEncoder(nn.Module):
+    """Frozen LingBot-Vision encoder (self-supervised, dense spatial perception).
+
+    Masked boundary modeling with self-distillation — produces features with
+    crisp boundary awareness. Excellent for dense prediction tasks.
+
+    Loaded from HuggingFace: robbyant/lingbot-vision-vit-{small,base,large,giant}
+
+    Args:
+        model_name: variant — "small", "base", "large", "giant"
+        img_size: Input image size
+    """
+
+    # Embed dims per variant
+    _EMBED_DIMS = {"small": 384, "base": 768, "large": 1024, "giant": 1536}
+
+    def __init__(
+        self,
+        model_name: str = "small",
+        img_size: int = 224,
+    ):
+        super().__init__()
+        self.model_name = model_name
+        self.img_size = img_size
+
+        from lingbot_vision import load_pretrained_backbone
+
+        device_str = "cuda" if torch.cuda.is_available() else "cpu"
+        self.backbone, self.embed_dim_returned = load_pretrained_backbone(
+            variant=model_name,
+            device=device_str,
+            dtype=torch.float32,
+        )
+        self.backbone.eval()
+        for p in self.backbone.parameters():
+            p.requires_grad = False
+
+        self.patch_size = 16  # LingBot-Vision uses patch size 16
+        self.n_patches = (img_size // self.patch_size) ** 2
+        self.feat_dim = self._EMBED_DIMS.get(model_name, 768)
+
+    @torch.no_grad()
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        """Extract spatial patch features.
+
+        Args:
+            x: (B, C, H, W) input images (ImageNet-normalized)
+
+        Returns:
+            features: (B, N_patches, D) spatial patch tokens
+        """
+        from lingbot_vision import extract_patch_tokens
+
+        device = next(self.backbone.parameters()).device
+        dtype = next(self.backbone.parameters()).dtype
+        x = x.to(device).to(dtype)
+
+        # extract_patch_tokens expects device as a string
+        device_str = "cuda" if device.type == "cuda" else "cpu"
+        patch_tokens, patch_grid = extract_patch_tokens(
+            self.backbone, x, device_str, dtype
+        )
+        return patch_tokens
+
+    @torch.no_grad()
+    def forward_spatial(self, x: torch.Tensor) -> torch.Tensor:
+        """Extract features as spatial maps."""
+        features = self.forward(x)
+        B, N, D = features.shape
+        grid = int(N ** 0.5)
+        return features.reshape(B, grid, grid, D).permute(0, 3, 1, 2)
