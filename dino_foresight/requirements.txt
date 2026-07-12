@@ -1,0 +1,16 @@
+# DINO-Foresight Surgical Video Prediction
+# Compatible with endofm-lv conda env (Python 3.11, PyTorch 2.7.0+cu126)
+
+torch>=2.4.0
+torchvision>=0.19.0
+numpy>=1.24.0
+Pillow>=10.0.0
+tqdm>=4.65.0
+wandb>=0.16.0
+opencv-python>=4.8.0
+
+# Optional: for V-JEPA 2.1 encoder
+# Requires torch.hub access to facebookresearch/vjepa2
+
+# Optional: for LPIPS (falls back to VGG-based implementation if not installed)
+lpips>=0.1.4
