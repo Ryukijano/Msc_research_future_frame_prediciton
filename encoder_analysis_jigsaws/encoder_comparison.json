@@ -1,0 +1,82 @@
+[
+  {
+    "encoder": "dinov2_vitb14",
+    "feat_shape": "(100, 256, 3072)",
+    "grid_size": 16,
+    "n_patches": 256,
+    "feat_dim": 3072,
+    "inference_ms": 27.605791091918945,
+    "inference_std_ms": 0.35982852274430793,
+    "peak_gpu_mb": 414.2216796875,
+    "feat_mean": -0.022991348057985306,
+    "feat_std": 3.407412528991699,
+    "dims_90pct": 67,
+    "dims_95pct": 235,
+    "dims_99pct": 1143,
+    "top3_variance": [
+      0.15714479982852936,
+      0.12765303254127502,
+      0.11108710616827011
+    ]
+  },
+  {
+    "encoder": "dinov2_vits14",
+    "feat_shape": "(100, 256, 1536)",
+    "grid_size": 16,
+    "n_patches": 256,
+    "feat_dim": 1536,
+    "inference_ms": 9.116568565368652,
+    "inference_std_ms": 0.06286320079470556,
+    "peak_gpu_mb": 159.78466796875,
+    "feat_mean": 0.023495564237236977,
+    "feat_std": 4.158140659332275,
+    "dims_90pct": 76,
+    "dims_95pct": 202,
+    "dims_99pct": 698,
+    "top3_variance": [
+      0.1870555579662323,
+      0.10529053211212158,
+      0.09691150486469269
+    ]
+  },
+  {
+    "encoder": "tipsv2_b14",
+    "feat_shape": "(100, 256, 768)",
+    "grid_size": 16,
+    "n_patches": 256,
+    "feat_dim": 768,
+    "inference_ms": 7.037904262542725,
+    "inference_std_ms": 0.08642682960110444,
+    "peak_gpu_mb": 665.91162109375,
+    "feat_mean": 0.00023914166376926005,
+    "feat_std": 0.5139849781990051,
+    "dims_90pct": 160,
+    "dims_95pct": 278,
+    "dims_99pct": 538,
+    "top3_variance": [
+      0.14302785694599152,
+      0.0908990427851677,
+      0.06742299348115921
+    ]
+  },
+  {
+    "encoder": "lingbot_small",
+    "feat_shape": "(100, 196, 384)",
+    "grid_size": 14,
+    "n_patches": 196,
+    "feat_dim": 384,
+    "inference_ms": 8.084814548492432,
+    "inference_std_ms": 0.09449041182641142,
+    "peak_gpu_mb": 154.9423828125,
+    "feat_mean": -0.015218175947666168,
+    "feat_std": 0.46392926573753357,
+    "dims_90pct": 78,
+    "dims_95pct": 140,
+    "dims_99pct": 274,
+    "top3_variance": [
+      0.18835189938545227,
+      0.10927040874958038,
+      0.080997034907341
+    ]
+  }
+]

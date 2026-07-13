@@ -34,11 +34,12 @@ os.environ.setdefault("TORCH_HOME", "/scratch/kcwp264/.cache/torch")
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default=None,
+    parser.add_argument("--data_dir", type=str,
+                        default="/scratch/kcwp264/Msc_research_future_frame_prediciton/VPTR_jigsaws_working/jigsaws_suturing/bair_format_dir/train",
                         help="Path to JIGSAWS frames. If None, uses synthetic test.")
     parser.add_argument("--output_dir", type=str, default="./encoder_analysis")
     parser.add_argument("--img_size", type=int, default=224)
-    parser.add_argument("--n_samples", type=int, default=50)
+    parser.add_argument("--n_samples", type=int, default=100)
     parser.add_argument("--encoders", type=str, nargs="+", default=["dinov2_vitb14", "dinov2_vits14", "dinov2_vitb14_reg", "tipsv2_b14", "lingbot_small"])
     return parser.parse_args()
 
@@ -55,11 +56,18 @@ def get_sample_frames(data_dir, n_samples, img_size, device):
         frame_paths = []
         for ext in ["*.png", "*.jpg", "*.jpeg"]:
             frame_paths.extend(glob.glob(str(Path(data_dir) / "**" / ext), recursive=True))
-        frame_paths = sorted(frame_paths)[:n_samples]
 
         if len(frame_paths) == 0:
             print(f"No frames found in {data_dir}, using synthetic data")
             return torch.randn(n_samples, 3, img_size, img_size).to(device)
+
+        # Sample frames evenly across different video sequences for diverse PCA
+        frame_paths = sorted(frame_paths)
+        if len(frame_paths) > n_samples:
+            # Stratified sample: pick evenly spaced frames across all sequences
+            indices = np.linspace(0, len(frame_paths) - 1, n_samples, dtype=int)
+            frame_paths = [frame_paths[i] for i in indices]
+        print(f"Loaded {len(frame_paths)} frames from {data_dir} at {img_size}x{img_size}")
 
         frames = []
         for fp in frame_paths:
