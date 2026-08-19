@@ -21,7 +21,7 @@ from PIL import Image
 import glob
 
 from dino_foresight.encoders import DINOv2Encoder, VJEPA2Encoder
-from dino_foresight.predictor import MaskedFeatureTransformer
+from dino_foresight.predictor import build_predictor
 from dino_foresight.decoder import ConvDecoder, PixelDecoder
 from dino_foresight.metrics import psnr, ssim, LPIPSMetric
 
@@ -87,7 +87,13 @@ def main():
             model_name=ckpt_args.get("encoder_model", "vitb14"),
             img_size=img_size,
             multi_layer=ckpt_args.get("multi_layer", True),
+            pca_dim=ckpt_args.get("pca_dim", 1152),
         ).to(device)
+        pca_path = ckpt_args.get("pca_ckpt") or str(Path(args.checkpoint).parent / "pca.pth")
+        if Path(pca_path).exists():
+            encoder.load_pca(pca_path, device)
+        else:
+            print(f"WARNING: PCA file not found at {pca_path}")
     else:
         encoder = VJEPA2Encoder(
             model_name=ckpt_args.get("encoder_model", "vjepa2_1_vit_base_384"),
@@ -99,14 +105,10 @@ def main():
     patch_size = encoder.patch_size
 
     # Rebuild predictor
-    predictor = MaskedFeatureTransformer(
+    predictor = build_predictor(
         feat_dim=feat_dim,
-        hidden_dim=ckpt_args.get("hidden_dim", 768),
-        num_layers=ckpt_args.get("num_layers", 8),
-        num_heads=ckpt_args.get("num_heads", 8),
         n_patches=n_patches,
-        n_context=ckpt_args.get("n_context", 4),
-        n_future=ckpt_args.get("n_future", 1),
+        cfg=ckpt_args,
     ).to(device)
     predictor.load_state_dict(ckpt["predictor"])
     predictor.eval()
@@ -162,15 +164,8 @@ def main():
             context_feats = encoder(past_flat).reshape(B, T_c, n_patches, feat_dim)
 
         # Autoregressive prediction
-        pred_feats_list = []
-        current_context = context_feats
-        for step in range(args.n_pred_steps):
-            with torch.no_grad():
-                pred = predictor(current_context)
-            pred_feats_list.append(pred)
-            current_context = torch.cat([current_context[:, 1:], pred], dim=1)
-
-        pred_feats = torch.cat(pred_feats_list, dim=1)
+        with torch.no_grad():
+            pred_feats = predictor.forward_autoregressive(context_feats, n_steps=args.n_pred_steps)
 
         # Decode to pixels
         with torch.no_grad():
