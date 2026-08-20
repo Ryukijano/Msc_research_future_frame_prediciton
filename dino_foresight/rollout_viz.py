@@ -67,6 +67,28 @@ def save_gif(frames: list, path: Path, duration_ms: int = 200) -> None:
 
 
 @torch.no_grad()
+def compute_rgb_predictions(
+    predictor,
+    decoder,
+    encoder,
+    past_frames: torch.Tensor,
+    future_frames: torch.Tensor,
+    n_steps: int,
+    device: torch.device,
+):
+    """Return normalized RGB tensors for metrics: gt, copy, pred each (B, T, C, H, W)."""
+    B, T_c, C, H, W = past_frames.shape
+    past = past_frames.to(device)
+    gt = future_frames[:, :n_steps].to(device)
+    flat = past.reshape(B * T_c, C, H, W)
+    ctx = encoder(flat).reshape(B, T_c, encoder.n_patches, encoder.feat_dim)
+    pred_feats = predictor.forward_autoregressive(ctx, n_steps=n_steps)
+    pred_px = torch.clamp(decoder(pred_feats.float()), -1, 1)
+    copy_px = past[:, -1:].expand(-1, n_steps, -1, -1, -1)
+    return gt, copy_px, pred_px
+
+
+@torch.no_grad()
 def rollout_one(
     predictor,
     decoder,
@@ -221,16 +243,20 @@ def main():
             past_frames, future_frames, args.n_pred_steps, device,
         )
 
+        gt_n, copy_n, pred_n = compute_rgb_predictions(
+            predictor, decoder, encoder,
+            past_frames, future_frames, args.n_pred_steps, device,
+        )
         for t in range(args.n_pred_steps):
-            gt_t = rollout["gt"][t].unsqueeze(0).to(device)
-            cp_t = rollout["rgb_copy"][t].unsqueeze(0).to(device)
-            pr_t = rollout["pred"][t].unsqueeze(0).to(device)
-            metrics["copy_psnr"].append(psnr(cp_t, gt_t).item())
-            metrics["copy_ssim"].append(ssim(cp_t, gt_t).item())
-            metrics["copy_lpips"].append(lpips_fn(cp_t, gt_t).item())
-            metrics["pred_psnr"].append(psnr(pr_t, gt_t).item())
-            metrics["pred_ssim"].append(ssim(pr_t, gt_t).item())
-            metrics["pred_lpips"].append(lpips_fn(pr_t, gt_t).item())
+            gt_t = gt_n[:, t]
+            cp_t = copy_n[:, t]
+            pr_t = pred_n[:, t]
+            metrics["copy_psnr"].append(psnr(cp_t, gt_t).mean().item())
+            metrics["copy_ssim"].append(ssim(cp_t, gt_t).mean().item())
+            metrics["copy_lpips"].append(lpips_fn(cp_t, gt_t).mean().item())
+            metrics["pred_psnr"].append(psnr(pr_t, gt_t).mean().item())
+            metrics["pred_ssim"].append(ssim(pr_t, gt_t).mean().item())
+            metrics["pred_lpips"].append(lpips_fn(pr_t, gt_t).mean().item())
             metrics["copy_psnr_per_step"][t].append(metrics["copy_psnr"][-1])
             metrics["pred_psnr_per_step"][t].append(metrics["pred_psnr"][-1])
 
